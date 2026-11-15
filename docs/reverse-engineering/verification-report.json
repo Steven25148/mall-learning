@@ -1,0 +1,85 @@
+{
+  "scope": "文档结构/覆盖/引用检查，不是业务运行验收",
+  "api_mapping_methods": 246,
+  "business_api_methods": 233,
+  "sql_tables": 76,
+  "business_requirements": 45,
+  "evidence_links_checked": 1315,
+  "checks": [
+    {
+      "name": "Controller方法映射标记数量与API清单一致",
+      "pass": true
+    },
+    {
+      "name": "全部45个业务Controller被需求覆盖",
+      "pass": true
+    },
+    {
+      "name": "需求ID唯一",
+      "pass": true
+    },
+    {
+      "name": "76张DDL表全部进入数据字典",
+      "pass": true
+    },
+    {
+      "name": "数据库索引记录没有遗漏",
+      "pass": true
+    },
+    {
+      "name": "主源码事务注解数量与事务索引一致",
+      "pass": true
+    },
+    {
+      "name": "正文23章完整且顺序一致",
+      "pass": true
+    },
+    {
+      "name": "正文证据引用已经解析",
+      "pass": true
+    },
+    {
+      "name": "README.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "文档核查记录.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "附录A-API完整清单.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "附录B-数据库完整字典.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "附录C-接口模型字段.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "附录D-Service与事务索引.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "附录E-功能需求与代码追踪.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "项目需求与架构设计说明书.md代码围栏成对",
+      "pass": true
+    },
+    {
+      "name": "本地证据/文档链接存在且行号未越界",
+      "pass": true
+    },
+    {
+      "name": "提取后源文件指纹未变化",
+      "pass": true
+    }
+  ],
+  "broken_links": [],
+  "changed_sources": [],
+  "errors": []
+}

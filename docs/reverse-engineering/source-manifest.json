@@ -1,0 +1,3466 @@
+[
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/bo/AdminUserDetails.java",
+    "sha256": "4370b16706b3ef2f9c69a78630270e5c963198bc15d248d74203634a7afe8a6e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/config/GlobalCorsConfig.java",
+    "sha256": "1d0810a884e8f12f6eb22c132c4bb1062ab59b2e407263207bcd44ec883b67ea"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/config/MallSecurityConfig.java",
+    "sha256": "4ee2368dd14d860079afd9e4eae561c1e1e8e05e86c21e54be92f7fa32265191"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/config/MyBatisConfig.java",
+    "sha256": "c2a98c40ba18e57a340e2a71b8cec578fa6443abd65f12ef4ea67e6a30464754"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/config/OssConfig.java",
+    "sha256": "57710156faa3bd226f0de89f7b27c8f45ed49a2b275382d37a7367dc47d16a4c"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/config/SpringDocConfig.java",
+    "sha256": "772348c659901cf8ace33e74e739a823a000843e3da1a3991560e70c8fcf96b2"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/CmsPrefrenceAreaController.java",
+    "sha256": "ef3b8a53d5b7575f27a407e9b84a6192304037b4bda03c0d0653d1f61abf9484"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/CmsSubjectController.java",
+    "sha256": "c131e73e8d774420870ca2a8b1af3cac5b2c7cc78792bbb66f2abeab60c8bcd1"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/MinioController.java",
+    "sha256": "ae5f2723c18f9d630038be9def0386cbcec7dbd873f019a876cd45579ee5a40f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsCompanyAddressController.java",
+    "sha256": "b33f65bf6414c45a9f619b5176e0758c0dbbe9053118c8b33018a2e6cd4dcc97"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "sha256": "6406aa2b49579a4e9ff34bb38fb092b273bcee9236262254fc4d7c71289366b6"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnApplyController.java",
+    "sha256": "f9a83cfb715440d82e47fa56a8abf34f7ee9a01b288a2b68fdad79195497a972"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnReasonController.java",
+    "sha256": "9fb95df2b4a9a4132d32564d0eaf09a427335b4b57872dfe3d3a6243525a23a8"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderSettingController.java",
+    "sha256": "fd49dff97486ef203213e1de0e5022352c205bc9c8d8428940104ac22944f1ba"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OssController.java",
+    "sha256": "7f59643065bc44f29b3a64890c0c078de17ca87e7256b21c34d61fcfbb11a9d2"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "sha256": "9b5ac3cd3a0ef19b541e2feb7df821497dcc91c86c6c2ab29d4f0496582dfe5d"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeCategoryController.java",
+    "sha256": "b702cb52e2e9f7a07d294ee4f5bb17fba268348c42ff9870292d4de5324e4ef1"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeController.java",
+    "sha256": "08f7f43ef48209e10e33d70bfa3d92b80e4789d6b3094a9bdbcdb4eba69c73df"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "sha256": "5b1be845b025c3b96dd61043aa19719a7f5ad75cc1170c093ab29d66dba917c0"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "sha256": "372fa9db7f287d2fc89f59bc832a79ef347b48b606601d1c3b956ba01a7d8cfa"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsSkuStockController.java",
+    "sha256": "2949a554968100a610cef11ef57863bfdeb308ca515abaf9b9078309fc74b62c"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponController.java",
+    "sha256": "39ac9e269af03342911767395b06ee3ac71807a32b9516d5cea42abfed495bd3"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponHistoryController.java",
+    "sha256": "bbf9ef619ee4cedf86d387b0bf21f15b1973e1b73323c51b7aa62f7a59262747"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionController.java",
+    "sha256": "c4e4d6237e529d893de678e6103adb7e03c68672fa399b67ee9d424cb78d06ef"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionProductRelationController.java",
+    "sha256": "67431fe97c3332f7339c6d413ca137389af846ca8c3c7fa0d29e3e7090a7a0b3"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "sha256": "0cc9ceb5dedbde314f56cc609439a56d5bdae0f963a749e668de57af49b59b20"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeAdvertiseController.java",
+    "sha256": "52c2ec43faf50334d23136b27cb94bbe94e3992d0459763b66025b2f295a43c4"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeBrandController.java",
+    "sha256": "04accc26305dcae4cfdbcfd8a118cd9589856895386a7049d5949018673961a5"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeNewProductController.java",
+    "sha256": "68d56ad52319df702b9d3109d5cb4e81f5476c2a64f4395f709d7fbcd26d650f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendProductController.java",
+    "sha256": "d2dc1451119076a86718a35476f8a6115a81accb1f973f753b08d5b8dfe076ef"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java",
+    "sha256": "fbf74810212ae5dba4ce0ca03650b465ce3e871889a2d0a06e0343e845927b91"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "sha256": "c8755cf60bf579c6187836a43d591497b897d8cb716f243980a200ee6ecef5a0"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMemberLevelController.java",
+    "sha256": "c1abdbba5bef83c40082d61120011910279fdfb605d18e1481ca63cd5b25874a"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "sha256": "05ddd010b0ae5ed578407bd5124417abf801d0c263427c0d089db148bdf7b6f3"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceCategoryController.java",
+    "sha256": "258cfcb0ff11d9471c1545a2f42396f89f0ed67352878e8ffff067a83e280187"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceController.java",
+    "sha256": "0d88a62c1f4705b420fdbf41e4b2b23111047c60f7446f4e967248242106da0b"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "sha256": "2082cf0bf7278f9fa5bb83fa819bb3a6f905631ee3c8e44a9a13dc58e7f6a4fe"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/CmsPrefrenceAreaProductRelationDao.java",
+    "sha256": "659c106a10e8984d44ee074ebbd0288d2b8d2586b524408d1b1d601531c4e709"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/CmsSubjectProductRelationDao.java",
+    "sha256": "4fdb4b046b93eeb5726633364e9b68c910cef3bde6f00e91e9ea27cc1f475766"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/OmsOrderDao.java",
+    "sha256": "3df91da18c76ecab3107e11dce08a5e086652b4b93a3d43722d66964a747a6eb"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/OmsOrderOperateHistoryDao.java",
+    "sha256": "6ea53481633a51b9af8e912ceae169653affc75dc738488adfd94f00ea78705c"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/OmsOrderReturnApplyDao.java",
+    "sha256": "ba27a65ac6c85690fc534f5127bbbcf824b9351a6b7dbe3eec7225a8242da1fd"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsMemberPriceDao.java",
+    "sha256": "a3da6d63646c61f05e57e561d2cf3bf3082a2eb15f7bc25a672f4c6490adfda2"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductAttributeCategoryDao.java",
+    "sha256": "952a66e9450acd29755c4be94d06bb1470e83203eb3af41ee84ba764260feed0"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductAttributeDao.java",
+    "sha256": "9fdd69aad7dae9c0ddea5f9bb345decba1a5bb10e9f3b330b0ef383ae3c8566e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductAttributeValueDao.java",
+    "sha256": "83c22ed4cf7fd95a1bbfbb1b64cc659c959848f9510ea2f1c5b192ace5d128b9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductCategoryAttributeRelationDao.java",
+    "sha256": "9d1a7aef2c9693bcf385f7c2318d6122a27d0bc77973fae2621d96b2ae238c3c"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductCategoryDao.java",
+    "sha256": "ceaeb753767cb98031e59dcc4b6a5e83b573eae1700ea039c6aa0d6a83c4e884"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductDao.java",
+    "sha256": "39e51c6a2a84a7516facb0df7c590a019a92a0e9bf4a268c2c3390f9239499b4"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductFullReductionDao.java",
+    "sha256": "71008572c2de213843c4d7558995dd516d114e92bac894918e19df0ab8d8f2a2"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductLadderDao.java",
+    "sha256": "731c0fd91581b9d235c82f07db710464ac91367f2fd763a2c9e908f0e9d66421"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsProductVertifyRecordDao.java",
+    "sha256": "0b3dbc2d30f36420b42b34af2b1ef057433c6523ffb18cadfe2604aea0f253ef"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/PmsSkuStockDao.java",
+    "sha256": "3648f4951a4ea39612b534bd79d81c4e829454f2200486e87ea1849f483c45ea"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/SmsCouponDao.java",
+    "sha256": "b40157512521c86c19322806a11361528aca0fa2feafccb55b1dbf254b342207"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/SmsCouponProductCategoryRelationDao.java",
+    "sha256": "0d4e1c7a0017f6a445674aa23e4a4a7704e151361bb99bf1d1ab6b10f4f4b0d2"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/SmsCouponProductRelationDao.java",
+    "sha256": "77de3601dad43805a76f7133dacd9672c24dfd326468046d40f641b0648749cf"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/SmsFlashPromotionProductRelationDao.java",
+    "sha256": "cbba47a0515e54414eed4984f4152c9c158d357d81b75f6f1f7cace71b70532f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/UmsAdminRoleRelationDao.java",
+    "sha256": "9ccb5c4c2ae77139dbf465bb0899b2d44ba4b0595c2fbbe6da516aa71c5a39e8"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dao/UmsRoleDao.java",
+    "sha256": "3a51c54a7b7c1d266d9542229f88861b0aea36887899f6ad2f8adf1d92e9a711"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/BucketPolicyConfigDto.java",
+    "sha256": "d29c25983d5fcaf89ffe8401c3f6b98fcb8b64911ad1f0154fd85bbf068177ac"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/MinioUploadDto.java",
+    "sha256": "db579264300f71cecbb9dbe2bf1121a914e4a1abe7e6a9f6332c53a87ddebdf9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsMoneyInfoParam.java",
+    "sha256": "5b964c3308ac7556590188e932d9652d6297465f121a3c00cb136263710e3a60"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsOrderDeliveryParam.java",
+    "sha256": "d22cc928cb9e2f9ce9982c86d378f3776ec9b9dfdf3357268387d12edf0aeace"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsOrderDetail.java",
+    "sha256": "8d1186a1caaa8b03cd53242f06b46580e3d5bbfa77d28e681545cc37e58fd76a"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsOrderQueryParam.java",
+    "sha256": "d5d36e4350d623496035158b2327a9c04e4d4f41e4c60676b6cffb695a4ca910"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsOrderReturnApplyResult.java",
+    "sha256": "9f1457033c32e9962b63ba1a9c873a38ffa3d0eb85749f6d2435cc514cd0eea0"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsReceiverInfoParam.java",
+    "sha256": "264bb70ab03c3955eb74584c35ad15b66dfef3fb6eaf08aae7f9ab0ffed10a12"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsReturnApplyQueryParam.java",
+    "sha256": "1db18b227b631709fb9555189a5ce478786fe7c9e666c8f6364da1dafdb2d248"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OmsUpdateStatusParam.java",
+    "sha256": "48f4a7ac06df023ee183c7baa0d0241476df00f686721256c1dc7d5715d96c63"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OssCallbackParam.java",
+    "sha256": "3c82c0adad4a623c4ffb2ce7310b9b4f1fcc0eda243ccc288c69b952dd0b6baa"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OssCallbackResult.java",
+    "sha256": "10fe81775070c18664daf66f6b90aa32b6a8cb8283d23f156eb83e0418d4bd0f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/OssPolicyResult.java",
+    "sha256": "d19085942d6d2ea2b23af7c303ca724a010441749a05a48549f9a536c3a08186"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsBrandParam.java",
+    "sha256": "1e661f19ad75398821b2c3c800afbc6a4bb0d1d29450b61b8037fcb7856a14f9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsProductAttributeCategoryItem.java",
+    "sha256": "2983585fd8faae75661b272fbed2c45192707fadddabadf02f75c9f9574d0657"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsProductAttributeParam.java",
+    "sha256": "2d312b906dc62d7917add99df1d41ddddba0121e6ee5bf2a0deec3e63bc8d51b"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsProductCategoryParam.java",
+    "sha256": "9de3d63e4066b838f1edd57bbf83539600796f0b9505f6000ded8e4e3b36db51"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsProductCategoryWithChildrenItem.java",
+    "sha256": "9be646b9793c02b538d57c4b3af53549291d920c5322f549e01b477411ce15fe"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsProductParam.java",
+    "sha256": "58ef736f101ad753219c61a68ea6903c89b5ea18074cb0328512aca554db9a5b"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsProductQueryParam.java",
+    "sha256": "cf5dc481b63698ea16b9b947bd429fae3ef6f4c9dd5f598c9fc4bca8ba7b4f2e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/PmsProductResult.java",
+    "sha256": "ae941b2166e59e7fd5727ee1be17d1ca8a33af6678150867a8cebad1dd7c48d6"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/ProductAttrInfo.java",
+    "sha256": "9b3f90caa0fdaa65c2c7cc7337dd8cae80842b085b3ccdeec3b2ce6788afea26"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/SmsCouponParam.java",
+    "sha256": "bc5ad95d926af6974a5ac973d7316f3222544067e4fc57cac1f21a8e880064b9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/SmsFlashPromotionProduct.java",
+    "sha256": "cba7a3d4039c993f412786ec080b1dc4948f111ad20376de67e5e56dbc178d5e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/SmsFlashPromotionSessionDetail.java",
+    "sha256": "5c5e7f8a59a8dd24666be8c44141a5dcbdb7182738397880ed30588eb4eb6093"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/UmsAdminLoginParam.java",
+    "sha256": "83b8c4e392aede605f3b46aa8751cb763b5dac49cf3b6bd467c8463fef4ff3c3"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/UmsAdminParam.java",
+    "sha256": "0b3da8cfe25951a2b95ec04fba6f641d442cb6a5641a1d84a72f590e3b6d07f6"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/UmsMenuNode.java",
+    "sha256": "b2c2c9b28ce2200b053247e25072ed6a0aa8babc6823ca16a78e4d8aed0c5540"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/dto/UpdateAdminPasswordParam.java",
+    "sha256": "8786ba87a7e4085cfede6308415b6f4dab99e4cb3522b3255bf31b3e1aa704b5"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/MallAdminApplication.java",
+    "sha256": "9532186b0ddb7641fa17ff0d07a163815fc11ae1d3557de839de5bb0e70f820b"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/CmsPrefrenceAreaService.java",
+    "sha256": "f85f105f0e92094abf5679103875ccb6a83a218b9befe3afb42396a414aa52cb"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/CmsSubjectService.java",
+    "sha256": "f1867a3c0f32689affb5e2f272158ee82e061e8e64237e456b952a2e4eb383ec"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/CmsPrefrenceAreaServiceImpl.java",
+    "sha256": "f70f93098639cf560a0b7aef667084b89f508806bc69afd56e20b7e289285880"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/CmsSubjectServiceImpl.java",
+    "sha256": "f728db29481b8e282a8b54576bab5dd4d75e440a007908e6a8540d0e526aeb27"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/OmsCompanyAddressServiceImpl.java",
+    "sha256": "e82ee290740d1dba4ca7f69e0b69b0a732e80bccb3f6ab9a0b0cfe093bf25596"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/OmsOrderReturnApplyServiceImpl.java",
+    "sha256": "78020982a4f82f5e8e960190e97a881c0aaaab48a8361cbf2a3676a91cf7522b"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/OmsOrderReturnReasonServiceImpl.java",
+    "sha256": "30c91451f7999af661a929113219bac8a218e0d6d0bca7358d1800a813d28321"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/OmsOrderServiceImpl.java",
+    "sha256": "1ef1efef8cf29b1c68baa40fd6a3521e24ff2189bb83cf36a81b5212c215465f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/OmsOrderSettingServiceImpl.java",
+    "sha256": "3be03a05fea17670f90a4681c946db69f3e73f5af8cf71d2e5db7932a1c3edcf"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/OssServiceImpl.java",
+    "sha256": "7429b18cefa23741ca3a7931d103de254fbd8180007cbb87d73d3fb2e8729970"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/PmsBrandServiceImpl.java",
+    "sha256": "9c160a5110cf8f6b9bbaaa8987da539ee8237199d600bb6dcfc7403886d7bfaf"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductAttributeCategoryServiceImpl.java",
+    "sha256": "04ee7dcf58b6d1b12cb9afa6a36ea0de0afa6920affea487a100a618df07bae1"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductAttributeServiceImpl.java",
+    "sha256": "bc18c2fc14be463e8f94c9c9b59cec97d32da187f7be85d95174f4fa402b67d6"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductCategoryServiceImpl.java",
+    "sha256": "bfd08d6af60c73722aee7523d303dfff80aa836671ac86a07c4fdad26221f6e5"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductServiceImpl.java",
+    "sha256": "04f9fe4b250d190c04003fe5cdfdea95ed1e916896c8e6ac6f18fa81467beb2b"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/PmsSkuStockServiceImpl.java",
+    "sha256": "b72a3ade5d70a2b38daeeefb5215a0821bcdc739a401c3949a08e4cb207b77ac"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsCouponHistoryServiceImpl.java",
+    "sha256": "002f825a808f5b7e86034f43ef9f14e510b6f3cf6381aa5171fed33d32ad18b7"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsCouponServiceImpl.java",
+    "sha256": "a5c29c81785b3dc061b30fc9968f78b241664e81eb9a54a04fbb75dc12b9d65e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsFlashPromotionProductRelationServiceImpl.java",
+    "sha256": "0ae0a69ae106214b2333f768c039ea01e3fa9c0e215c06c0470b9f1fba27be9f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsFlashPromotionServiceImpl.java",
+    "sha256": "96b474bb920cb3b4b99658f839d3054402f262998809acaa57d28257e3e08aa0"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsFlashPromotionSessionServiceImpl.java",
+    "sha256": "14931996acae55ee271792fcedaf51d7cb3ddfb93e6918482d064a63f2fa3cf7"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsHomeAdvertiseServiceImpl.java",
+    "sha256": "c9cd39040335a6b4081a062c44d90f251252a95d20f890c318794828201d5159"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsHomeBrandServiceImpl.java",
+    "sha256": "9cb9f8cd471fc014a9c797c4ed70a955dbfd7531c940082854162176f83cfd59"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsHomeNewProductServiceImpl.java",
+    "sha256": "69476f75b4bc48ca9eed952af1a2c1388f980c3994449a3d496f608f675a4c2f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsHomeRecommendProductServiceImpl.java",
+    "sha256": "c36a2368fa8036cea0714d714734387629bec72b26fae183d98edb01172ad4e6"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/SmsHomeRecommendSubjectServiceImpl.java",
+    "sha256": "e637dd9bacc241f7e43107ba830472bd75857686ca845caad870845555e5d171"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminCacheServiceImpl.java",
+    "sha256": "f58d4ccfda4918abe13db04d2a01449b8e86b963dbade8e5ce8ecf0f217d18af"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/UmsAdminServiceImpl.java",
+    "sha256": "f71206c8d9bda040fa79823986b5ca46ea23f71e74080dc1434a9f1b3b804660"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/UmsMemberLevelServiceImpl.java",
+    "sha256": "584c3a1e6f310b9c019ef9fd4d5e38c6a575486fd9987dd722c9b227d02042b6"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/UmsMenuServiceImpl.java",
+    "sha256": "64d59c9020cefd58b1a6102bc65e1d92f97876576ef743f641b740591f9356c6"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/UmsResourceCategoryServiceImpl.java",
+    "sha256": "59c18b83f9f83222a9775211dec391666d1860eb4a3820e74d11cb059b648384"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/UmsResourceServiceImpl.java",
+    "sha256": "96b97c10285acc063c5b70f7ba6192fe226fd1b2f7ea36b1128ef18adb0819bf"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/impl/UmsRoleServiceImpl.java",
+    "sha256": "89b9c4b7cc9b774f1ba8e4fcd24cd86d65f28e667b13d57b18b5c37eed507887"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/OmsCompanyAddressService.java",
+    "sha256": "fcea151ed03b34b66b97a7eb167b1859e4387bf99a5deb363254a08dd3e5ad32"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/OmsOrderReturnApplyService.java",
+    "sha256": "e4dac95c775dfd23e360d08b3a3c8c8b7a386789001414a22e4843c526cec852"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/OmsOrderReturnReasonService.java",
+    "sha256": "dfb0ddbf011b00aa6cf51833bb42d53cfbc335e61c04ae09c66bf3202c5854be"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/OmsOrderService.java",
+    "sha256": "51a5aa484a8d5622aad71cf4a6ab9c2d2a8e8bf05ffb3564bbe0ed08fd2f9ea0"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/OmsOrderSettingService.java",
+    "sha256": "2718857bb7f941532c2d50954d1c06e225bddaf51cae412c577fb22ee94cf087"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/OssService.java",
+    "sha256": "fcd170a75f9b2749446b246a28c3bf74f074b66479613b9fae295ef7c88f6b93"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/PmsBrandService.java",
+    "sha256": "8e0e2435bac03e80b885f8b98d3af161411523da95774b1535a8c4a56888eba9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/PmsProductAttributeCategoryService.java",
+    "sha256": "8d63a1a0d91a2c384bda094815de2f2232444e7f86d6b6614e2fdb6a0032a87f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/PmsProductAttributeService.java",
+    "sha256": "8f761c8db4743a661150297c61247e25364ed9183504a5fe9cb1eafbc4aa72aa"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/PmsProductCategoryService.java",
+    "sha256": "6b61f19eab29d9f69db40f1237aa1dc7ec437ad540205dc7fa6548b1b30b6b44"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/PmsProductService.java",
+    "sha256": "5ac3279e2ffa3af1fc96bf0b2bfc0de327f9886279fbaf1b0eeecaf3c110ddc9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/PmsSkuStockService.java",
+    "sha256": "65da9f61d274ac2d2e8a3e96280f501cef9c46f97c090206a10afb000adc3f4f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsCouponHistoryService.java",
+    "sha256": "29cdca7d57d94ca111875f2ce5fa7bc27c7a61b49614ca1e9048ac03a349cfdb"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsCouponService.java",
+    "sha256": "fd2ae20b25718e893fd5a421e6f56748dd709aff996d944e7aa6644bbdce58a9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionProductRelationService.java",
+    "sha256": "527e9d452808e0271a34f6a6d17102aab31dfd457eef8d6e30fffe707bae10db"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionService.java",
+    "sha256": "4c9379151bfc01dba4cbf7bdf10a59c24b62657a3e1df6648e12a4453f403d2a"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsFlashPromotionSessionService.java",
+    "sha256": "1fb167adddd070520fa1daf6fbe1b7c2aa125e2603e9cbad97d19bf62516a444"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsHomeAdvertiseService.java",
+    "sha256": "3efc886d0270d93d58c81ba34d874155327cfa7b7ed7098eda13472d9a1a62eb"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsHomeBrandService.java",
+    "sha256": "d4388e17716f4af0c9dbfde377d7b802190ffe37a8b2ca1e23236534abda3c7d"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsHomeNewProductService.java",
+    "sha256": "67aa911b91aa83d0a5e1bc80a172c8c9221df5eef8b38579d191a6ccf38080fd"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendProductService.java",
+    "sha256": "934dfc696d18c6c5def16c46e8bb95117bcdb3f665dd2615d77cacf12d5ff25f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/SmsHomeRecommendSubjectService.java",
+    "sha256": "5a3ee5bfb43ada93ee75d35640bb4af906cd4e9231e2092581e0e6449c9fa80c"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/UmsAdminCacheService.java",
+    "sha256": "be545bced0facf924afeb575ea3d3714a152d9ec3873366222e9181044d95571"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/UmsAdminService.java",
+    "sha256": "490586785fd93b1c0ea1f2f1518b6e197c4234587a7e2a28a551a67d1c582ec0"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/UmsMemberLevelService.java",
+    "sha256": "6370f12c0407f7694b8596debeeb278ff8a65478f36b196e0b62b68007056127"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/UmsMenuService.java",
+    "sha256": "a6a3b9fbbb058c26390d57666331c7a3fb3a7a592c223c4bbe47a3f1ae9c465e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/UmsResourceCategoryService.java",
+    "sha256": "557c3e49534779d7146867966bb723b93da3a79e1649abf4b5c17db322b0e933"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/UmsResourceService.java",
+    "sha256": "2a86b47d8c74a464df74eb11751729e5af3e3990744e50638f78c1c1a2914b0c"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/service/UmsRoleService.java",
+    "sha256": "061d7836d9d61e23a7a1ddf72ca7ab46f3a27c94ebf96548d408a0651e769ac9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/validator/FlagValidator.java",
+    "sha256": "2035d3d0c554c893a4b44922b307082315accdd8322b895bce706a0ecd464cf9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/validator/FlagValidatorClass.java",
+    "sha256": "d7f78b6035d2ce47089f3d983340353c62ca0a50ce0e6e1a286169008cdce409"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/api/CommonPage.java",
+    "sha256": "74318df22b8f94993649b7effa5a348fc6aac56c2898f289a984f88748ede728"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/api/CommonResult.java",
+    "sha256": "0c00abb66c48fc280c8d5456b1b1fa4ce4b0afa27f7d21bd66f68e154ab72346"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/api/IErrorCode.java",
+    "sha256": "9599e4680f0543f6c212a73bc3715187e7700693fcfd15b077882aa5740f9009"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/api/ResultCode.java",
+    "sha256": "8b73e57d5d858ff91f729e44781e36c331636228eacadf76926fa15d537474c0"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/config/BaseRedisConfig.java",
+    "sha256": "20dc24160a0c1a2400fab310a43409abbea31815934a81f0674d20ab944eb650"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/domain/SwaggerProperties.java",
+    "sha256": "d762ce72e3d95df0dac42116a48c296cac78cc2ea9a5532d8462ea23bb873d84"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/domain/WebLog.java",
+    "sha256": "8455007c4b8065156ea00f16c7906a5716d66dd220030038dcf031f6e988750e"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/exception/ApiException.java",
+    "sha256": "e3fb2073161cebe91760e91dec59bbf3db5e33b51463da15637dbb0f2aa3f3af"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/exception/Asserts.java",
+    "sha256": "8f23d99af34379941682f05ee6bd8ff6988016537bcf0cd55c8917da7d425f88"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/exception/GlobalExceptionHandler.java",
+    "sha256": "691855ae1c42a61013166f5e14c5b7ee3e33fedac9e1f5323865273b40f04b8f"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/log/WebLogAspect.java",
+    "sha256": "e305567c6211fdc02e4ff70fce395632c3b342799ade5bc14e30a7fa67891454"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/service/impl/RedisServiceImpl.java",
+    "sha256": "c8ebe4f5863a4cb96b7d0fee874bf18c8f6c1c8e53964798260528470ff317e5"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/service/RedisService.java",
+    "sha256": "9daaa702e7e1f31766ab74973a4f78f2ea7d238e2bc821fbb0b83d1f5f3dd43c"
+  },
+  {
+    "file": "mall/mall-common/src/main/java/com/macro/mall/common/util/RequestUtil.java",
+    "sha256": "c2e9aa169af3aa1d3000f4a4a2ea9dee0632fed6163c3c3b9dce26f9658a3933"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/bo/AdminUserDetails.java",
+    "sha256": "5ab813e0e7a7c9d1c40eb2089163761a5b98279f9aec5a8eea98a2b3ba620d4e"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/config/MyBatisConfig.java",
+    "sha256": "189ce7ec6d177e72e7bf1b84dbb8157128723e88666ecb682c11ae06e89f65ed"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/config/RestTemplateConfig.java",
+    "sha256": "02b9f376dab42e10bbab524579b0ea43a05a60ac67fda647e11ef227ce8ec5c2"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/config/SecurityConfig.java",
+    "sha256": "ada1e1ecc7906ea4a52658e1f5bc3f84f3ceceb2c7f2d306783b370a297a8643"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/config/SpringDocConfig.java",
+    "sha256": "d6ea7ffee3b90760f4b468ce98ad624f3d5b60501063acf64043b9b92918045b"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java",
+    "sha256": "8128091d6966f1d237c77e84c6585a7568f23d176eee1c06d048183a8ddfe912"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "sha256": "7a8766321960ed91b122b2d808cd604d65be120cc4680d53a3bf4a1b2e22c9b0"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/dto/PmsBrandDto.java",
+    "sha256": "f649935da6ab87aa1c823fc0da0ae4a2a61623c461aafc5105e1889ba737af3b"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/MallDemoApplication.java",
+    "sha256": "967139c0ec7a61ec6ee106b604e091d22e81e6a27cdf10a86f1f2b9213f0b531"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/service/DemoService.java",
+    "sha256": "0f6fcc28308c0afb2ce35e289633732ac94e9813ef0c62869e99f74329af51b0"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/service/impl/DemoServiceImpl.java",
+    "sha256": "749da0bba1c1f0e7c93478643f2a9e104958ce5842480d322199cc867a8e60e3"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/validator/FlagValidator.java",
+    "sha256": "ecff5829a96208d6e6a0e958903eedb3b56ab4aa19dac00a5d2409a2d7100213"
+  },
+  {
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/validator/FlagValidatorClass.java",
+    "sha256": "2d4a47fa24557ac34376ac652bab292f28dfac3a3284f3509057ce746a294c6b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/CommentGenerator.java",
+    "sha256": "5a76656b51aab2035a89b096c71ed3b6758ba1d4a2a03ba2ba073dc91ea1a0c0"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/Generator.java",
+    "sha256": "5e98c5dea44ef658ab75838d996f16f15eabe1b18b06bd4dac61381c39dad2c0"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsHelpCategoryMapper.java",
+    "sha256": "7dad0ad3b3803e3f454115688b4d56295657696ba143fdf986e4ef9d46278295"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsHelpMapper.java",
+    "sha256": "d97930046df2b1af06bfbf490c1df522969968838ee61cb51544def6b196da0b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsMemberReportMapper.java",
+    "sha256": "dd93848bdc554818e80a5a1bf3bb5ff3806c33d49f6459399387f90364b5f854"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsPrefrenceAreaMapper.java",
+    "sha256": "48bfeee2d32f986351968a1a92a86bb4419040d3038351e2b8a52379af7321ff"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsPrefrenceAreaProductRelationMapper.java",
+    "sha256": "886e03d1dddbf19d4135a39fa35eb53b50dd164d127cb78521b782e43971f944"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsSubjectCategoryMapper.java",
+    "sha256": "7ba0528a0f9c31e4cef12e80d936d2ff6ab44ef46c3335ff8d4b396c7dff96e1"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsSubjectCommentMapper.java",
+    "sha256": "bbfb2190876495b6b3de473a53e46a7916ebb86230d5d57f024ee750dd55b53f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsSubjectMapper.java",
+    "sha256": "177ed83eca89b3017e6d148ae728ee2d833d7039fc2f8f853540a68abe4c46c4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsSubjectProductRelationMapper.java",
+    "sha256": "1666d97d9289c69cdac5d14717696305525ff0f07b236cb4ce9ba57c591100c6"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsTopicCategoryMapper.java",
+    "sha256": "97d04a54cb8479677ef3ad9f37da7ca8135fec16d020a035ee4c188174ae6d9b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsTopicCommentMapper.java",
+    "sha256": "f4030e7b35ca42d210a723f97719522b296024eba8ad50b4138b6d6d6f400db5"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/CmsTopicMapper.java",
+    "sha256": "32d9d680f2720252f52afbd12c9edeb98805a0960ec8c9fca3df60e5fda0c5ef"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsCartItemMapper.java",
+    "sha256": "2c611303dfc37ba0fa52cc56b5f5bc723a0b321f271eea01ac0c6522cc627901"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsCompanyAddressMapper.java",
+    "sha256": "afb996bd6591fe9b6e4b73ece35a6ee102302e95c240df08438f003f1dd4ca84"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsOrderItemMapper.java",
+    "sha256": "bb754b38f49908c7cfdd6b77d3648778138262a2d3773e90e729e83823b56082"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsOrderMapper.java",
+    "sha256": "2024f930c621c508ec7158246bf6cb1602e607fac65a4152ad9104bf71e62c6a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsOrderOperateHistoryMapper.java",
+    "sha256": "8a91de24b1faa74d4dbb5d7d2c9bc6539d7fb4ca9167e923601593dd9f150c27"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsOrderReturnApplyMapper.java",
+    "sha256": "61ad3fd149e80027534c5f75f6b3c1b529e184b3ee31987fbfde17b45de24eae"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsOrderReturnReasonMapper.java",
+    "sha256": "592b276bbfc9b9f93ad6ac9b809eebf6d9a6bdf9ae7e512f76423087e8bc96c0"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/OmsOrderSettingMapper.java",
+    "sha256": "0190b96fe952c0ae1239f3f0184f393b6714a18996de7a9aa973b833f20b0158"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsAlbumMapper.java",
+    "sha256": "376a7b5549ebcc2ce8d11dcb67c9b18810b34d840cc9adac662ac517a381834c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsAlbumPicMapper.java",
+    "sha256": "97707995b5f4cba18fe91e7566eab7821a59093185cef03123b8fef0696393ef"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsBrandMapper.java",
+    "sha256": "929a1be97ff3f80d45afc7097ea2f6ba1778a176bd187d571fa6327f5b12ce0b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsCommentMapper.java",
+    "sha256": "a6e4f3de89f0b30c9f1276d9f325958688feea13f246e8ecef4c2d9745a6617e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsCommentReplayMapper.java",
+    "sha256": "638482820a5666f143706cad60473fcb7a912449366b8e6c7618bc269656c7f4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsFeightTemplateMapper.java",
+    "sha256": "dd8e120e5925313115f57bcb745455a50d39df7729f8681e198c6e491ef375aa"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsMemberPriceMapper.java",
+    "sha256": "017c1dce922c662d523b09d8d7a8ca2773d3b23c63c9f8696a5444519719950f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductAttributeCategoryMapper.java",
+    "sha256": "de09d385257d321268cc53d1ea89a2e113a7888170f78aa8a19cb2bcae1f74bb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductAttributeMapper.java",
+    "sha256": "dacfbce195ca2d3a60be577ff5a43689fd6a8d0d93d5af39038900548a6ed133"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductAttributeValueMapper.java",
+    "sha256": "9fdd4eb111b48346ca89069eaeb35a95d533bd7e8da64275a65ad846fbbdf3b6"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductCategoryAttributeRelationMapper.java",
+    "sha256": "9bfb6f7b88622b73ed4b52664bf833bf2f5acaf808fd35ce552e04c13324400b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductCategoryMapper.java",
+    "sha256": "5d192b2650661230fa75e0ad1a8307df2d1e829bcf1ed81f0ec06eef752b8aaa"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductFullReductionMapper.java",
+    "sha256": "979d492086e8d2bbf261f518ca359189612caaf1e398315d81f05fcd0bbba9c2"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductLadderMapper.java",
+    "sha256": "3eb694a8a9765a17eb5f4ef536496d0bfc86762aa67eb056455840b2afc11cc4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductMapper.java",
+    "sha256": "a30c49d42500bedea8b9ae0850601193a4b2c8e0831dfd1207d17474b4c9ae18"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductOperateLogMapper.java",
+    "sha256": "5138c0eb19049b7f7d6074f428a047027365a0602e04fac2c355bec74059eaf6"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsProductVertifyRecordMapper.java",
+    "sha256": "0fe19e68528272dc52e4755d58d60ccdfdee24ec560fe008ae3a284c9407ca58"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/PmsSkuStockMapper.java",
+    "sha256": "cac0ad9ddc4ca1a2f1a1a9df445c0e15e032655ed38fab3716538cf4ca244922"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsCouponHistoryMapper.java",
+    "sha256": "5b358d584b112581658f4c3b0b79d9ac4119163ddeda46d5ee3dc5741a581f33"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsCouponMapper.java",
+    "sha256": "c94fee73b1326f5006942f7ac026e7a3beb9c79f2739397bcf3b3b8f8bf59de7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsCouponProductCategoryRelationMapper.java",
+    "sha256": "daff52fd213f9760a59bc501d4a5f31a1ebb0dce1489c12f79fc38b3a48cc939"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsCouponProductRelationMapper.java",
+    "sha256": "b4fd2d416f443d3a66b31c0ab07bc529e48cbfdbc817acd296f9eb6e03fbfb84"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsFlashPromotionLogMapper.java",
+    "sha256": "98141bcf40e8ed924397895e8ed47134c3747cb90728213bfa156ed799e24245"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsFlashPromotionMapper.java",
+    "sha256": "c3e3e135350c4e4d0272c54209b7920f3f20b376d44c8908ae915d852d567eb4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsFlashPromotionProductRelationMapper.java",
+    "sha256": "00bc4b25cf68df4a9678d190aa2d5f7070945d19c098994dca9765ae1d70d9bb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsFlashPromotionSessionMapper.java",
+    "sha256": "6e3562169aae653f7b7a813c4898d04a7828ce5c3e282036e334eea8f89b2b26"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsHomeAdvertiseMapper.java",
+    "sha256": "31f4bfc9da429511ce5a930799f39c94e7cdbc25a17c44ed1a7f4a9bbbaf7cae"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsHomeBrandMapper.java",
+    "sha256": "b14afc8eca798d73811eca2e197f32c488b745a02de2f1354d017fbff433e440"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsHomeNewProductMapper.java",
+    "sha256": "78dcdeac2b1d8865fbbf8c947fbb5fd6d9291d2ffddb14ba4e7230d69a81ce72"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsHomeRecommendProductMapper.java",
+    "sha256": "0fdba8ebe27c4be7f01ba95ed45febd55b95faf886cc7f979fbd9f6db569b0bd"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/SmsHomeRecommendSubjectMapper.java",
+    "sha256": "3fcd7f601f88ebc26dc74afff31cbf45c1d112baff5b58f7034dc2ffa0c5be33"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsAdminLoginLogMapper.java",
+    "sha256": "ab31e6dda86d64e682b1da299a9cb0f88b8332a4fba07e81c55ec7ad907d834d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsAdminMapper.java",
+    "sha256": "48901a3227fda3e3d84cddaaf2f2347d8df0a3ceecfb90d9ee44415782a9c6c7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsAdminPermissionRelationMapper.java",
+    "sha256": "5f58672e576f077ca6c5550a796b8b0c9a205d3f5ba1899de1971f3d9b45ac70"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsAdminRoleRelationMapper.java",
+    "sha256": "2078bffc746badc70ddda997d419602d61b87df1d429d628da45ab538852d498"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsGrowthChangeHistoryMapper.java",
+    "sha256": "221fd7e8485cc3a7dac7b02f62ae236db18d1a95d4c3d549832f6424907c60b4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsIntegrationChangeHistoryMapper.java",
+    "sha256": "f7099cc941c286f7ae200d8d99ae85b24d3ae07958f776211f35896777b10b23"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsIntegrationConsumeSettingMapper.java",
+    "sha256": "94f942895156e7cf732bbc8c0288496ed7d465d2fdc796235c96a3dd68ed75c9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberLevelMapper.java",
+    "sha256": "f09a5dddb9f5fc64ed2a50b93bdab844c734d946690a465c4a955bbb142c95b3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberLoginLogMapper.java",
+    "sha256": "3585bf511db8ebbceb5a56da559aaf74bb2e0acc97f65f0c339866a14725bdf6"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberMapper.java",
+    "sha256": "5f7460a22e49693a51b55e654904e1c51d81dd6ec229edca88d23c55cc79e608"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberMemberTagRelationMapper.java",
+    "sha256": "9b9614d63e871315d200f0bdedc52e31d5402ef71ee19b2022216145ea94bf52"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberProductCategoryRelationMapper.java",
+    "sha256": "77ac73724891b750c2de904413b90f3cef00e255542238cdc6b42a0202575e8a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberReceiveAddressMapper.java",
+    "sha256": "df0f2a2d269a7e65ade285c9962408db70f86e8d88ae30ac553f07d3901c5bd6"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberRuleSettingMapper.java",
+    "sha256": "fe6264502ac5f0cbfd6e8d8f100cd36717f4287a85393b60543b85fac99c4e3d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberStatisticsInfoMapper.java",
+    "sha256": "2736828c788442bca22fcfb977164e311d42515945a35deddc81fd50087db69d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberTagMapper.java",
+    "sha256": "541eefcc41b0d0f5ae552fd7ed60a718a4e27b62c69be4131f1afcdac58807bb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMemberTaskMapper.java",
+    "sha256": "016718019f7a15514f2e7e7831ebb46b389da1ae0b60f05b48790bdf3222320e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsMenuMapper.java",
+    "sha256": "0ab1f4482cc129a942af8f5bce41559fd4ddc57625f8442890c79e98393ff6dd"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsPermissionMapper.java",
+    "sha256": "a2e2bc5d23aa71ff5614e4baa9514532e2e7009b4efbbe2bcf429c08a0f5ea21"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsResourceCategoryMapper.java",
+    "sha256": "2b1f345b89252e74ca29e3001007fb08c7b98fb7fb9d678d890ea0a698e89aa4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsResourceMapper.java",
+    "sha256": "7620a0168440fd5078c85f80a6ca3906ee8855478eee82e00113ce2ac5cabcc9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsRoleMapper.java",
+    "sha256": "9f97c7d9497071c97b648d076b7b3ad26eea266604c349091c78a06a054244d9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsRoleMenuRelationMapper.java",
+    "sha256": "c53158e92e4c404dc879098e8fff3ccaaa376b7a9ea13bd509f0a27bc80bef33"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsRolePermissionRelationMapper.java",
+    "sha256": "d3046ae5e0455a0a825e637f20e7222641bd091ee689bf40ef37b6bf147374cf"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/mapper/UmsRoleResourceRelationMapper.java",
+    "sha256": "c29bed7ba4c6043b5e2adc2ac3731d881398103923193950e761d4e618d4d18b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsHelp.java",
+    "sha256": "d6dc7bae0dcf9195ea6e8dcf68fa6ef5532da1e2043b8f6d162d80e8551c5ae0"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsHelpCategory.java",
+    "sha256": "146bd205b1f45f665ba51dd7627e4edfee1180ef582f29d1faec3dc745848c76"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsHelpCategoryExample.java",
+    "sha256": "d0b32b409fa979195590732f584ad24e241ea426e644c2713cc35008a01ec12f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsHelpExample.java",
+    "sha256": "cdaade1eb26baf6145bda84b00fbc0c3cb239ae7be33a2ce44456f4f587bbcc4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsMemberReport.java",
+    "sha256": "5a4cfde5858ee90ab393b798d523fe5e03424fbf9f1b4c8e8dec1fce44256f37"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsMemberReportExample.java",
+    "sha256": "cee84043b261e339a1dad406e56434e20fca3397293bcd51a96e21a23e61c452"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceArea.java",
+    "sha256": "13e6bd29586f4a35443f604b1def7878f772b3995782c2f2166adf322f99b0ee"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceAreaExample.java",
+    "sha256": "53d12792b1b6679df20799ee37e2e34e5d7d2c81c3615df80e3464fef990d301"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceAreaProductRelation.java",
+    "sha256": "8665969e46f9035f07e03dd4a4afb2685e4922e5308557eaf97769a30891a4cf"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceAreaProductRelationExample.java",
+    "sha256": "7574dbca15b041e6c556a5ec34dd2ed03930a38a53d5f3dfdde957a9d7bdc2b8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubject.java",
+    "sha256": "dad4ad32007ae25324f3ad807b415a5b54402e14df428a833e86659649cae18f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectCategory.java",
+    "sha256": "b18314998a50a7afd62e4f9f78e9639b9a23a783897b11ce192f83f8313507de"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectCategoryExample.java",
+    "sha256": "f249e9001a24586698e06afba1059ab2474c6cd2acafbd07b0c8bd7c8b1e80b5"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectComment.java",
+    "sha256": "12337bce550ceccb500ea85517d14d72f4582602943d4a62677baf14c1747f3d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectCommentExample.java",
+    "sha256": "65dde61cbbd7c5469d0791d3680d5e3852a1bcf5fe4572f95eda86c252428b61"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectExample.java",
+    "sha256": "8da52d9ba9d240c00b69e34f4a9a2d87f4b198a9722241e9276cc64d721e4e18"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectProductRelation.java",
+    "sha256": "252cd1c0773c3ae3f980856fe8e9dbdd639f49b4286f5ff1b897f1c8d357c8e4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectProductRelationExample.java",
+    "sha256": "8e7907cadb4b87d1145bdb6e5c0e1e9c5be147a3064db674f1286a1895e6b99a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsTopic.java",
+    "sha256": "2d9b39274ab7936feefb956fd4eba36a509bb34ce9527902cfe8bd273eadaf30"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsTopicCategory.java",
+    "sha256": "e3fa1a8b45819d3a72c8ef506fe67e7cd65b922843fb83f1c12e4c1c83c57ffa"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsTopicCategoryExample.java",
+    "sha256": "d580995c59d4caef24afa2c5f4971410899951dd5b2e546bca53ee463d53e137"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsTopicComment.java",
+    "sha256": "219f26bbbf1f5b5b8b5bc53567e07c8c289626179305a2d2a05d79f42e4248e8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsTopicCommentExample.java",
+    "sha256": "561431abe6093c4e707ce9d914b001cd69219d06cb6ee51eeb556fcab38ed70a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/CmsTopicExample.java",
+    "sha256": "3a134941c9e6ba79e302dfe507cb39e35b0c6823de2dbc1f3755bd31b1b42c04"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsCartItem.java",
+    "sha256": "d0c1fa927ed723906043abe370145bc81326cea569f4d2f5484432c932a7628c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsCartItemExample.java",
+    "sha256": "6c8f37ae896653e6a78f82e209dc183c81f4485524129582284239584481aeeb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsCompanyAddress.java",
+    "sha256": "9ec1bf184e714ee340f26a55651b39c8620c45a26f52f0137e5a1ecf76e4d156"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsCompanyAddressExample.java",
+    "sha256": "c680984bbdc4716a99f43427f05e67e56fa9c056041ad7322dd87f36f1043f3d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrder.java",
+    "sha256": "6b5d20f2a0ddd11dea8b5c913c58dad8ff61d7b0a90c4b8a42d4ecbdf886598a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderExample.java",
+    "sha256": "bea52f4e65815c543f686b5ee192e5fbbb74100cd74f976017f87558c74df505"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderItem.java",
+    "sha256": "a35dfb9ffbcceb962d3670efdd8e97769998ecf02d9d8ab14189f113bf949ced"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderItemExample.java",
+    "sha256": "33678632f3af494a18c36fad79c41c1d0e15d98407cdc8eadcbc8c886ccf8331"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderOperateHistory.java",
+    "sha256": "d76f5aedbdaf62d3256a525254c6096e853db5a2ca1e4989274ba38313292675"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderOperateHistoryExample.java",
+    "sha256": "950e35e2a38fbda756b0454f001aba3275e3f0da471c29bb1c55e71e5b284a28"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnApply.java",
+    "sha256": "ac132871fd8fff5f7745e8be507681ef3d6cb45427e557c3fb2d962146f08669"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnApplyExample.java",
+    "sha256": "09381343bd008a2a4f6ea736e8620b6ffad8594a57c824d2509567405dc03fe3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnReason.java",
+    "sha256": "949a46795aae8edbf250daf87fb3fcadae29529671fbd4d14922b99beb8d812f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnReasonExample.java",
+    "sha256": "39fbf6a8137af8034cb15fbe1a7f9c9b7812a7d86c7a2c9afef2da14aa51f7a2"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderSetting.java",
+    "sha256": "c72a6c044fee2dda57a89de312dbc43b5d2ea2a3348f79a7cf5f6b6d86dcb476"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/OmsOrderSettingExample.java",
+    "sha256": "70b3a07c2ae20cab38d3cc29173d63bc832b65505b96edd21f30b51ad156f3c4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsAlbum.java",
+    "sha256": "95b20e243e6084f625e465ae881aea8017d914dd183a254d45e56d9f18c65e0c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsAlbumExample.java",
+    "sha256": "9e680270e4d7d8e4a630acd38348a32ae5a81441f6049801e8b890c76ffd80ff"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsAlbumPic.java",
+    "sha256": "26a4d62cdfdf3e06fa6f86d8b4d14aeb0d00180b514f970e5541af38dc34e830"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsAlbumPicExample.java",
+    "sha256": "610f3523315c38ff71ee374303c8ba8e3673af32dced373c411dcbc5c2b5dda2"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsBrand.java",
+    "sha256": "ce5b636237d129b4bf1fa2b154f85adefdbf4971bf2cfa11d13d1d6c31418202"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsBrandExample.java",
+    "sha256": "10231dd7be9a11eda0b6e9d7790d2dd30af88065f831e3873e7a98e7fe9b4913"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsComment.java",
+    "sha256": "a59d4300fa6cf77705024048cff480e22e0e5727ea8d2b082bebd4ed68e02269"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsCommentExample.java",
+    "sha256": "5a32f076a00b45414d919c7c34e9741c11c1071818e424b34f79bd53e381be1a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsCommentReplay.java",
+    "sha256": "f9daf18fe961960ec9cf9d0ab3ba278193eedc6df6eb2055f2bea62586c0b2d6"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsCommentReplayExample.java",
+    "sha256": "9b54fa6a215bc8b85515450ada97a1968535aac28f11cbfa8826aa91d7f7fe55"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsFeightTemplate.java",
+    "sha256": "c6288469ab790f98cd0364d95719cc318868b2f9bc3c324a0c189e970988b0a0"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsFeightTemplateExample.java",
+    "sha256": "f0edae5031f96113dba16537dd196faa448925ec3d6821a759e18acd5d845080"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsMemberPrice.java",
+    "sha256": "9e107a6d4c6960ecde97c5c5d87d5c1a32dd6c72277dabd6dd02cbbeb6eafa3e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsMemberPriceExample.java",
+    "sha256": "94afdd07f605d434dab649db700cefec526048209f31de3248c2cb5c0fbf02e4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProduct.java",
+    "sha256": "5601ced23076ebf0cda979d4fb006fdaa3a556af924fc6cd3c47db50b8d55661"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttribute.java",
+    "sha256": "a6c68b1c5dca9f58a8e6dffda8ace20aef90b5d0f9b6934718aaa149b87c6592"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeCategory.java",
+    "sha256": "af6b88e657b43834d1010528c9f8855309eab5d976ba81226173af2dc1f6a00c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeCategoryExample.java",
+    "sha256": "a497fe56502cf59f1d0116fe4e03a3507b74b5b2a45fa9eabe455248b916719e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeExample.java",
+    "sha256": "560e2b387ef001b1b43adc3c22093dba3ceb74142295e296958839e2eddc4a33"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeValue.java",
+    "sha256": "01000db88ce68defea3658023508a27e37d40e1ccc2db45b78622de0ced634b3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeValueExample.java",
+    "sha256": "cfaccbda50e81ca2beacc73b9edf01577ec581c13c9108aba81a31666754bed4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategory.java",
+    "sha256": "fd1d81eab11e3c7eee8edd51d9c911b4ab42964398e9acb34365878470c10154"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategoryAttributeRelation.java",
+    "sha256": "18eef8bf3824b14cdd2610b141da0942250ab520192433cece03ad525205c9fc"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategoryAttributeRelationExample.java",
+    "sha256": "4caaa512205cb7c22c34abf4b6e1a0402bf3568b842156379634dc066f83aec7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategoryExample.java",
+    "sha256": "021165d7b2931439878585b34120a3af83a2c202072a885a218b662ad3135864"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductExample.java",
+    "sha256": "147275961365660419eb075b59043dda74d09f4af0c496fdacc8c6f9a831a157"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductFullReduction.java",
+    "sha256": "83bb5a0f14357e567445ae447f35f69d074ac02b8845a352d7fbc792f2e3234d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductFullReductionExample.java",
+    "sha256": "b567c69e6266d89adb26ec2fa4802baad0d47e4841dd660a388bdbbc125b5d00"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductLadder.java",
+    "sha256": "6141c07a7bf0f8bb154d446ebd712a3d0450769379d9901fbca4d3aeed70e913"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductLadderExample.java",
+    "sha256": "9307fc025d8b202b2121b457d052d12a1850c5205acbacaad82468bdbc4e5ec1"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductOperateLog.java",
+    "sha256": "340363cec947e5c6011b85338d4f02c2ef8e8d075328d8a589d8388cb3899607"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductOperateLogExample.java",
+    "sha256": "1c5f0f9114a1ed743da6fbf3217dfcde941255c6b265d07ecd30c09d5382b712"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductVertifyRecord.java",
+    "sha256": "94c1cd19216c97754d7db43f0216eae5b97695e0dd0c39871048e44bc3b35e3b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsProductVertifyRecordExample.java",
+    "sha256": "07306f08003b076982a2010f51163f3ee78b4b1e46950944c15a468aaa20874b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsSkuStock.java",
+    "sha256": "a92f11143f4d4b2350f2acbec4df1a136c77d43517984a8313d9fb7a4093c8e3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/PmsSkuStockExample.java",
+    "sha256": "51fc8ddc4716b7abe7500542a4830bde7bc6515c637b385c5e88c9d65404eecf"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCoupon.java",
+    "sha256": "e053b7d0a1137acf1ba7289cb5f07d467ec7eab1ca852b4a879879813686bd10"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCouponExample.java",
+    "sha256": "27e1986b43a9d39fffe21013d7af972c0212eb9a0760237be7945149ce04bbf6"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCouponHistory.java",
+    "sha256": "55cad3e02eae82bc4c108c2865c08bf686ae9847f9c4f3ba2e2ad577bd64d95a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCouponHistoryExample.java",
+    "sha256": "a36480854a4cc850bf956c3c456546cd25f24804339523eef2e0532f7386f672"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductCategoryRelation.java",
+    "sha256": "29d9e4544e78686996d5535f8a549d320767908f91497f08fa00cffaef1dd691"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductCategoryRelationExample.java",
+    "sha256": "423032d266ef78ad91229f702cc4bcfc11ba5bbcc67abcec496059c07f4f3476"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductRelation.java",
+    "sha256": "576ca923af85e79b4a97dd7cf244e75cb44e1e09a5930ad0dc12778b585ed06a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductRelationExample.java",
+    "sha256": "566d9e885c4dbe8b07407222afd98329ba8dfb345677a178a122bbe856443635"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotion.java",
+    "sha256": "23637cc098c550365f7ac67e09e59275db1392e6f7101caf5809d13312fac6e7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionExample.java",
+    "sha256": "7167ee7a54486f1477c50b5b572abd478c25664c8fc6c211d7e99c04414aa8fa"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionLog.java",
+    "sha256": "993f02c6de6b1a6c7cf7a0bfc7d0a82702c8705035a96f7e4bc01cdd54763a99"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionLogExample.java",
+    "sha256": "00542366ad0daea442b9674bda3a2bcc63eb849449f739df7add652975d53352"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionProductRelation.java",
+    "sha256": "c10e9a427693a22f5d06ece16396ef969c606d53372e0dd174fe5cd97f353f97"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionProductRelationExample.java",
+    "sha256": "721f3821328d168bed35482c27e71ae291c2818a9da23c8b64c7d26eb1bab0ef"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionSession.java",
+    "sha256": "5843c3971b00edbc41903192e1dad3bf598cf82f4e2547c040ac659ab23d50dc"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionSessionExample.java",
+    "sha256": "d38fe692975bbda5f66cd12a7c16f3c4e94ba90479ec80996db766c5ede43ab8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeAdvertise.java",
+    "sha256": "0478058120ee302eb989506790db59c69dd215cabceb18c6f4829d2d571fe289"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeAdvertiseExample.java",
+    "sha256": "e6c750735efa6f985b67a54b6df427e7e25cf5120a288576766ab02d60a2172a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeBrand.java",
+    "sha256": "87c1b9ccb0aab4f38f919ddae7f33c2888ffd8aab528b9140b93f8f75dc0c74d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeBrandExample.java",
+    "sha256": "2f51b2f000ff863055500780d92f69e7dd003105706bc95faff0524374994232"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeNewProduct.java",
+    "sha256": "b4c8f7050316138a740ec27f48ff901cd3e193e104e6e3aa773bf25aa70b56d9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeNewProductExample.java",
+    "sha256": "ed3bd0b216e57b77599dbc6daed029bb7bda72fab6d25a3aef181644e450a0d3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendProduct.java",
+    "sha256": "d62a977fb0569b9fe27c0774bf1c1a2b3f3a511691760cb1785204a6b7103e9b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendProductExample.java",
+    "sha256": "f48a9c469b1f5049bd1945ed8bae3aa94474dcb03b66f6a73a7b868cc6228e63"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendSubject.java",
+    "sha256": "6b3d9e090ad7e3e7ccb499999eaa5f1b470514960c2747da9d9a4a438e1226c8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendSubjectExample.java",
+    "sha256": "cd850dbc40177caccaa1e610a539fb858f37a4a3e54c77497bd545836b666517"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdmin.java",
+    "sha256": "68e7f7b22f67cbfcc40cb01c3835b3758acc99a31a7df5833467ce5e38e09a5f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdminExample.java",
+    "sha256": "21b84373aab459b27af491ffa6bcff9a9f0e4b162cb070efea8113f2850eeb1b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdminLoginLog.java",
+    "sha256": "ac08b1b51cb157e6c9ab5b5bb8ed7609b5b45182f9c9014d0a8995e72121fc4b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdminLoginLogExample.java",
+    "sha256": "02d9a35c5c117489a91c14ebf0e4be0d6d434e20d196aefe1189334c22ed1ce8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdminPermissionRelation.java",
+    "sha256": "8e271264a7b4193d927ede21881d235f8e9fc60d3020e2cf005212e79b100d71"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdminPermissionRelationExample.java",
+    "sha256": "a59c1e5d72521cd8e9f657a074a7c6ea47acf3219d5eb977e3f695bc1bc35f01"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdminRoleRelation.java",
+    "sha256": "2cf28249f7773dc5d0f50a829c0fb2e6d50160b85f0f66838e622ebcb66900e3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsAdminRoleRelationExample.java",
+    "sha256": "76fbeb32b956130e9aace144e09e000dcf401b0c3678a5e9af99a18e5ed6ad51"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsGrowthChangeHistory.java",
+    "sha256": "bcdf9f1e4c72c8775b69cee2ff623beb00f31b6550be29ce7c0685288d995af7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsGrowthChangeHistoryExample.java",
+    "sha256": "0b7d4ea4aa1d1963e27f88a652f8e06c135b60be9f66cb692e220a48612bf71c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationChangeHistory.java",
+    "sha256": "ad8035dfa54589f293cd2b73e92f936b8d707ff01a9e86c9bf59abed7c66e917"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationChangeHistoryExample.java",
+    "sha256": "cd0d668305e2a9d745d2a728dd604c54788ac6d165b7af0c83f73af045f08182"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationConsumeSetting.java",
+    "sha256": "9ec6002d81e17745ae4a79308ce66cb87c3702955c80a10f3d1d71b5738634e5"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationConsumeSettingExample.java",
+    "sha256": "6b74f8a8fe63d735c56629255a8f80a5d69732377a34a117be8831a107dc6ce4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMember.java",
+    "sha256": "9dfdb55fc47931c49ce420384a7ba06641447cadc427e97f6f8ffc4c0929be71"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberExample.java",
+    "sha256": "68fa356e792e2211771820cfb496a32fd7e928561ef398bbf87c73abccc5f825"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLevel.java",
+    "sha256": "8c5814909ad44738293d88ec58acb749e7bfc9ac44e92e8f9b08d8d7c1824edb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLevelExample.java",
+    "sha256": "de744db2f9d1a806e1214f160c855a917ff571696d9e9093a709968c9bf1a134"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLoginLog.java",
+    "sha256": "0c0e3fbe422c669c0ba0e911ec451ae4ff1f36346673c37430e93a196f1f56cc"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLoginLogExample.java",
+    "sha256": "ca247224cb4f74361014524f84f5647a7dddb4d495d5aec59f872ec3f9e3ce36"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberMemberTagRelation.java",
+    "sha256": "8bcca403ac520b525ccc67dd7f435f6a8c850b5fc2f19f0b4c18ee4b07de9f85"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberMemberTagRelationExample.java",
+    "sha256": "db99b0aeb5b91130bfab42db12209e8eb9b6c67c17bf800e34c9961a70e9d8f8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberProductCategoryRelation.java",
+    "sha256": "1ef215b2ba4c01cde7b45a1f397911ffd951e093144cb31b1515235e6cb5bcca"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberProductCategoryRelationExample.java",
+    "sha256": "3df5ed29ce1bb3f66e1e63b7d5f3b35e3d619eaff89fdd54e0c4adc88c347bbf"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberReceiveAddress.java",
+    "sha256": "0b5e84f7f38415e65cd948330cb53a1b389137d6c6a2973abf3e50c7608913a7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberReceiveAddressExample.java",
+    "sha256": "0fd59a3828dfdf714f820f7c0c727dd8ec1b27a0daa6321dad028d116b385fb4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberRuleSetting.java",
+    "sha256": "8f80fccf946f456393f44801c11df0e3987f67645c2750b1da21947c68306746"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberRuleSettingExample.java",
+    "sha256": "10c8e604dc8d336a2ae1c8816002e89a2261e01270919c087eebc81c847b8e5b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberStatisticsInfo.java",
+    "sha256": "f0b977aea2f48637456a49682c6c2e6c1aec6986f00e49e915a6e24b1b3a6b70"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberStatisticsInfoExample.java",
+    "sha256": "ecfe1b07bf52b7d7aecb22ce5e9f0d5fa6b83a0fe5ed3fccfe11688217eb35ad"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTag.java",
+    "sha256": "a9348df4d8b76c9dcdefb2ba40a0657b50f1075b6f59c674b4127bd9029126e3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTagExample.java",
+    "sha256": "0ae7c5cfd8dd92b39677aedbafa6e2ece67ace6179ecc7dc1b4155ea77b024c7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTask.java",
+    "sha256": "35086bb513c163b9ffe642f3eae4450cf075f4137a23c72ef7aa2ad11476cd25"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTaskExample.java",
+    "sha256": "09c5c63013c14a387a45a76006ec017185fd236e8b4886d959993cb26b12e015"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMenu.java",
+    "sha256": "0c4d6a09975ecb7d723fae38e28eb1f5e324d41ee0d46ba415b5b2ddfa3f415e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsMenuExample.java",
+    "sha256": "b312e4db38ea2a07bbf7ac4a4ece67a715f4325725d936940e0cbd9e858c0019"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsPermission.java",
+    "sha256": "9f6cdda4e77a5a49602d2566f284667dbb421656807f9a1ef5ec947568cda57c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsPermissionExample.java",
+    "sha256": "a986233203d9e9b291de426a9baae10276a83e523e82d0c3a09cb752785e9eb8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsResource.java",
+    "sha256": "ca11a40ccd12a3d9b822371f3dad4cd9ed76433b2838b1c487899d4f60d3678c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsResourceCategory.java",
+    "sha256": "c4931af4f14f6c67ac9a51d74a40d19511e340dd7c61ea89d85040cd61ae3b42"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsResourceCategoryExample.java",
+    "sha256": "8066519e9f039fd57c4c991a6b5059d407f1e39de01b94c8776984c5485805c3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsResourceExample.java",
+    "sha256": "abd18a1e3ec9a1f5f1cc2b4d6149d8526fc63f8aba588e8d4e31f5c17c5abc9a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRole.java",
+    "sha256": "2b2807bec7b707eb499198866002909e154855e4d5b9c55059c0aa6145760ab8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRoleExample.java",
+    "sha256": "63d805c140035096f78f4ce4396c21932a9d49ac449eadc053d6f349e1454c30"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRoleMenuRelation.java",
+    "sha256": "cee77de6d620dafb9e7597eb9ac8a95cb3e720f7a7b53690df99a6c3f1d9da9a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRoleMenuRelationExample.java",
+    "sha256": "6be4f43761ce5ed0fbe5b03cacf61006b6efe10267af0e06ae791a69e1a22a2a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRolePermissionRelation.java",
+    "sha256": "95d6ef586b5a3c963e353487156b5c8ffa29a556728454da19036c9fe7f140c9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRolePermissionRelationExample.java",
+    "sha256": "76712d01158be78cdbc865529daaf5e90210b7d2aa8afca99d1e4e836a905f36"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRoleResourceRelation.java",
+    "sha256": "0b060052f7bb52a7bf6ba4e074e018b8913924e620f4b1dae5bcd3fa1db3575f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/java/com/macro/mall/model/UmsRoleResourceRelationExample.java",
+    "sha256": "741026406f6fcc1b0dbe5fbcca76a3a6995e2ea5ae639bc29f70cbad005e7419"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/component/CancelOrderReceiver.java",
+    "sha256": "513727ddd601d51cdb9180c2c711281b1d3017f9e0b83e8717812971c2c7f8fb"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/component/CancelOrderSender.java",
+    "sha256": "5a0f242b1a70217982dc39e3e51094f8dc340c8e1f66c331a2b879a703d32727"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/component/OrderTimeOutCancelTask.java",
+    "sha256": "f355ff858998c4c954e669b0389daf3f7a0191e8e3a58e015555874bb84309e4"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/AlipayClientConfig.java",
+    "sha256": "441d2a9f5717facba85f0ea26cb10554a6e43961dc93db62a6f1371fc32282e9"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/AlipayConfig.java",
+    "sha256": "6b2cc66d2639e3cbd3bf4ba8b351f21d49f15cbc0a15e1c56bd990e79e611924"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/GlobalCorsConfig.java",
+    "sha256": "4750deb0ef3452a4cbce6153099a9be6d9549c5068b3c6ecdb60eafa9bdd2c98"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/JacksonConfig.java",
+    "sha256": "c0dc2a7854719200d39f49e028508e91616fa684280b1ba39babff9e5698516a"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/MallSecurityConfig.java",
+    "sha256": "7a88cad4be60a4b92cbc144086177c1091e5c59bdfc52d9ee350adc6d80e7987"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/MyBatisConfig.java",
+    "sha256": "099171375b33135ddb270423576330497319da157fdf5bed95809bbf9f1bb6b1"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/RabbitMqConfig.java",
+    "sha256": "62e0bb3083d2f2d424cbe2bfccd062f40c435a7eaa2bb03c229edaf20845a96d"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/SpringDocConfig.java",
+    "sha256": "f74a89db35c2b5ac45a826925856fb3282f65ba8ea9208d710a7f000fb8469db"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/config/SpringTaskConfig.java",
+    "sha256": "a135894edf3fa4a386aefda2bbbd8a255a1bceba9394cc3da10bfcf50823114a"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/AlipayController.java",
+    "sha256": "73f7593b2186eb50c1f296aa03ab5d84747b031a5cc1f78ba668d81e812d971b"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java",
+    "sha256": "a491ca8b9f7e643d636f93c24310dea3153b676c7dbbbc25909433b647efdb64"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java",
+    "sha256": "62fe52b372eb4d71b3801116754f05edffd31bb28014d39d1da60f6fdbbdd525"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberProductCollectionController.java",
+    "sha256": "0dfe33c6d8c59e768fe9a24c98397baa93997993f119be2887ed0b5d1c4b2aef"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberReadHistoryController.java",
+    "sha256": "3596ac380a7413eb6790848fd5de3a98e88b40cc4960e798f1ef7de52651a53e"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "sha256": "0b01d51be35d92514e092f102b407bb91a8daf845f227588c4f422364b53053c"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "sha256": "668e5a30d6268f7ba413fc2726e7c4bbabfbccd4af494c09d4a7bca23ac1fb10"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderReturnApplyController.java",
+    "sha256": "c2a0c1a2732d57edbeba68cad02b2ad0d1e9ce5dbd3ed5af918a6430f23823a0"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalBrandController.java",
+    "sha256": "8e963d8dbc4c04dfddf6bb54fde2679b5dcd9803af1940ca1358d61608625307"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalProductController.java",
+    "sha256": "83b84bd96f8dba07e7af2a66f9c6a75e8ea6d4f57f3a8cb4c480c36843950d52"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java",
+    "sha256": "fc8e9bcff8e03fae633a628de51078d431f7592bb86cd10a07daca2860f50c31"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberCouponController.java",
+    "sha256": "17b81e98571cfe2dc95260f235666db0ae1e7d85a947609e5208f7c2570f3261"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java",
+    "sha256": "f2af2925c06fa2be62dd22a009eb880b311cc575237a00a459573cea4e42c2a1"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/dao/HomeDao.java",
+    "sha256": "d5d69dfb9c7fbebba36161c7c82ad69250a2bff5157fee22747eff67aba54b2c"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/dao/PortalOrderDao.java",
+    "sha256": "449d6dde57e9133c159212cb02489c221fc2cfd8308c6cc28324b853e65f7bf0"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/dao/PortalOrderItemDao.java",
+    "sha256": "160084d80be5650ee11d394cb27175ecf03a2f1204988475bd0468f6c0124b17"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/dao/PortalProductDao.java",
+    "sha256": "327d5d8015dde55dd8abcbfc4efb4e699ef54516041e796e5609c2558d0a0fd7"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/dao/SmsCouponHistoryDao.java",
+    "sha256": "fc0061b4e583b80eda80b042102c25685c621d5823d557634b0880950b7a7dd8"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/AliPayParam.java",
+    "sha256": "b0226675dc4e30c8135bc0d7417d69e6ca553125344037757d9ecfebefdf4a28"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/CartProduct.java",
+    "sha256": "e7394d687c2d89161f6fc4e5f2ff651f427c582578c88e3bfd963c8a5688ff12"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/CartPromotionItem.java",
+    "sha256": "2912d1916f4350aa7341abfd0280cadee6072725b4c1b1f6c0e7c5ea792df4d1"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/ConfirmOrderResult.java",
+    "sha256": "f36c1f9809880c222284ee6cf231f3c96435556cccae907e72c2707183945ed7"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/FlashPromotionProduct.java",
+    "sha256": "94402053b4bb17149528df3d2c74f5521871f96a077ac611cbc8be25b552704c"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/HomeContentResult.java",
+    "sha256": "169b145efa2ee31e4d2aa8bbb5ddf04ea302d5bbf6a9f2c719d653954cfeea4c"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/HomeFlashPromotion.java",
+    "sha256": "85cec273cd06a54b53bd41de906f9efb45997173075d5fd3a8e30c67a50a3448"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/MemberBrandAttention.java",
+    "sha256": "4080537fbb2cb57845be3a9015c8e80fea8e1ed3ae839354263b015dc90a22c4"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/MemberDetails.java",
+    "sha256": "91cf9a526faf1e1cb4515a316505b8f6d1ae769fac77b086d945287c355cd64e"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/MemberProductCollection.java",
+    "sha256": "6133cd2f50cdd21cb9ea90b7091b6eee2781eea14b081f7d89c25c2b1ef7075a"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/MemberReadHistory.java",
+    "sha256": "5e12991c09da10af1cb6cb3d70a6bf72e4113640360cea77cee69d8ba9dd4697"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/OmsOrderDetail.java",
+    "sha256": "116456ee89baff5d1526db1ef475357444436747c2b6a592343a23f464e2181f"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/OmsOrderReturnApplyParam.java",
+    "sha256": "d2776028871c1ed4814dd55e47e7469685d544847e8a21533447a6e0b912b313"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/OrderParam.java",
+    "sha256": "d42f874f04af469318fe94194348dc3679558cf666dd944a18864f51af806bab"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/PmsPortalProductDetail.java",
+    "sha256": "2c53affa0682b46aa4d791b1ec8f1ef37f214f2030df4a69cd01da1bd8d03233"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/PmsProductCategoryNode.java",
+    "sha256": "20ce2f97d7f39ca4944a61b9535a0f840c529347effa328d61e76bc9580752a5"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/PromotionProduct.java",
+    "sha256": "4f98100883067a2097195255de68da02ed8a2d4e4bcb8a97918203d2bf676ab7"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/QueueEnum.java",
+    "sha256": "5599d2d2bb4f61dc82bf21f7b9ef398607f883ed851c56b3d9f8ea60f618dde6"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/domain/SmsCouponHistoryDetail.java",
+    "sha256": "3e05971644fc35a72be6760f4c06ed1c3235c55d846f1a86cfa89d36b983d36a"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/MallPortalApplication.java",
+    "sha256": "712e169a8a6d99abb2fe793598a18aedea3a98842c6038ac989ac302c85f029f"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/repository/MemberBrandAttentionRepository.java",
+    "sha256": "ff43201cedbc8b47c30e8e541a82936054f69996efcc2347a6a6e7d78fe1a94b"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/repository/MemberProductCollectionRepository.java",
+    "sha256": "e6db1d9db62f3d32c0ddb64d4f3be130e27be7b49880ced467666c499f1a251e"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/repository/MemberReadHistoryRepository.java",
+    "sha256": "9f2fb93c19521660e55e19563d8ebcc490ce991902e776d1a964196e8b826a1b"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/AlipayService.java",
+    "sha256": "db5c3930dc9cd56c361c932fbeab3857a73c208a46003885670d63321f0aabe2"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/HomeService.java",
+    "sha256": "5cde6d12bebfbbf632bfe2350be373c57617112bdf27bbb20aae12e22e405eb2"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/AlipayServiceImpl.java",
+    "sha256": "67277db2fbea7742848d19028a91f51c8899e437f8d52e423c74e8ab582aa702"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/HomeServiceImpl.java",
+    "sha256": "2d9962f7cf6d17ac3cf99613e75210229768f3a9134a4fed54424db2723bc67d"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/MemberAttentionServiceImpl.java",
+    "sha256": "55afa6d3dbe27de5debf7dd0b2894068809147411892d752e25286622d2e7690"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/MemberCollectionServiceImpl.java",
+    "sha256": "92eb5fe650288f73ccc1dc01da4978bcd4d7801d40475a5a45970a063dcbff1b"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/MemberReadHistoryServiceImpl.java",
+    "sha256": "9ce55001bc6b01192e0aba35fc1b17d32660f97cfd5b13d74acb50f8a4016bd7"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsCartItemServiceImpl.java",
+    "sha256": "d4a7c8808d75eca40d38ff63e69de31885dd8a4bb946a0b3ce2616b3a8398785"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPortalOrderReturnApplyServiceImpl.java",
+    "sha256": "536d87a7e6683ed62349c7de6181e84ca2a7107f28534fcffbd9bf06dd2f1bbf"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPortalOrderServiceImpl.java",
+    "sha256": "f24003393c23b2f197fab86bf418e90f3b90e9694a22f181673f1bf567ea7999"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPromotionServiceImpl.java",
+    "sha256": "638733768b7e101145abf5be72651390371625d071f942b23818078f73a1a977"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/PmsPortalBrandServiceImpl.java",
+    "sha256": "1aacd2c53819834f1469d379da5f9b7fb8ade5ffd5589553e3558b54fa3010a5"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/PmsPortalProductServiceImpl.java",
+    "sha256": "5eddf9ea849a3c3a68c347eab0a09e59e3f4a8d5bf09e9dc84d1840bdf9008af"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCacheServiceImpl.java",
+    "sha256": "bd551165ceec47b9699e2c530c6db92143862c8d673eaf43a378f37e7f85fae6"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCouponServiceImpl.java",
+    "sha256": "85d499da17466608e644c20f51687e807e93aab0678e3ea5d8eb292ffed60fc3"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberReceiveAddressServiceImpl.java",
+    "sha256": "f0db8dbaa434f45b76c5a86a1cc83b8a271b42da5760d7f529fa609cc1d76f4c"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberServiceImpl.java",
+    "sha256": "64904d4d1047041f5c8c170da1a318d8b6d8b8cbbe483a0abf558602f53e3a8b"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/MemberAttentionService.java",
+    "sha256": "45ede06a32b2702c57cb00001b33a523fc156e91b0c7131ad62644d41d968759"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/MemberCollectionService.java",
+    "sha256": "27943d9dc8a9316566e43946932561d213bbe3fd563b11140b27877a21452bc4"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/MemberReadHistoryService.java",
+    "sha256": "d79ba3711293b964ae7d8f6df2dd8a594df14782277aaad6a36e1d18d7218c90"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/OmsCartItemService.java",
+    "sha256": "205d9b10a85070e5139ba941391c82bf0c147cba87029b3e65614fa71b11bdf7"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/OmsPortalOrderReturnApplyService.java",
+    "sha256": "615979476a7494b9655a3ccb5e158f354174aeb286a4f749fc9bad613e6c50f1"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/OmsPortalOrderService.java",
+    "sha256": "30f3012c3fdaade5af4f5a78bcdcf265b11864b83edd6a0a1851d34940287e3b"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/OmsPromotionService.java",
+    "sha256": "94def27f4a9d84d1f55db1243b6cc6cb873a1d70a34427528a7b475922b07217"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/PmsPortalBrandService.java",
+    "sha256": "b80723a52a5d73722e886ff7be0dc06b04eba4f335af66fe452fc524e6249650"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/PmsPortalProductService.java",
+    "sha256": "ece2f3fd0a579cec8b8125146f743562172bfc0752e90a407cb9588ce0c6659c"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/UmsMemberCacheService.java",
+    "sha256": "f96705de5cf0f8e5a317a273b8c8ad4dba39d39f49163689cdd4e2852b49efa3"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/UmsMemberCouponService.java",
+    "sha256": "ceb2ad96204083ba06d9a4a7c01e401a943b6818e80951efa4ba6bf1d7edba8a"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/UmsMemberReceiveAddressService.java",
+    "sha256": "21202e435a4c4abdeb921aa5a6cdfae6f9a4603f1cfdbc35e3e689b59e8e53bc"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/service/UmsMemberService.java",
+    "sha256": "d63b8b3ebb551e04aba3e0cc1910008a39c295e0fbf3fcf1c578755477e82bb8"
+  },
+  {
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/util/DateUtil.java",
+    "sha256": "d4e59d75239cb0e4b9e138bb19af5ade0735f6484ee5d8d9a8e56b9f6d91d505"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/config/MyBatisConfig.java",
+    "sha256": "11945e4edc43700639c033c95906a015012fc6abc811f13ccec315bcb87d88bd"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/config/SpringDocConfig.java",
+    "sha256": "34b9b40c6ae4ac984cbde33fe051e9c6af1a84b5447948585c4588e1eb5c79af"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "sha256": "83899c1ee2d0436c3bea15ff42a5ef85fabdda4e3148eac1d5ea81532c8bd189"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/dao/EsProductDao.java",
+    "sha256": "355e597d40c40d4f894a0fdb62c78e3c5bfd85f468c1c1e18e8fb968c70ac755"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/domain/EsProduct.java",
+    "sha256": "9dbc24ccccc88792b832e922b2282be981ab7e492938aac80ecfe323be8800d2"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/domain/EsProductAttributeValue.java",
+    "sha256": "9b692f7b97d5ee6c98de781ae6400fd776a564ac81b7b029b5bda80360219197"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/domain/EsProductRelatedInfo.java",
+    "sha256": "ed4e31a9f30b1fb7b18ba41af857ec75093c02bfc4362e0db1724d0f701b1cd5"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/MallSearchApplication.java",
+    "sha256": "8c2a8d15aa288ab5b6af4b2d6593310ddf0f9859576e0c0a0e3df8dc1bee80d7"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/repository/EsProductRepository.java",
+    "sha256": "3535d1331dd4ea4d1e6d14f8c3838219c67a3885f7646d18daa757e64eda7c4c"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/service/EsProductService.java",
+    "sha256": "d553d5f9cc5fd27986c07dbbbe88c0351294892c0c52bf94c64fd563f44aac82"
+  },
+  {
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/service/impl/EsProductServiceImpl.java",
+    "sha256": "0fb5eb3c4006f86a1439be0c56c8bfc1544db940ee2e900dd2e71313da50c792"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/annotation/CacheException.java",
+    "sha256": "a1ad83f0354dfeff07600d8c4ffd5c979a5de3c98276c97c09316530df88c4f7"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/aspect/RedisCacheAspect.java",
+    "sha256": "67ced21cc8579b06b45cb5673397c92449286cad44bf50fcb573fd31ddbb2e9b"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/component/DynamicAuthorizationManager.java",
+    "sha256": "2e7dd17f0a31556281c5172014448b638bfd819d349dd35ce56a7bd3325cf4db"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/component/DynamicSecurityMetadataSource.java",
+    "sha256": "75b9cc750f9dd29502f660aa5a4cc5666e046341204a05b9773e884153a15f43"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/component/DynamicSecurityService.java",
+    "sha256": "85a7ebaf27b761b105f563fd7bbcfef5e2258e0c5948ba69702e3ef480675915"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/component/JwtAuthenticationTokenFilter.java",
+    "sha256": "52108d3d40c30275dd50745cb6d1a02fd5d25a60eb029a8fb42bad4f30052412"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/component/RestAuthenticationEntryPoint.java",
+    "sha256": "b04206a1e28568e9c28e3eda8b76a7226f95cc7d2843bd8e85bb0f51d7472230"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/component/RestfulAccessDeniedHandler.java",
+    "sha256": "91953a1a7e0ac154ba3de4c217cdb17a6c8e647c0c469d29393220262c0fb22d"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/config/CommonSecurityConfig.java",
+    "sha256": "517d91e8ca3401b1e03636e1548ec324a62023d511c46f0bd28b37a9e9ac803a"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/config/IgnoreUrlsConfig.java",
+    "sha256": "f0528601bc177ac0832985eb1011236ec3cf6fd4e21ef70c6441782741d1470f"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/config/RedisConfig.java",
+    "sha256": "5dac9ec4b59d873bf7766b80d65292d6c9f4f215a37a072b21617e9aed538920"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java",
+    "sha256": "b3080be0c0b6c8b8f72fed2d8c93835cfbf1fb75cc25133f5419299c4d8ee99a"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/util/JwtTokenUtil.java",
+    "sha256": "9abb30a06f6c55d1e51114abee16d21cf517e283480cd42d7e9eb2cc059999ef"
+  },
+  {
+    "file": "mall/mall-security/src/main/java/com/macro/mall/security/util/SpringUtil.java",
+    "sha256": "240ebc54d566252aeee920eac0b567184aabe947adbb376b70c234e949608d2e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/application-dev.yml",
+    "sha256": "9b3180bba083623a862108f4fe15cdf3a4f4f92fb0f0bb69ad5f1232a426e3dc"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/application-prod.yml",
+    "sha256": "e74bfa9ad4f14b2a034bc1932a1824afaae404536de35ec09a48417ed2eecc50"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/application.yml",
+    "sha256": "e1749591d551e32fdac055413268dc8c6a3249c501e402bb4e29bccb9cece609"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/CmsPrefrenceAreaProductRelationDao.xml",
+    "sha256": "c9e278b91a2277d43c2e0728c3d8fca8c3174882b1713381941028b5a44c444f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/CmsSubjectProductRelationDao.xml",
+    "sha256": "00f7d1044bf15750ebca6c74e72850cdd1f2f94356b97de76f4fcbd44f670705"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/OmsOrderDao.xml",
+    "sha256": "1619eb17cb3ff34aea49634d073f2b80a1cacaa3dfaef0f341c300d5f587ca51"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/OmsOrderOperateHistoryDao.xml",
+    "sha256": "1af149ca5079f1bebb79c2b83f4e2274616c4fdb761e69a63ce7342468869b72"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/OmsOrderReturnApplyDao.xml",
+    "sha256": "c2fa4c8c040b2b46b52a95c3b39cff6788292c0e9fe477136f454e563767182e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsMemberPriceDao.xml",
+    "sha256": "2b8dbcc1da141a95673ac2818d0d6046c3bfb1673ab2e5356ec088049de683fa"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductAttributeCategoryDao.xml",
+    "sha256": "d6a0234fd3daeff61243748ffd3b2df699195ada7c234a5c328accf084be904a"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductAttributeDao.xml",
+    "sha256": "fa27b4444fbb15a5f464482c8f21df90690b66bd0b5f0ad5d69e35f734d924cd"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductAttributeValueDao.xml",
+    "sha256": "b3c333725a62d706f256aa4a39d5131898513710654d23a9e7f3f37d8c959ddc"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductCategoryAttributeRelationDao.xml",
+    "sha256": "16996790a2d4ecf9a2772a057f8502b766227b8cbfbf727cf7d8b4a10877297d"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductCategoryDao.xml",
+    "sha256": "f393cc1be8dd0cf297639960e629edc0a09297d10079901dd59b6b4a6ae1411e"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductDao.xml",
+    "sha256": "18ca71cb491e0454a5faff2d0f87eeb897357770f34ffbe1bf0ec4c4988787cc"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductFullReductionDao.xml",
+    "sha256": "d5c24df7ccfda479686ad2868c49989592880d416ede8fe7623d1fdb98a9f9ac"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductLadderDao.xml",
+    "sha256": "fe41a6205db39b24403b574debbccfda2102107249f006f695c4820e0edf7ecb"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsProductVertifyRecordDao.xml",
+    "sha256": "030d74ab98df2da0b2aa8fc38b3ed547ea3388ce83f32e89698f0fe969425745"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/PmsSkuStockDao.xml",
+    "sha256": "7c558522f6fcd7a26dbb0e7051d68c6b7cc8f2da55432e096be6914fe311523a"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/SmsCouponDao.xml",
+    "sha256": "37061f71d5e15ca3a24406c236e0446e52d9e2f7a5ac19f0ad125fa0d9f070cc"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/SmsCouponProductCategoryRelationDao.xml",
+    "sha256": "deb60b94765b9e28951311801e1a115db618c4ed99e9931ce6e9ceeb97e4b6d1"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/SmsCouponProductRelationDao.xml",
+    "sha256": "02301fb2d3c3e48453d7d195eac0612e38a3765d40a30036585cc445a03f1017"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/SmsFlashPromotionProductRelationDao.xml",
+    "sha256": "812efb634fa523baddb884cc44fe416d9ad0ccb394e0e7fe82e89556b287b3d7"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/UmsAdminRoleRelationDao.xml",
+    "sha256": "ff86bd2887198dafbedbd3428f147ef28504a18cdaaf872f2022d69d30525a5f"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/dao/UmsRoleDao.xml",
+    "sha256": "827f64539ecf741ebd8297e79970e3cc9478019f41258e103d38fb71371588c9"
+  },
+  {
+    "file": "mall/mall-admin/src/main/resources/META-INF/MANIFEST.MF",
+    "sha256": "279847b9cd3d7f8e91ecf72bb549459fa98cd2c0b7a89a7ab0a64f5fc683d8ab"
+  },
+  {
+    "file": "mall/mall-common/src/main/resources/logback-spring.xml",
+    "sha256": "8a3de60accea470becfb521360b0fa6d45fefb4bfc52f2d76b57f45796fd2f50"
+  },
+  {
+    "file": "mall/mall-demo/src/main/resources/application.yml",
+    "sha256": "1ffe935adf6bd9a306d72713a3dde1a270edf5b03cbc8ebbe4712d624f54662e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsHelpCategoryMapper.xml",
+    "sha256": "9993dfd3e163146d3c213cec20104141661b851f9561c26bd6cf5ccb7696c68d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsHelpMapper.xml",
+    "sha256": "c3e933bede35a4a498a8b09c70b76610bf25ab55abeac70fe27b10048f88378d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsMemberReportMapper.xml",
+    "sha256": "4e3044aa18e39f3ccea0857beea481e3384ad0baebab458761e8570b5fae425a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsPrefrenceAreaMapper.xml",
+    "sha256": "e4022644b0377698d85c160e070a1863045fd35c4b7147c847fae65d3f8309e9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsPrefrenceAreaProductRelationMapper.xml",
+    "sha256": "ec986d10bc2eec42c8d82ded37c4d2deb1e3a385ceb41ed839ffb52cd7388eae"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsSubjectCategoryMapper.xml",
+    "sha256": "62d6fbe82bf9672ee02928e57330dc8494e2acf408460cf0277987bd3b8bfdc8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsSubjectCommentMapper.xml",
+    "sha256": "e153a17f496c6098bb6c727b69a5d22b62ee894d6e93d05f5e5fa7bf28f4f874"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsSubjectMapper.xml",
+    "sha256": "1d058c507602cb476479d1e6b711b18e520c9948328dc078f7d36f0b8c754737"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsSubjectProductRelationMapper.xml",
+    "sha256": "acc03b32d8ab9b2e1404a63b74761d2653d39791888b9f6724f7212ff5317e96"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsTopicCategoryMapper.xml",
+    "sha256": "e6c50ec190fa55d339948bf4c8debbe32193b8aaa10bd3c9906aef9fe3179ee7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsTopicCommentMapper.xml",
+    "sha256": "1f4dffcf0b630b5ac19aea68dba61edaed4681deba7eff3ffe000b6bb86914fb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/CmsTopicMapper.xml",
+    "sha256": "dfb201cad1e5d716333771a96fef8e8a9e13f74a2addfafd8a7750f3d43d63e2"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsCartItemMapper.xml",
+    "sha256": "d9c7156fc397297a05d8b30a2cad757c52d1c973dc628bbc7817e3d4dee0b0c9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsCompanyAddressMapper.xml",
+    "sha256": "11822d9e1c6999edd72ebf7af26f274dcd8a54a31b57e4f3cf9b43389d8fcb39"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsOrderItemMapper.xml",
+    "sha256": "d27d409573a93c8b76ffce8b46074e7fa65fe07149ecd366ad9ace40315238ef"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsOrderMapper.xml",
+    "sha256": "0aa265e6dc5925657f44ced4811971ab134e80a0cd3c8f03ba911190d959acc0"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsOrderOperateHistoryMapper.xml",
+    "sha256": "8c01cee4ea11a0759106af62784ba65d623e421bcfe7e759bd923842c445919e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsOrderReturnApplyMapper.xml",
+    "sha256": "5aac13fa66a5a866892dae5ed6c0d63065e0bef2c1e1bba98576fa311fb29cd0"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsOrderReturnReasonMapper.xml",
+    "sha256": "dc173fb18289245413af115f02c187ad1ac1c2239b423fee7a8019f5a601470a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/OmsOrderSettingMapper.xml",
+    "sha256": "ba344d9d8c6a1790f0983a775ce6054d3422f498d9093cf2cb75341461b48339"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsAlbumMapper.xml",
+    "sha256": "cb596ddae5afe8bf549981962842d27910e7b1485fd7c11b581ba5e8304cba94"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsAlbumPicMapper.xml",
+    "sha256": "ba814d208665bf9ce97bcf91247fafa9323757022f37f53e945eae96d841edb1"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsBrandMapper.xml",
+    "sha256": "3d9fdf58d9196dca6017711c7b3fee21a49c7cbab049d2cb567276b67dedf98b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsCommentMapper.xml",
+    "sha256": "c910359f79e582f2ffb4bd760b184350e71c5e14f958a1912dd192c6ba9fb38f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsCommentReplayMapper.xml",
+    "sha256": "0a5f1c3485379662b87df79ffbf82d37c63fa8c2b8b5457b4c3618709d39778e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsFeightTemplateMapper.xml",
+    "sha256": "8b4ce3d0e3ff184a68fa557482eee59026b0d4b4b8ee5cf4983a0cc2ef57f4d1"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsMemberPriceMapper.xml",
+    "sha256": "a17ceead123d10007dde2f59aea23a3478e259b9d2d81294115948434cb030e9"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductAttributeCategoryMapper.xml",
+    "sha256": "a6bffcfa87e08804758358660954bb80dd4cb566a8349dc08cc0a55a9cbf995a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductAttributeMapper.xml",
+    "sha256": "b878d6a69cea3cef1585df7182b8d326d430986911a58c8f064a9427be32de5d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductAttributeValueMapper.xml",
+    "sha256": "626fe411baba36e5ca71e03bd11e0229e436dfe3d7697e7a485248cf61fbde55"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductCategoryAttributeRelationMapper.xml",
+    "sha256": "f714fa622c63a179af9d01b0cb79360d50facc1b5049cddf6bbb754b3ea42ca7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductCategoryMapper.xml",
+    "sha256": "dba51a1dc20bda8828f567539cff8784ccc13c1d8cd65a01944a742f5fed990e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductFullReductionMapper.xml",
+    "sha256": "bc946d3f62d476f13f293c27eceb97c73849e7181b98e013002d20fb016b1dd1"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductLadderMapper.xml",
+    "sha256": "31c57b5738ad4092af4983551e0873d46910dfc7af6fd50f7d9cb9b667abb44a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductMapper.xml",
+    "sha256": "f166d487f2f56813029274c7bcdd28a2ea91a94217963935403ee5d41df6afb7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductOperateLogMapper.xml",
+    "sha256": "6bf09b87f52a278ed37bf97d52676f2c2f456062fd37b5a16f1f6f163b9e98aa"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsProductVertifyRecordMapper.xml",
+    "sha256": "c532b96a99c801abb9f0f72c1337ecc4cd47c11079d53c78f72d80394d15b34d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/PmsSkuStockMapper.xml",
+    "sha256": "981324664b862c5b4d5a55ee64cb3715344ddeda1678b4420b706d5435836af7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsCouponHistoryMapper.xml",
+    "sha256": "55c9c393442460b61f63f2757edb7478cddc0a7b99cb5fac6427cb99b1e2c7bc"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsCouponMapper.xml",
+    "sha256": "c4779e808ad75fd6c55427dca1f08eec40756f4600e20d58b435f400ed2a0257"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsCouponProductCategoryRelationMapper.xml",
+    "sha256": "9331c9ac62babfef06f6af118788678b91d61a9d9b74d3fbbee93695a1241d63"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsCouponProductRelationMapper.xml",
+    "sha256": "e09a0a5e122ff75dba1875db1f83827f7ae72895ca4ad2b01256becf0c5f7186"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsFlashPromotionLogMapper.xml",
+    "sha256": "2643fc81bc9a1a5f5d9f1e4ed7360be25e85074ec9634d55a690a7ace2f9b156"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsFlashPromotionMapper.xml",
+    "sha256": "82e29874f398963cb69aad8e83054b2c7793106a71d3b685e273af213c19c709"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsFlashPromotionProductRelationMapper.xml",
+    "sha256": "5c60fc899a400538d0974f87ebf1a7b30b18838e9946daf8c6fd0d9b20a9defb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsFlashPromotionSessionMapper.xml",
+    "sha256": "1bb0763e268b7f51bd3214d8fc41e7a2b4cdfee9639567241b2631769b23c4f4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsHomeAdvertiseMapper.xml",
+    "sha256": "13dc7442ff9173a8beead811633d4041ffab99b962898cd046eacaab7ec851c7"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsHomeBrandMapper.xml",
+    "sha256": "1ae591c46fc85dcc6e1efe6eb53f6337ca06e6ac6ff46ec274c135679b292a5e"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsHomeNewProductMapper.xml",
+    "sha256": "1ad0976e9cec0d310e058a0e60835d34b811736a7c3a9d3a4a0dcf236698b290"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsHomeRecommendProductMapper.xml",
+    "sha256": "fa0bb18f40667d0d79cbc993131b17ddbfa179bdbb2974c7d705009fd3433a56"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/SmsHomeRecommendSubjectMapper.xml",
+    "sha256": "8be468da3cea174ff116335453ab01184c7ad76fe0022cdb180997d473866b1c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsAdminLoginLogMapper.xml",
+    "sha256": "ed40d08d805049a07485886bccd064a4bef06a71a1d3301398a8f2df9a4b610d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsAdminMapper.xml",
+    "sha256": "d1ced1e0ab8e872a2ca620c9a4e205f4154bcd1e1cd497b8c9ba36784270b440"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsAdminPermissionRelationMapper.xml",
+    "sha256": "cc4072978563ed59bfe62e71446c47298315bfba4bcbca9a469bfca2bc807970"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsAdminRoleRelationMapper.xml",
+    "sha256": "dd169a602d05ed55ac04ba5bd1c3c3f7c4a02d30a6888981189e4331511ed76d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsGrowthChangeHistoryMapper.xml",
+    "sha256": "5e782bc9183d3d928fb2cded080e957e5f95637515fdf30fdc367e1233ef953c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsIntegrationChangeHistoryMapper.xml",
+    "sha256": "acb3b6df497bdfb83ff48d37f04487b45ac80aa872fa248df61b8271f96b7c51"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsIntegrationConsumeSettingMapper.xml",
+    "sha256": "92ee2cd172784dba5be93eb9dc8641de59555ad81a0fc769ec152e10aa4dd3dc"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberLevelMapper.xml",
+    "sha256": "2ae4b26e5a6d1200983a0b5b4b23c62c062f4848acd74e480258d15cbaca40eb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberLoginLogMapper.xml",
+    "sha256": "2e682605a94cc26c49446666a674c0da5c2769e28f9708d477153583c762d452"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberMapper.xml",
+    "sha256": "70e11ce131a56c481ba57296d920cdac3002bb78c632aefca7e3cdbc07d6b06a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberMemberTagRelationMapper.xml",
+    "sha256": "7b6cbe514acbc80177f2fd2c48561eea07bfb503a3c3f947dbafaabdde4064a4"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberProductCategoryRelationMapper.xml",
+    "sha256": "14c21b1f3b908243a8e62b88df6944b7ec3e35588e960dc6514514073db10877"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberReceiveAddressMapper.xml",
+    "sha256": "f591930e71ffa74dfa6dad728f056e26dcde6d19e74637b462038704ec583fc3"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberRuleSettingMapper.xml",
+    "sha256": "312c7334d41a1b23b2cb0b1db473d200a420fa6613c572c53c0a11346b9f6c34"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberStatisticsInfoMapper.xml",
+    "sha256": "63d05a94c9623a4ab0674159395c6f57bd766eb60c5d57d7f0aff2b559d22d90"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberTagMapper.xml",
+    "sha256": "d2ea14c5f1fb2a55a3e4cf3500c0bb4f12d077039845fc21be3323a3d6a17554"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMemberTaskMapper.xml",
+    "sha256": "90fcd5fb751e4d1731ddc65ea905eb8a2139bb329118742af43d6bef33c2b67a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsMenuMapper.xml",
+    "sha256": "4a7434b2296c18883756eb26ed407aeade40333cc8bd19e1eff3b8b290dd612c"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsPermissionMapper.xml",
+    "sha256": "b3c744ca7981e72fc9d9e5760a3611f0768dd91a9ffee9dbe24321794f4ada7d"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsResourceCategoryMapper.xml",
+    "sha256": "8a09d1a89f5891eab6d2ca893932b4ff82fa8c5bde26eb3d90adb8309d277a4a"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsResourceMapper.xml",
+    "sha256": "8591acfa5808d690077339192b3bfc71fcabdb28dd9e7ae1e2c4736c21292493"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsRoleMapper.xml",
+    "sha256": "c0a747ffa2c0e1bc2733fa04fed2f2dc4a3d6b11a0bcc928af4cffb3866730eb"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsRoleMenuRelationMapper.xml",
+    "sha256": "2dc4241d880efe2266c0f7c9b0ac150bb1c6f56ca48b1307d9a32289ffa6fd91"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsRolePermissionRelationMapper.xml",
+    "sha256": "a605c4c623022445dbc0dd91984a6acdfb0f2d516743a2da9fbab74705171bf8"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/com/macro/mall/mapper/UmsRoleResourceRelationMapper.xml",
+    "sha256": "9dc4a7c87b40f9b0d62feb1ce069070b62975e46918b9057366fdcb178e6678f"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/generator.properties",
+    "sha256": "68e11d869022ee85e7ecef8eb64b006ea044960e868e4d52645e02f19e98540b"
+  },
+  {
+    "file": "mall/mall-mbg/src/main/resources/generatorConfig.xml",
+    "sha256": "b20ce50625f18c9262a2cd89d5622ad0592d9e7146662378378469dc2143b10c"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/application-dev.yml",
+    "sha256": "ae383219af6642e76e3712891e6606322a475cbd015daaa7f383bfe903d84f7d"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/application-prod.yml",
+    "sha256": "f97e1c633d7a307b56034838c7c5380f3a0b90812c5058ac7015779d3fb9d4f8"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/application.yml",
+    "sha256": "528c9fd10295655c202e8b543d38fd59255a4230e750cd779727b451635ad30d"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/dao/HomeDao.xml",
+    "sha256": "e27c54271bedea0fb5be829c9b6410ed5c5de71219fe4eee614353c01dbead4d"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/dao/PortalOrderDao.xml",
+    "sha256": "3411f123bf523ccf48e194b7eb86147dc63293443d762d5ebbe7e4798c503316"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/dao/PortalOrderItemDao.xml",
+    "sha256": "b603559faa28ef2c72cc433711b98de756c718b01234330d160db27f0530e289"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/dao/PortalProductDao.xml",
+    "sha256": "f121e0f779e53c770cc2fd6a07fc4077ed4472c785d62f89c76f319f01d43b47"
+  },
+  {
+    "file": "mall/mall-portal/src/main/resources/dao/SmsCouponHistoryDao.xml",
+    "sha256": "3ec4855f033c8e7a0055d43ffdca54636a1e0c7eb97d42b3a879d5c7c3d25dc0"
+  },
+  {
+    "file": "mall/mall-search/src/main/resources/application-dev.yml",
+    "sha256": "bdea1f4bb26f11a3120ec4771a0e94c6e85e5fb7e23269cf0b3fe8b2255b3809"
+  },
+  {
+    "file": "mall/mall-search/src/main/resources/application-prod.yml",
+    "sha256": "a8a679db8fa767e2aed3f0f65882ec4df05a34a89a133e71b39087b98577fac9"
+  },
+  {
+    "file": "mall/mall-search/src/main/resources/application.yml",
+    "sha256": "0a67988f6a0042387420837567140f8978bc80c273146ea0f9a72fe30f6795ab"
+  },
+  {
+    "file": "mall/mall-search/src/main/resources/dao/EsProductDao.xml",
+    "sha256": "84ca464f6ef227aefa22693d4f2c236bc0908276b53d3e0dd71b0b6a8985f633"
+  },
+  {
+    "file": "mall/mall-admin/pom.xml",
+    "sha256": "548db72d541f5c0308b128b8315cca24ca9c365dbf50b00e487e801a9a244198"
+  },
+  {
+    "file": "mall/mall-common/pom.xml",
+    "sha256": "c41ad2981b3a389eae871feaa404325d61ffc129d5e38ea65cff9f5a9976fdbc"
+  },
+  {
+    "file": "mall/mall-demo/pom.xml",
+    "sha256": "f39e83ea069dbf513119cdd94f55350213ada04aa0edd114bda60c586d990071"
+  },
+  {
+    "file": "mall/mall-mbg/pom.xml",
+    "sha256": "c09ba3e763dd53849fc3353f1d0c9618da27452c35f3860d3088ea9c46e63913"
+  },
+  {
+    "file": "mall/mall-portal/pom.xml",
+    "sha256": "c5d74f6821216a5c5d2bcd4004a695959a5e5fd8eddeea4f1b741c24c5691c19"
+  },
+  {
+    "file": "mall/mall-search/pom.xml",
+    "sha256": "544669c1a1179aa25c6f6b3129cac8d0d962ce8b03fedcd9f2a1f0b413406abc"
+  },
+  {
+    "file": "mall/mall-security/pom.xml",
+    "sha256": "3d6c08e8d8aaa45c71d4506fb50579af20e70339b06b0637936cf894b6d7f13a"
+  },
+  {
+    "file": "mall-admin-web/src/apis/admin.ts",
+    "sha256": "302d82960dbbbf0094a7b3ff97325db5ca7971f40cf18f500402042c627b2346"
+  },
+  {
+    "file": "mall-admin-web/src/apis/brand.ts",
+    "sha256": "88af63d6d2dc2f99cb70708e929c01e4b471943c6c5453285c0c144ce934749b"
+  },
+  {
+    "file": "mall-admin-web/src/apis/companyAddress.ts",
+    "sha256": "fe19b9d00a9654250179445400b45f3b76f7e141a134ca8c06044ff64143d752"
+  },
+  {
+    "file": "mall-admin-web/src/apis/coupon.ts",
+    "sha256": "4aa6aa33775cd11954246e052baea60476e04a71ac391c9e879395c81503b842"
+  },
+  {
+    "file": "mall-admin-web/src/apis/flash.ts",
+    "sha256": "d00ad59323bddbd77a006cf5ed7359a82ed6d62c534208ce4d5209f3fed79053"
+  },
+  {
+    "file": "mall-admin-web/src/apis/flashProductRelation.ts",
+    "sha256": "1592a4e06aa8ac69f337d36e72fe97869ddd4e95f47d7a77939cf0b898881b29"
+  },
+  {
+    "file": "mall-admin-web/src/apis/flashSession.ts",
+    "sha256": "c9b7208a704ea6c31da3f2951714df96827eba8f4d2375ae25da5879073b840e"
+  },
+  {
+    "file": "mall-admin-web/src/apis/homeAdvertise.ts",
+    "sha256": "0b43d53f4ec3699ddda225b4adb2092c848d7db8091ae2ec43555ee774857ef8"
+  },
+  {
+    "file": "mall-admin-web/src/apis/homeBrand.ts",
+    "sha256": "6efd2985dc4c0946dd9e8ff0eb115e6fa5df939d14de4413dca1ea37f672e0ec"
+  },
+  {
+    "file": "mall-admin-web/src/apis/homeSubject.ts",
+    "sha256": "ad2dccc332a5b332ecc922ff622d9facd81d019ebf727e85f22827ac1acf4656"
+  },
+  {
+    "file": "mall-admin-web/src/apis/memberLevel.ts",
+    "sha256": "f8252ff497646f89c419efdec38f7f0ae87685a88701483c40e628363463aeee"
+  },
+  {
+    "file": "mall-admin-web/src/apis/menu.ts",
+    "sha256": "37aa14e8635428cee64f145cce82d49cff923688956f995edd1f2e710212d08e"
+  },
+  {
+    "file": "mall-admin-web/src/apis/newProduct.ts",
+    "sha256": "ef8a94afd37841f722af48aecf36228c7caf417167c036ea1aead61ecbf3497a"
+  },
+  {
+    "file": "mall-admin-web/src/apis/order.ts",
+    "sha256": "3d893c0ad35cd2c29f535f100f949c018ec4251188873f88b43013830ee459a2"
+  },
+  {
+    "file": "mall-admin-web/src/apis/orderSetting.ts",
+    "sha256": "081596c9524c243fb22c229bd7a665886c47bbbab67a26625a444fb02959a274"
+  },
+  {
+    "file": "mall-admin-web/src/apis/oss.ts",
+    "sha256": "b605603b90ad982c47aefa9b378e78f8d94205b4d99296e6c64cb1286f9511ee"
+  },
+  {
+    "file": "mall-admin-web/src/apis/prefrenceArea.ts",
+    "sha256": "98ff5aa148ad2ab7df61903773761a00a00271689b9ec65f15351630d409a8e0"
+  },
+  {
+    "file": "mall-admin-web/src/apis/product.ts",
+    "sha256": "2e366c377d1acf5a53b5e8d98927a2b977d18772ab5b9edc4631b919dc7b4ba5"
+  },
+  {
+    "file": "mall-admin-web/src/apis/productAttr.ts",
+    "sha256": "345ddde4d42806b15216617ddbcd0589311ca00d299a3e3ad3023ddb91ab4f5e"
+  },
+  {
+    "file": "mall-admin-web/src/apis/productAttrCate.ts",
+    "sha256": "0d08b8a575539393331e1201a56d74d13a4031202eb6707b26921f4b9e5eb7a4"
+  },
+  {
+    "file": "mall-admin-web/src/apis/productCate.ts",
+    "sha256": "1a3345090ab01f819452312bd051bd59467c64ba6cad1d28b20772a786275848"
+  },
+  {
+    "file": "mall-admin-web/src/apis/recommendProduct.ts",
+    "sha256": "623731d48aed98afe489c1df187721588f36d78aadbacc357d086e9d5f920c6b"
+  },
+  {
+    "file": "mall-admin-web/src/apis/resource.ts",
+    "sha256": "c6167e39253ea67b68b3cda179706cb47189c98e716764cf91917514924a3e58"
+  },
+  {
+    "file": "mall-admin-web/src/apis/resourceCategory.ts",
+    "sha256": "1ce31375f54838017b842a62245723028a19cfc750dc22a4ea4db1dde04865b8"
+  },
+  {
+    "file": "mall-admin-web/src/apis/returnApply.ts",
+    "sha256": "55a6bcf26290b4dcdfec1850e065a93281eb45bc0c0b15acb4f48943ae0d772a"
+  },
+  {
+    "file": "mall-admin-web/src/apis/returnReason.ts",
+    "sha256": "d6ba7125b6086a01526381a29e433a302ad2b86e8bffc03a0bff15b402f3389a"
+  },
+  {
+    "file": "mall-admin-web/src/apis/role.ts",
+    "sha256": "bd197080d8e3684ca903ad6a5bca0dc5622328a55272cd715138f528e0cae086"
+  },
+  {
+    "file": "mall-admin-web/src/apis/skuStock.ts",
+    "sha256": "b810a2f2a91b043c5ff7315bda3b447589ffdff3083f629c9a3023dbb76fccc9"
+  },
+  {
+    "file": "mall-admin-web/src/apis/subject.ts",
+    "sha256": "6ea59bd8dc8b87a516268cf92bd2f41e1f4b3c44866dca24010d613439350dc0"
+  },
+  {
+    "file": "mall-admin-web/src/App.vue",
+    "sha256": "4ca37180331b82b34210f10bc05ad0b3c3ed280e3ac3d380eb10b6325c901b39"
+  },
+  {
+    "file": "mall-admin-web/src/assets/images/404.png",
+    "sha256": "538aa4d7334df582e45c6f998b2a98dad44062fa8586a6c602af103a61f1d63e"
+  },
+  {
+    "file": "mall-admin-web/src/assets/images/404_cloud.png",
+    "sha256": "98e7ac66d86036e26a821eb4882d8d040e48991f9ae200119cdefaf450a405e8"
+  },
+  {
+    "file": "mall-admin-web/src/assets/images/gif_404.gif",
+    "sha256": "51130a9ebd2a071848bc970336de4cc2a26c17387d874a9ea3453d1eccd8a940"
+  },
+  {
+    "file": "mall-admin-web/src/assets/images/home_order.png",
+    "sha256": "c1aee496bbff2383a672b11c414e653353f5b4a084cf7b3c0b23fc32047dd86f"
+  },
+  {
+    "file": "mall-admin-web/src/assets/images/home_today_amount.png",
+    "sha256": "1bdec0c56251daa3f3bd371f7d673afeb747eeb5c64f76c327f33ca13951a9f7"
+  },
+  {
+    "file": "mall-admin-web/src/assets/images/home_yesterday_amount.png",
+    "sha256": "5f6bd411b3a70cbdfd863883b9df8900ac9a351ac167d1c0bcd921083334463f"
+  },
+  {
+    "file": "mall-admin-web/src/assets/images/login_center_bg.png",
+    "sha256": "03bfdf2b423d1663219f4cb61e90136cff528dfe275ac4ba35ae6c7b4ae766f4"
+  },
+  {
+    "file": "mall-admin-web/src/components/Breadcrumb/index.vue",
+    "sha256": "587abb856a804b02d25b3d2a09fd0a2cf324ea2e295ffc23221d55a3d3089f51"
+  },
+  {
+    "file": "mall-admin-web/src/components/Hamburger/index.vue",
+    "sha256": "2caedc641a36cd16f4362db82cb553951092e75f7052c1f2c8206bf080e503c8"
+  },
+  {
+    "file": "mall-admin-web/src/components/ScrollBar/index.vue",
+    "sha256": "b1eed299e890f1f7ef27a70aa6ec5e0f73995ff007d8f3469ca839573d2e855f"
+  },
+  {
+    "file": "mall-admin-web/src/components/SvgIcon/index.vue",
+    "sha256": "7d159da19fc9241bfb94ffba52d0dbddd76e4b03c33f20114d815a0c8d4452e0"
+  },
+  {
+    "file": "mall-admin-web/src/components/Tinymce/index.vue",
+    "sha256": "f635f96146a0ff40080bd43ebf498bfbaa24811d6cb9848c6a1a820085359f30"
+  },
+  {
+    "file": "mall-admin-web/src/components/Upload/multiUpload.vue",
+    "sha256": "b197c9bf93769402301089f32641e2210f6635c123ef10bdf1efda560a3554c6"
+  },
+  {
+    "file": "mall-admin-web/src/components/Upload/singleUpload.vue",
+    "sha256": "80f85f746f5ee93b0657400d201e7e15abeb833525977e9eac2bd10c61a30051"
+  },
+  {
+    "file": "mall-admin-web/src/icons/index.ts",
+    "sha256": "690a747011e8b30dfc37823d11f3c097097aaf3a28119d404e8699333b6e3623"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/cms-subject.svg",
+    "sha256": "7039f6e63b0067015e233fd42b66299477a7842879ad566b3d836ac69bfb68ef"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/cms-topic.svg",
+    "sha256": "113d6aa0d644628183cd816801189ce74103ed57918b3cc5097f534015baee12"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/cms.svg",
+    "sha256": "48e1facf4a82ee5cdff9326908de480d2c2c0088193421189fee9fbb29bc5f7d"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/dashboard.svg",
+    "sha256": "51ec79df45ed9bfadd0340e56f14e54893a86f634856a9c060af21609826c7ee"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/document.svg",
+    "sha256": "b905e94797aec5295127b1922655463e2e901dff831b53b7721dcc7245f6c01e"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/example.svg",
+    "sha256": "e570baf8f247efe3ba2d7464f64fbd503fb9bde060a4291cf2b927e08786bc94"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/eye.svg",
+    "sha256": "1a50c7c9a5a014913bcc253ce198ae870dcc293bbb74a198457a3150de2c36c1"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/form.svg",
+    "sha256": "a429fdd34d3776c77f3021fc23df1b06ee253294947d00373e3a6fd017557153"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/home.svg",
+    "sha256": "92ba32336f2f796c97f90ba28943f49a4cc52f0e8a75d82fc2c6b94d4b580149"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/login-mall.svg",
+    "sha256": "15fb913a795006f45e99d63d5ba5e953b3ee4c96ba7db88ffb7d2d606bf6e84f"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/marker.svg",
+    "sha256": "1b4c11a053ee3fe92a5cfc4e0d6f6d47e0e954fd9d6e4ce3b6e93878b23d6292"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/order-return-reason.svg",
+    "sha256": "7ecd812d46b5bd74052c04bc8d9f3c84636e18ac8300efa7e188ef647d96405f"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/order-return.svg",
+    "sha256": "f22f24f10db96d6350600e2230a562fbdeab9d0c9d25867324ea014738eb1d1c"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/order-setting.svg",
+    "sha256": "1e11a708bfc7be088ca6e454e23d13be128d9ef1eb6af9374a887273a36eac72"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/order.svg",
+    "sha256": "260a8ccb6b78e25fce09528af57a512f380fbc4eea2c2d073708798bb9d3770a"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/password.svg",
+    "sha256": "fcd7bef7541a0b8f8a416fc5d2f522283732ef9797e25d44fe826d9cd8fb6709"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product-add.svg",
+    "sha256": "2f75e4107aaa91d9b574da8e3023db96733a6df560244720d6cda62e6b336c86"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product-attr.svg",
+    "sha256": "d209faadae2d3696c5b8970bd04d877d52fe6050a0bd691276cdce16873a2866"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product-brand.svg",
+    "sha256": "f3f6a137ac368d7d2981ac85aaa359b6662db9bc59a0738a9cc940c307c25331"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product-cate.svg",
+    "sha256": "1f5d2debe30418cbc40cb5257d360bd0bded9e1638d4a95599bbd266dad503b1"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product-comment.svg",
+    "sha256": "bbc438651c003f2751f81e2a523c73b18cd0876b915be707c1f592a3facf8aab"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product-list.svg",
+    "sha256": "1a2e49420ed1ad172c519095e0424cbdd16d5c0d9409dc48f69afc73e1880293"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product-recycle.svg",
+    "sha256": "dca332c96a771974d44baff7091bb9153236da8d15eccedec536621f561f750a"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/product.svg",
+    "sha256": "004c102a50c68b06d2a637cc6d25a791855d216e795ae8bb194186ddb1830485"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/sms-ad.svg",
+    "sha256": "1c568b4feb65b24964f48fdc351ad38720550a60c071b438574f57e68e051c02"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/sms-coupon.svg",
+    "sha256": "fdb893081058f8fc48b64f9774873aa28d05bf90d6f4dbf13d1c135324fab8f0"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/sms-flash.svg",
+    "sha256": "e0b4c7280cb7247c8eeaf744e24873b3fc8178ab1337c94486bd4b312688b9b5"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/sms-hot.svg",
+    "sha256": "99ee8355a6002154262a6b04a122e2a95a0d61387ef99b7586e65a06bf59da13"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/sms-new.svg",
+    "sha256": "3db9734088c9cc6dbb23b5b22eacedcffe61b866a8e20b50e8f3308ad4107eb0"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/sms-subject.svg",
+    "sha256": "35aaa4241fa1539cd632460e1813d220e0fc404a7e7d6e91f301d62e3e2d01d2"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/sms.svg",
+    "sha256": "95a43182633ed99294293624823d5b6c1d01a2c38f1ddfbc340c2b4ee25f245b"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/table.svg",
+    "sha256": "705bf26cd1f258b5afd26227b6fdf55583f8b5f0e3ce825cd3330739e3ec451c"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/total-today.svg",
+    "sha256": "5e6aaaf0173205d241735244f69e11cc2e257e5f83dab3c5c4ff6db0134e15da"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/total-week.svg",
+    "sha256": "767d860d81b2c543e8a7929f3f0cd9c0377f75e9bf7fcb2c7c26e15715cc02af"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/total-yesterday.svg",
+    "sha256": "390a4c50a769d7a70db4b8f6f5aa33940dc800a2955a27c2b6dd2c2c997cd2fb"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/tree.svg",
+    "sha256": "07345dfa12755f9e062dfcbafb413f8b72bccf6175bbcab52ea70d3cfeff5731"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/ums-admin.svg",
+    "sha256": "3b2c05c59d8bdc93dbb72058c118c093d4b6870f10e89e4c094ce8d3a56b8e12"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/ums-menu.svg",
+    "sha256": "059893c5a9ba7e76315eead83865f82ca17ab874464766c39b93bcc659178866"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/ums-resource.svg",
+    "sha256": "c4510449541df0f20b64d10ab92721814afd1f45239ce4a7999bda1fd9b9cddd"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/ums-role.svg",
+    "sha256": "226698c1eb2625c2d4634f8eb09d76756b48c629f658bb4453331dd0945d33ce"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/ums.svg",
+    "sha256": "76945a320e10c3e8cbc9a1ae74189e47bd886ea9d51189d6063bed2536c550f3"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/user.svg",
+    "sha256": "231687e91d0f844babdd5d3edf80be1f309a8839c4235046739dddf52c303ecb"
+  },
+  {
+    "file": "mall-admin-web/src/icons/svg/video.svg",
+    "sha256": "e0338d5c7e24b545d991d71650ace6132f3af58e570f216ba6a535303baaa698"
+  },
+  {
+    "file": "mall-admin-web/src/main.ts",
+    "sha256": "b800eeb7710783d0d8550157d2a6860f422f2f79dce2d7aa7faa40c7a258102c"
+  },
+  {
+    "file": "mall-admin-web/src/router/guard.ts",
+    "sha256": "2db7808e0bee65a6a741c923d9c5ddb67165159a5f7a0b0e0bf616a920ef3052"
+  },
+  {
+    "file": "mall-admin-web/src/router/index.ts",
+    "sha256": "3ffabf6b6a3d930201e809b15d62dd10c4de60afd9cea2c366d8bf2ab019a835"
+  },
+  {
+    "file": "mall-admin-web/src/stores/app.ts",
+    "sha256": "a158eff0761df61bff8802f22097fce3d2b8c01991ed70e0a1c4c901cab41009"
+  },
+  {
+    "file": "mall-admin-web/src/stores/counter.ts",
+    "sha256": "020df900053c3934ba667626d2ce87127be2e71a77aeaf4089f0070a0d4a1af1"
+  },
+  {
+    "file": "mall-admin-web/src/stores/order.ts",
+    "sha256": "ca2a9958d43f7c839fb149df01c7dc489847ddbe2ba5536ea4509afc99fedbea"
+  },
+  {
+    "file": "mall-admin-web/src/stores/permission.ts",
+    "sha256": "6dfc63ae3297d104980b4efbdff523a294bf658e5e1bc163f5ee6df6ae543989"
+  },
+  {
+    "file": "mall-admin-web/src/stores/user.ts",
+    "sha256": "91729d3b4c7a2e741b0562da3adcbf0fff1c065c35bd9276bed70e828af7e7d2"
+  },
+  {
+    "file": "mall-admin-web/src/styles/element/index.scss",
+    "sha256": "7c9034119aba6a8c31a42391973a2d556a27a5a0c0174543d4d3410502bed402"
+  },
+  {
+    "file": "mall-admin-web/src/styles/element-ui.scss",
+    "sha256": "a8e14372b796c37c1661209245c7ee251ef4166605282f43d00953f1dafbe157"
+  },
+  {
+    "file": "mall-admin-web/src/styles/index.scss",
+    "sha256": "d9c04ca93c5fec52532525126e7084f83bf6b105fb37e98212305ce597483070"
+  },
+  {
+    "file": "mall-admin-web/src/styles/mixin.scss",
+    "sha256": "f8886c0ddf10bba7fa77ae55d3a1c5365c0507c70d19f9cf8041b39dac0db547"
+  },
+  {
+    "file": "mall-admin-web/src/styles/sidebar.scss",
+    "sha256": "175682c91ccedb15909792e9b0352684461c6c20f46eabd2173ae68ca0e3d083"
+  },
+  {
+    "file": "mall-admin-web/src/styles/transition.scss",
+    "sha256": "5102adaf4995fd6289d03288d04681e2b37ac67da81f6e8b05cd12617465cdd5"
+  },
+  {
+    "file": "mall-admin-web/src/styles/var.scss",
+    "sha256": "25baac1f2bf20f9bff629e14250400e6b0915be54d0e0920f7c158ade7a87530"
+  },
+  {
+    "file": "mall-admin-web/src/styles/variables.scss",
+    "sha256": "89e4bb80a9e28eedc1e102f0c4815953d3e42ec5000e61d875c2fbb242bc1874"
+  },
+  {
+    "file": "mall-admin-web/src/types/admin.d.ts",
+    "sha256": "e9c7ef7ec94cecbc35cda37977ca703c1700c153bdd34091986a55b647e48614"
+  },
+  {
+    "file": "mall-admin-web/src/types/brand.d.ts",
+    "sha256": "0b84642832afa1faeb61f1171706375f5457d88b8de3021ddb4eb3aa5026421f"
+  },
+  {
+    "file": "mall-admin-web/src/types/common.d.ts",
+    "sha256": "028e0703a4ff565506d4a268fc31b6e886dedea2bf175920f787aae3928095d4"
+  },
+  {
+    "file": "mall-admin-web/src/types/companyAddress.d.ts",
+    "sha256": "cd75a511bf4c122df824ff30d7388dc1e3e68ae4abbc32289c43227bdd0a3454"
+  },
+  {
+    "file": "mall-admin-web/src/types/coupon.d.ts",
+    "sha256": "4d11caa57513cec71c0e43dcbba1aee39c1c70822b0f94a324a6bcd61298c36a"
+  },
+  {
+    "file": "mall-admin-web/src/types/flash.d.ts",
+    "sha256": "2c6278810f4fa19fffaf50287203477a6d25335f0be8461db6c36dc006c0902a"
+  },
+  {
+    "file": "mall-admin-web/src/types/homeAdvertist.d.ts",
+    "sha256": "49b212ebc15e6b3c4028525112586d9a4fcab76ab5595d5e69aee42171b30829"
+  },
+  {
+    "file": "mall-admin-web/src/types/homeBrand.d.ts",
+    "sha256": "0b505e92d1563531c72604270828208c00810e307930cf99947a2abf719e2687"
+  },
+  {
+    "file": "mall-admin-web/src/types/homeSubject.d.ts",
+    "sha256": "0938ae87e71e99c0ee4976403a4264204dbae7534c3df18dd077f1d557946dda"
+  },
+  {
+    "file": "mall-admin-web/src/types/memberLevel.d.ts",
+    "sha256": "311f9fef663218a62b83363cdda6cbf0ee3c531193b7aef9af622d0b952d731e"
+  },
+  {
+    "file": "mall-admin-web/src/types/menu.d.ts",
+    "sha256": "e18345751e6e5257cece9927b896e113c6c322f84b4f539aafa533286e42b05b"
+  },
+  {
+    "file": "mall-admin-web/src/types/newProduct.d.ts",
+    "sha256": "c60cf8a8b8abd608ba0dd6ce861d06e48fdab8603e445c9a272cb8b13d06af3a"
+  },
+  {
+    "file": "mall-admin-web/src/types/order.d.ts",
+    "sha256": "d75d1024939ca85dfbcf0fb76b56c0abbf61c76469298f3d434a6d87c0a2c244"
+  },
+  {
+    "file": "mall-admin-web/src/types/orderSetting.d.ts",
+    "sha256": "bf280d316e181d0ddfbde8444b4a8bef30e82cc1509cc76598aa2c75634bf1fa"
+  },
+  {
+    "file": "mall-admin-web/src/types/oss.d.ts",
+    "sha256": "afc872249f6c83648055b8576c8b3d818e07e250a3b2872665fde0370954b9e0"
+  },
+  {
+    "file": "mall-admin-web/src/types/prefrenceArea.d.ts",
+    "sha256": "e8181df3aa4e0cda65d8f2c87b86ae3c26fb17f81661a51b73b139b46a2d42cf"
+  },
+  {
+    "file": "mall-admin-web/src/types/product.d.ts",
+    "sha256": "529027c0cf8b8958df349be29f6dfae7f9e1c9fe527689c7b74acec6269d5acb"
+  },
+  {
+    "file": "mall-admin-web/src/types/productAttr.d.ts",
+    "sha256": "977372610f01df8c99478c4e1d1d7bb98635c04c16cd3a3e29b17c3592230f40"
+  },
+  {
+    "file": "mall-admin-web/src/types/productCate.d.ts",
+    "sha256": "c8dea60ae4ebb7966683e1a16556bf91ac236e61b16d11d810087cd77291c62e"
+  },
+  {
+    "file": "mall-admin-web/src/types/recommendProduct.d.ts",
+    "sha256": "7e77e1f1a792df5a97f42fbca6993a5abd718555efdb697e9f61d30fe95aae21"
+  },
+  {
+    "file": "mall-admin-web/src/types/resource.d.ts",
+    "sha256": "f663b2c82ab55466711eab9afac098bd220dc8897a67ee690de7f705ecda95ea"
+  },
+  {
+    "file": "mall-admin-web/src/types/returnApply.d.ts",
+    "sha256": "78e74b690b9bb06a4b65ad014ed92c69164315b2b81e1dccfbe5ce80ab8f3bdc"
+  },
+  {
+    "file": "mall-admin-web/src/types/returnReason.d.ts",
+    "sha256": "11cfcb25ce63cd0a88a4785265ade3d8f16e8f415f610735447392ddef23d120"
+  },
+  {
+    "file": "mall-admin-web/src/types/role.d.ts",
+    "sha256": "f90baed8b6252b9441f3369bdf6524ebac9ae9ea497cca5366a013977e030445"
+  },
+  {
+    "file": "mall-admin-web/src/types/router.d.ts",
+    "sha256": "f5ad22504d5119379ebc464fef255f34daa50d3f66847c73b957a418b52c0e32"
+  },
+  {
+    "file": "mall-admin-web/src/types/skuStock.d.ts",
+    "sha256": "566f3df880f2a975247ba00a190a0a461454aaee9064959498c12d044bb7ba11"
+  },
+  {
+    "file": "mall-admin-web/src/types/subject.d.ts",
+    "sha256": "843c4defea6cf7d7ef3bef6ac9bfbb10b4133beee88af14843bec09531801ba7"
+  },
+  {
+    "file": "mall-admin-web/src/utils/constant.ts",
+    "sha256": "d1b100d0e89862fa1d88d11cb79053eb3456647915463c2b8128562e79f9ecc7"
+  },
+  {
+    "file": "mall-admin-web/src/utils/cookie.ts",
+    "sha256": "a30b3546e7c508cd46c14d18e3a5f6d86795172ad6da80543b68880e0f248078"
+  },
+  {
+    "file": "mall-admin-web/src/utils/datetime.ts",
+    "sha256": "72fbdf00270e6a3827f33130dc139724a8439a4664e90fc9e30329c27cc315cf"
+  },
+  {
+    "file": "mall-admin-web/src/utils/http.ts",
+    "sha256": "79457fdfdb07094825e20dd3ea3ee69bae876e18e95d5be19c066ef6fa4c44d7"
+  },
+  {
+    "file": "mall-admin-web/src/utils/validate.ts",
+    "sha256": "daede6aa290ee0b5f0d3a3d377e4cafd7dd2dfae8251b8246b0983ce42dbe327"
+  },
+  {
+    "file": "mall-admin-web/src/views/home/index.vue",
+    "sha256": "358edc926540511ac8563dd88e93f01455fa9d0a401340a9b8bf296e40b0da37"
+  },
+  {
+    "file": "mall-admin-web/src/views/layout/components/AppMain.vue",
+    "sha256": "76071db2f1a9819468df06e2c43bd822eda0495a8eaff3d341e785fa71e6c5d7"
+  },
+  {
+    "file": "mall-admin-web/src/views/layout/components/Navbar.vue",
+    "sha256": "1730415f84bc370c9369be13ad41d19e496635baf5b6967b696942caedc4e80c"
+  },
+  {
+    "file": "mall-admin-web/src/views/layout/components/Sidebar/index.vue",
+    "sha256": "278f9975405b060fa7c871a5b5736daa76a0b1efffd94f0ed6d6ebf37d6c2896"
+  },
+  {
+    "file": "mall-admin-web/src/views/layout/components/Sidebar/SidebarItem.vue",
+    "sha256": "32fa7c1da7418b7e08114a825492a03f0b68bbfb42d9a6664ecd2d4fd667ef89"
+  },
+  {
+    "file": "mall-admin-web/src/views/layout/composables/useResizeHandler.ts",
+    "sha256": "b495a3fd848e811c5e60ab1c6a90ba3b34b0a3a5afe6871c699aaafe55427235"
+  },
+  {
+    "file": "mall-admin-web/src/views/layout/Layout.vue",
+    "sha256": "016d62f4439c0aee788e7b073c7e545fbaa3c080e15eec90ddabe4a9af556209"
+  },
+  {
+    "file": "mall-admin-web/src/views/normal/404/index.vue",
+    "sha256": "64f38f3a062d701da5ed478f427702426106fd1317f7aaf0dbfca75ffbe6b6dc"
+  },
+  {
+    "file": "mall-admin-web/src/views/normal/link/index.vue",
+    "sha256": "c3d5745dd72341a3ed21b93c40b950efaf2262d40a8917c98bd95585dc9579fd"
+  },
+  {
+    "file": "mall-admin-web/src/views/normal/login/index.vue",
+    "sha256": "3dc84f75765d0f43b7f93130b9240f280970c6312fea07c66ace81b9cd45daa3"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/apply/applyDetail.vue",
+    "sha256": "7da02a03cc19876517afd755dfaac97791c2924fb80cea233944fbd7eda5cf2e"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/apply/index.vue",
+    "sha256": "79f4fdc33d927098d07c0f2b15facddc16a97e33b56aeff1214517ebc641a189"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/apply/reason.vue",
+    "sha256": "b4f79839eb2304c263f5f0593cc2c1a2313f24611fcec256052d1e42fc08c01a"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/order/components/logisticsDialog.vue",
+    "sha256": "dcaf4ba1ca26e02047507c1c68a74a8bb334104bdad6afee73352cb61db42665"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/order/deliverOrderList.vue",
+    "sha256": "20fbd3b4df3ee9ddf53336477cf25ffea014beb04f22345592cd479cf672ba80"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/order/index.vue",
+    "sha256": "bce05185f9f0877018d2ff9feb48e77e18de139064fc0523c28e2badb4a64054"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/order/orderDetail.vue",
+    "sha256": "327f6a187fe8ddd9910303dab363c885439980b9ef6334077bf23378be3d5c1b"
+  },
+  {
+    "file": "mall-admin-web/src/views/oms/order/setting.vue",
+    "sha256": "83b4a4212e6021499b3579fa21a0179f3d1d8488173509d66cfdd7d43f0611fb"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/brand/add.vue",
+    "sha256": "7881f51ab640b68d6b6bce231b245b5e48d4db028a497e4fe98b741977b1b19f"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/brand/components/BrandDetail.vue",
+    "sha256": "de80edd158bd8bce52417811a97245090f461a20be9ae7d374d6ab066fb4b1e0"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/brand/index.vue",
+    "sha256": "ed0c7f07b26401bf3e91e779caa1a175c344543e53d4f0bf6dff91704e96f339"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/brand/update.vue",
+    "sha256": "8112df7a829e52b5fdc6a1d9ab46212b59b662b062b9812ca1eaccaa28ce4f69"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/add.vue",
+    "sha256": "0fbd812863ce58a1973de8a0ed3a14d613cf4d4c9df3ea4a855cc790a34c4c2c"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/components/ProductAttrDetail.vue",
+    "sha256": "75bb1c1276e5c76279e6a3c6ec2bfc5e87471c339466477379bd254e0d408875"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/components/ProductDetail.vue",
+    "sha256": "7c277082d5b83d60307027a526e59b71f064b6c703b1ee272b7be0290177d912"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/components/ProductInfoDetail.vue",
+    "sha256": "60662ac84d389b2a8be5df028f0fd9cc93e2a4719b1906d736102e6ad03712b3"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/components/ProductRelationDetail.vue",
+    "sha256": "002b47e61c63998aa09fc8c7f3f6b90f7caae19174fe93b9661d9b535e8a4488"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/components/ProductSaleDetail.vue",
+    "sha256": "31de9027db7640fc834f25f91aab9a786135deb57d49b8e52cd83ddf8c920f26"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/index.vue",
+    "sha256": "f96c0f92bb1c4e61686bb753378a264eb7ec965199be481d670c3226bd80539c"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/product/update.vue",
+    "sha256": "63c4f76feca4c410bca7af5cfbcea58c366978169ee547dcd532714a8c0cf671"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productAttr/addProductAttr.vue",
+    "sha256": "5494d35e8c42f050f7a4f2cf029ae65c604f54b660a5b448c251d2557207c3ba"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productAttr/components/ProductAttrDetail.vue",
+    "sha256": "096500945cc8ee33ec32aff31a22c0f1300b0147f530c71d6b032344f8ff3de7"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productAttr/index.vue",
+    "sha256": "e1935ffb1a54dd633e27e803329aeeba69f909991eaaf7230cd69da684813d44"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productAttr/productAttrList.vue",
+    "sha256": "37aa92dc5878be91285745a17164b7d5fe29f96b258f1e2e2998758f6f3c64bc"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productAttr/updateProductAttr.vue",
+    "sha256": "01de4945009042fd1eb118334775e472f8071292476b4b1320554edf24d00e46"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productCate/add.vue",
+    "sha256": "783fe7c1f3535b7b142660d0ffcd7a205cacc5a4f158087e291cf10908b4fa83"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productCate/components/ProductCateDetail.vue",
+    "sha256": "f0b47a335a1ff8f7a55f2905d1d36442fe5b8ead73bba7522ddcae40ea3c209f"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productCate/index.vue",
+    "sha256": "2201864f00fb36c151f5d51d6bc95799b46c8f55dce80e601eeb6b2f6a258646"
+  },
+  {
+    "file": "mall-admin-web/src/views/pms/productCate/update.vue",
+    "sha256": "9da6127e7daab996a09cc5e627e72be1884d2d1573c931f743ce0881c7f891f5"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/advertise/add.vue",
+    "sha256": "7ab28987183b4ed781bd9f273705beb2fc2145563b91ba2325e95aa98a8e1674"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/advertise/components/HomeAdvertiseDetail.vue",
+    "sha256": "b8c36f502bdb8545e29a091cd25caf981ca86da4e453ad1ae9becb43b2078060"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/advertise/index.vue",
+    "sha256": "8c24791b7aebff14d66f38417b1d2a4a93a4d6327811718bfc70ff0a44678957"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/advertise/update.vue",
+    "sha256": "8b36f9ace2b764b11dafeecba377bf23c15edd0281a5684d1dd68604ba340994"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/brand/index.vue",
+    "sha256": "6d9501018ee87fe91e444dcaa2294ec27d300c413dbe1c45f1a758f85fb7c76b"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/coupon/add.vue",
+    "sha256": "7e80a2ccc42a6b381b39b19b926d9e0ae6f42ddeb9c04470d5fabc95d88c4c5e"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/coupon/components/CouponDetail.vue",
+    "sha256": "4d78b21116d5a3d7b9c1387e6a352302a5b41f735e886ac5234a542959bc23fc"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/coupon/history.vue",
+    "sha256": "04907fb58f6d319622556c6b20fa961fa6d74732f21bbecb1079db4677891c56"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/coupon/index.vue",
+    "sha256": "23aa0d44a2ac8aab39c12d1d5866113e1273426b08d27b0120fdb1f2c596e9bb"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/coupon/update.vue",
+    "sha256": "2f6c14027a82e688ce0871ace65eed93b79cdbecb10d880bf65d6d4a79171c1d"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/flash/index.vue",
+    "sha256": "3328ab6874999816cdbd8072befe6db0819c541448a1ab7991839f107a72e6e1"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/flash/productRelationList.vue",
+    "sha256": "998558c7cb9bb21880221edcd1b4f975587ad177eb0f70497cf55c00b4429d4c"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/flash/selectSessionList.vue",
+    "sha256": "e7e742cae25ae8cb204e54e45f2848f43c5250ddc685551f9cc545fe15eebecd"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/flash/sessionList.vue",
+    "sha256": "a2385c7b339ee773262eee72070c85ffd2559aa8ad11f29a75b79d661edc75c4"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/hot/index.vue",
+    "sha256": "5bf5add5b5fc96a31f1b28952edc293dd87e70e174e70a224d25a113720e4de9"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/new/index.vue",
+    "sha256": "71b8bf6f0f355b8dafbb3671da324c9e001f87503f25b007538910c4dea9cc72"
+  },
+  {
+    "file": "mall-admin-web/src/views/sms/subject/index.vue",
+    "sha256": "d1d98c4c6b7ab117695486af62a9a88db9ca1cd6d1b21616fbe7f8bef81c3ce4"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/axios/index.vue",
+    "sha256": "cff8efc70d0e35206a55f381d7a041b04ce0515ae0d031ce95c2cd12d3ae4299"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/element/index.vue",
+    "sha256": "60a59d036475c8948c2056067446ba28a4d959af3676bf732e351281180bcc81"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/index.vue",
+    "sha256": "2a4e8e5c3e6ad7a0881a0000f2663c3a459e66f4e92e4787c87c68aa63ee4af3"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/pinia/index.vue",
+    "sha256": "d53a2e4ef293155d767dc8faf65a7be6fe6dc5035fd8c9b620397133f5a065ba"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/vrouter/category/index.vue",
+    "sha256": "bc2822bc2f15c5419b4dc4f6c0cdb2d698f57415a70e1decff9dd4452f6de4b4"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/vrouter/home/index.vue",
+    "sha256": "b20e524a0fce390c76820b002bcb633845ba1e088574f562a689886081f26de5"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/vrouter/layout/components/LayoutFooter.vue",
+    "sha256": "2214abe255963a57bd33d62ee747605ba4fc5a768d299ef0f5c747fb14db9256"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/vrouter/layout/components/LayoutHeader.vue",
+    "sha256": "52eb51ee875eed0781b33209294ae555c6ae513a0ef5cc69d2d1b93438460a57"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/vrouter/layout/index.vue",
+    "sha256": "d5e54005796a81fffd5e468591c639d8aa0001458f94ad4d73240ecc36e052a4"
+  },
+  {
+    "file": "mall-admin-web/src/views/test/vrouter/login/index.vue",
+    "sha256": "311dba328f5d573c421fba33acec709b903713ec8d0ee765b255e4f1d172777c"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/admin/index.vue",
+    "sha256": "40e477f0043eba7a855e17c823833694a54fe4c0d78e1b55de59b7a5716b57f7"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/menu/add.vue",
+    "sha256": "8a626642cb3ff8521f817e76726efe9fa00b8e39cd8cb556f8802ec9cc349508"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/menu/components/MenuDetail.vue",
+    "sha256": "4d45ad348ecd0e05d23308ed153092ba7366fee3cd727103ec760eca1f0c5091"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/menu/index.vue",
+    "sha256": "b8ea19aa0322ef4361be4abe43ad68664b99cd9cadea768780611db83963c221"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/menu/update.vue",
+    "sha256": "2e10b6056161c87876da3e5f073f8b246eefaa6eda7cc1b76397f034c4d156f6"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/resource/categoryList.vue",
+    "sha256": "0305069e921690c10900fffff3e4ccb2e1569699a11a9ce2f21b46d181f1c9f1"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/resource/index.vue",
+    "sha256": "75b85ee5e44c1144cc51951054bb46f527e8e3736087372d740fccef729e603c"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/role/allocMenu.vue",
+    "sha256": "185c30569d7e15cb8bba8c3c953cd470f07ccf9afad428c1fa10c5e60ac54fe0"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/role/allocResource.vue",
+    "sha256": "f0baa985bff60f7ceb95ca05299ed41f4a6517b533b450efa35888bc810b9fd0"
+  },
+  {
+    "file": "mall-admin-web/src/views/ums/role/index.vue",
+    "sha256": "7a7b00292e1fe15655adcd031423fbdebca3148eda342f7bc407869a3e4b3dc8"
+  },
+  {
+    "file": "local/Start-Mall.ps1",
+    "sha256": "fc36449966f8135325d47f2b35309daeff91b0e67030e9f782fe8bf4c1d9ff99"
+  },
+  {
+    "file": "local/Test-Mall.ps1",
+    "sha256": "58337a419d3280ab701369b6b97db0484a8774c62e179df86155a9c566e037c9"
+  },
+  {
+    "file": "local/init-services.sh",
+    "sha256": "1e33422bb8da4840d3279356e73812c342b1e7cb8f53a3f1e39cf7da0a3dda49"
+  },
+  {
+    "file": "local/run-backend.sh",
+    "sha256": "f0c1991d0223d8092d1b541dcdf636b7dcc67d4ee9a8fb575f29a1c206d02909"
+  },
+  {
+    "file": "local/start-backends.sh",
+    "sha256": "0dbb647d98179caf832cd2ca58e8a22dfd0b4f480dbb70cc3bc282d89f833167"
+  },
+  {
+    "file": "local/start-elasticsearch.sh",
+    "sha256": "f63a68e1c9ca10ef10ce51394de643b85714cfabfadd26d98eb7375f29480aad"
+  },
+  {
+    "file": "mall/document/sql/mall.sql",
+    "sha256": "fda7aacfbdb42e6d1669aa3e323dfaaef058dd435944de680f27041d5b607375"
+  },
+  {
+    "file": "mall/pom.xml",
+    "sha256": "5c43eebd63d1687ecb2e574fd0fac86848bbfd87d7362f4654eba6fbf7a52955"
+  },
+  {
+    "file": "mall-admin-web/package.json",
+    "sha256": "531758399bb4f577d7aee46a55c1ced6ad1896334dcc2a29be9ba980bf12d455"
+  },
+  {
+    "file": "mall-admin-web/vite.config.ts",
+    "sha256": "bf1b0aeb4f7184841151813d8acb9adfe305808a5711381763380798c999bfd8"
+  }
+]

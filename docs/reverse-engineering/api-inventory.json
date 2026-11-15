@@ -1,0 +1,3948 @@
+[
+  {
+    "module": "mall-admin",
+    "controller": "CmsPrefrenceAreaController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/CmsPrefrenceAreaController.java",
+    "method": "listAll",
+    "http": "GET",
+    "url": "/prefrenceArea/listAll",
+    "summary": "获取所有商品优选",
+    "params": "",
+    "returns": "CommonResult<List<CmsPrefrenceArea>>",
+    "calls": [
+      "CmsPrefrenceAreaService.listAll"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：23:商品优选管理 (/prefrenceArea/**)",
+    "line": 30
+  },
+  {
+    "module": "mall-admin",
+    "controller": "CmsSubjectController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/CmsSubjectController.java",
+    "method": "listAll",
+    "http": "GET",
+    "url": "/subject/listAll",
+    "summary": "获取全部商品专题",
+    "params": "",
+    "returns": "CommonResult<List<CmsSubject>>",
+    "calls": [
+      "CmsSubjectService.listAll"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：24:商品专题管理 (/subject/**)",
+    "line": 32
+  },
+  {
+    "module": "mall-admin",
+    "controller": "CmsSubjectController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/CmsSubjectController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/subject/list",
+    "summary": "根据专题名称分页获取商品专题",
+    "params": "@RequestParam(value = \"keyword\", required = false) String keyword, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<CmsSubject>>",
+    "calls": [
+      "CmsSubjectService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：24:商品专题管理 (/subject/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "MinioController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/MinioController.java",
+    "method": "upload",
+    "http": "POST",
+    "url": "/minio/upload",
+    "summary": "文件上传",
+    "params": "@RequestPart(\"file\") MultipartFile file",
+    "returns": "CommonResult",
+    "calls": [],
+    "permission": "配置白名单放行；方法内可能仍依赖登录主体",
+    "line": 44
+  },
+  {
+    "module": "mall-admin",
+    "controller": "MinioController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/MinioController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/minio/delete",
+    "summary": "文件删除",
+    "params": "@RequestParam(\"objectName\") String objectName",
+    "returns": "CommonResult",
+    "calls": [],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：未匹配；按该样例配置会被动态授权拒绝",
+    "line": 105
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsCompanyAddressController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsCompanyAddressController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/companyAddress/list",
+    "summary": "获取所有收货地址",
+    "params": "",
+    "returns": "CommonResult<List<OmsCompanyAddress>>",
+    "calls": [
+      "OmsCompanyAddressService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：12:收货地址管理 (/companyAddress/**)",
+    "line": 30
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/order/list",
+    "summary": "查询订单",
+    "params": "OmsOrderQueryParam queryParam, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<OmsOrder>>",
+    "calls": [
+      "OmsOrderService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 30
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "delivery",
+    "http": "POST",
+    "url": "/order/update/delivery",
+    "summary": "批量发货",
+    "params": "@RequestBody List<OmsOrderDeliveryParam> deliveryParamList",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderService.delivery"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "close",
+    "http": "POST",
+    "url": "/order/update/close",
+    "summary": "批量关闭订单",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam String note",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderService.close"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/order/delete",
+    "summary": "批量删除订单",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "detail",
+    "http": "GET",
+    "url": "/order/{id}",
+    "summary": "获取订单详情：订单信息、商品信息、操作记录",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<OmsOrderDetail>",
+    "calls": [
+      "OmsOrderService.detail"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 73
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "updateReceiverInfo",
+    "http": "POST",
+    "url": "/order/update/receiverInfo",
+    "summary": "修改收货人信息",
+    "params": "@RequestBody OmsReceiverInfoParam receiverInfoParam",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderService.updateReceiverInfo"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 81
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "updateReceiverInfo",
+    "http": "POST",
+    "url": "/order/update/moneyInfo",
+    "summary": "修改订单费用信息",
+    "params": "@RequestBody OmsMoneyInfoParam moneyInfoParam",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderService.updateMoneyInfo"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 92
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderController.java",
+    "method": "updateNote",
+    "http": "POST",
+    "url": "/order/update/note",
+    "summary": "备注订单",
+    "params": "@RequestParam(\"id\") Long id, @RequestParam(\"note\") String note, @RequestParam(\"status\") Integer status",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderService.updateNote"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：8:订单管理 (/order/**)",
+    "line": 103
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnApplyController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnApplyController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/returnApply/list",
+    "summary": "分页查询退货申请",
+    "params": "OmsReturnApplyQueryParam queryParam, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<OmsOrderReturnApply>>",
+    "calls": [
+      "OmsOrderReturnApplyService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：9:订单退货申请管理 (/returnApply/**)",
+    "line": 32
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnApplyController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnApplyController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/returnApply/delete",
+    "summary": "批量删除退货申请",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderReturnApplyService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：9:订单退货申请管理 (/returnApply/**)",
+    "line": 42
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnApplyController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnApplyController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/returnApply/{id}",
+    "summary": "获取退货申请详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderReturnApplyService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：9:订单退货申请管理 (/returnApply/**)",
+    "line": 53
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnApplyController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnApplyController.java",
+    "method": "updateStatus",
+    "http": "POST",
+    "url": "/returnApply/update/status/{id}",
+    "summary": "修改退货申请状态",
+    "params": "@PathVariable Long id, @RequestBody OmsUpdateStatusParam statusParam",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderReturnApplyService.updateStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：9:订单退货申请管理 (/returnApply/**)",
+    "line": 61
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnReasonController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnReasonController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/returnReason/create",
+    "summary": "添加退货原因",
+    "params": "@RequestBody OmsOrderReturnReason returnReason",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderReturnReasonService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：10:退货原因管理 (/returnReason/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnReasonController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnReasonController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/returnReason/update/{id}",
+    "summary": "修改退货原因",
+    "params": "@PathVariable Long id, @RequestBody OmsOrderReturnReason returnReason",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderReturnReasonService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：10:退货原因管理 (/returnReason/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnReasonController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnReasonController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/returnReason/delete",
+    "summary": "批量删除退货原因",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderReturnReasonService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：10:退货原因管理 (/returnReason/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnReasonController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnReasonController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/returnReason/list",
+    "summary": "分页查询退货原因",
+    "params": "@RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<OmsOrderReturnReason>>",
+    "calls": [
+      "OmsOrderReturnReasonService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：10:退货原因管理 (/returnReason/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnReasonController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnReasonController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/returnReason/{id}",
+    "summary": "获取单个退货原因详情信息",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<OmsOrderReturnReason>",
+    "calls": [
+      "OmsOrderReturnReasonService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：10:退货原因管理 (/returnReason/**)",
+    "line": 71
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderReturnReasonController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderReturnReasonController.java",
+    "method": "updateStatus",
+    "http": "POST",
+    "url": "/returnReason/update/status",
+    "summary": "修改退货原因启用状态",
+    "params": "@RequestParam(value = \"status\") Integer status, @RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderReturnReasonService.updateStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：10:退货原因管理 (/returnReason/**)",
+    "line": 79
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderSettingController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderSettingController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/orderSetting/{id}",
+    "summary": "获取指定订单设置",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<OmsOrderSetting>",
+    "calls": [
+      "OmsOrderSettingService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：11:订单设置管理 (/orderSetting/**)",
+    "line": 26
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OmsOrderSettingController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OmsOrderSettingController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/orderSetting/update/{id}",
+    "summary": "修改指定订单设置",
+    "params": "@PathVariable Long id, @RequestBody OmsOrderSetting orderSetting",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsOrderSettingService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：11:订单设置管理 (/orderSetting/**)",
+    "line": 34
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OssController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OssController.java",
+    "method": "policy",
+    "http": "GET",
+    "url": "/aliyun/oss/policy",
+    "summary": "Oss上传签名生成",
+    "params": "",
+    "returns": "CommonResult<OssPolicyResult>",
+    "calls": [
+      "OssService.policy"
+    ],
+    "permission": "配置白名单放行；方法内可能仍依赖登录主体",
+    "line": 32
+  },
+  {
+    "module": "mall-admin",
+    "controller": "OssController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/OssController.java",
+    "method": "callback",
+    "http": "POST",
+    "url": "/aliyun/osscallback",
+    "summary": "Oss上传成功回调",
+    "params": "HttpServletRequest request",
+    "returns": "CommonResult<OssCallbackResult>",
+    "calls": [
+      "OssService.callback"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：未匹配；按该样例配置会被动态授权拒绝",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/brand/listAll",
+    "summary": "获取全部品牌列表",
+    "params": "",
+    "returns": "CommonResult<List<PmsBrand>>",
+    "calls": [
+      "PmsBrandService.listAllBrand"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 31
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/brand/create",
+    "summary": "添加品牌",
+    "params": "@Validated @RequestBody PmsBrandParam pmsBrand",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsBrandService.createBrand"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 38
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/brand/update/{id}",
+    "summary": "更新品牌",
+    "params": "@PathVariable(\"id\") Long id, @Validated @RequestBody PmsBrandParam pmsBrandParam",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsBrandService.updateBrand"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 52
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "delete",
+    "http": "GET",
+    "url": "/brand/delete/{id}",
+    "summary": "删除品牌",
+    "params": "@PathVariable(\"id\") Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsBrandService.deleteBrand"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 67
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/brand/list",
+    "summary": "根据品牌名称分页获取品牌列表",
+    "params": "@RequestParam(value = \"keyword\", required = false) String keyword, @RequestParam(value = \"showStatus\",required = false) Integer showStatus, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<PmsBrand>>",
+    "calls": [
+      "PmsBrandService.listBrand"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 79
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/brand/{id}",
+    "summary": "根据编号查询品牌信息",
+    "params": "@PathVariable(\"id\") Long id",
+    "returns": "CommonResult<PmsBrand>",
+    "calls": [
+      "PmsBrandService.getBrand"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 90
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "deleteBatch",
+    "http": "POST",
+    "url": "/brand/delete/batch",
+    "summary": "批量删除品牌",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsBrandService.deleteBrand"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 97
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "updateShowStatus",
+    "http": "POST",
+    "url": "/brand/update/showStatus",
+    "summary": "批量更新显示状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"showStatus\") Integer showStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsBrandService.updateShowStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 109
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsBrandController.java",
+    "method": "updateFactoryStatus",
+    "http": "POST",
+    "url": "/brand/update/factoryStatus",
+    "summary": "批量更新厂家制造商状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"factoryStatus\") Integer factoryStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsBrandService.updateFactoryStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：1:商品品牌管理 (/brand/**)",
+    "line": 122
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeCategoryController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/productAttribute/category/create",
+    "summary": "添加商品属性分类",
+    "params": "@RequestParam String name",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductAttributeCategoryService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：2:商品属性分类管理 (/productAttribute/category/**)、3:商品属性管理 (/productAttribute/**)",
+    "line": 30
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeCategoryController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/productAttribute/category/update/{id}",
+    "summary": "修改商品属性分类",
+    "params": "@PathVariable Long id, @RequestParam String name",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductAttributeCategoryService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：2:商品属性分类管理 (/productAttribute/category/**)、3:商品属性管理 (/productAttribute/**)",
+    "line": 42
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeCategoryController.java",
+    "method": "delete",
+    "http": "GET",
+    "url": "/productAttribute/category/delete/{id}",
+    "summary": "删除单个商品属性分类",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductAttributeCategoryService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：2:商品属性分类管理 (/productAttribute/category/**)、3:商品属性管理 (/productAttribute/**)",
+    "line": 54
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeCategoryController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/productAttribute/category/{id}",
+    "summary": "获取单个商品属性分类信息",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<PmsProductAttributeCategory>",
+    "calls": [
+      "PmsProductAttributeCategoryService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：2:商品属性分类管理 (/productAttribute/category/**)、3:商品属性管理 (/productAttribute/**)",
+    "line": 66
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeCategoryController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/productAttribute/category/list",
+    "summary": "分页获取所有商品属性分类",
+    "params": "@RequestParam(defaultValue = \"5\") Integer pageSize, @RequestParam(defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<PmsProductAttributeCategory>>",
+    "calls": [
+      "PmsProductAttributeCategoryService.getList"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：2:商品属性分类管理 (/productAttribute/category/**)、3:商品属性管理 (/productAttribute/**)",
+    "line": 74
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeCategoryController.java",
+    "method": "getListWithAttr",
+    "http": "GET",
+    "url": "/productAttribute/category/list/withAttr",
+    "summary": "获取所有商品属性分类及其下属性",
+    "params": "",
+    "returns": "CommonResult<List<PmsProductAttributeCategoryItem>>",
+    "calls": [
+      "PmsProductAttributeCategoryService.getListWithAttr"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：2:商品属性分类管理 (/productAttribute/category/**)、3:商品属性管理 (/productAttribute/**)",
+    "line": 82
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/productAttribute/list/{cid}",
+    "summary": "根据分类查询属性列表或参数列表",
+    "params": "@PathVariable Long cid, @RequestParam(value = \"type\") Integer type, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<PmsProductAttribute>>",
+    "calls": [
+      "PmsProductAttributeService.getList"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：3:商品属性管理 (/productAttribute/**)",
+    "line": 36
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/productAttribute/create",
+    "summary": "添加商品属性信息",
+    "params": "@RequestBody PmsProductAttributeParam productAttributeParam",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductAttributeService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：3:商品属性管理 (/productAttribute/**)",
+    "line": 47
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/productAttribute/update/{id}",
+    "summary": "修改商品属性信息",
+    "params": "@PathVariable Long id, @RequestBody PmsProductAttributeParam productAttributeParam",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductAttributeService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：3:商品属性管理 (/productAttribute/**)",
+    "line": 59
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/productAttribute/{id}",
+    "summary": "查询单个商品属性",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<PmsProductAttribute>",
+    "calls": [
+      "PmsProductAttributeService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：3:商品属性管理 (/productAttribute/**)",
+    "line": 71
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/productAttribute/delete",
+    "summary": "批量删除商品属性",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductAttributeService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：3:商品属性管理 (/productAttribute/**)",
+    "line": 79
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductAttributeController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductAttributeController.java",
+    "method": "getAttrInfo",
+    "http": "GET",
+    "url": "/productAttribute/attrInfo/{productCategoryId}",
+    "summary": "根据商品分类的id获取商品属性及属性分类",
+    "params": "@PathVariable Long productCategoryId",
+    "returns": "CommonResult<List<ProductAttrInfo>>",
+    "calls": [
+      "PmsProductAttributeService.getProductAttrInfo"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：3:商品属性管理 (/productAttribute/**)",
+    "line": 91
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/productCategory/create",
+    "summary": "添加商品分类",
+    "params": "@Validated @RequestBody PmsProductCategoryParam productCategoryParam",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductCategoryService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 32
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/productCategory/update/{id}",
+    "summary": "修改商品分类",
+    "params": "@PathVariable Long id, @Validated @RequestBody PmsProductCategoryParam productCategoryParam",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductCategoryService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 44
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/productCategory/list/{parentId}",
+    "summary": "分页查询商品分类",
+    "params": "@PathVariable Long parentId, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<PmsProductCategory>>",
+    "calls": [
+      "PmsProductCategoryService.getList"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 58
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/productCategory/{id}",
+    "summary": "根据id获取商品分类",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<PmsProductCategory>",
+    "calls": [
+      "PmsProductCategoryService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 68
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/productCategory/delete/{id}",
+    "summary": "删除商品分类",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductCategoryService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 76
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "updateNavStatus",
+    "http": "POST",
+    "url": "/productCategory/update/navStatus",
+    "summary": "修改导航栏显示状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"navStatus\") Integer navStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductCategoryService.updateNavStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 88
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "updateShowStatus",
+    "http": "POST",
+    "url": "/productCategory/update/showStatus",
+    "summary": "修改显示状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"showStatus\") Integer showStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductCategoryService.updateShowStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 100
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductCategoryController.java",
+    "method": "listWithChildren",
+    "http": "GET",
+    "url": "/productCategory/list/withChildren",
+    "summary": "查询所有一级分类及子分类",
+    "params": "",
+    "returns": "CommonResult<List<PmsProductCategoryWithChildrenItem>>",
+    "calls": [
+      "PmsProductCategoryService.listWithChildren"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：4:商品分类管理 (/productCategory/**)",
+    "line": 112
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/product/create",
+    "summary": "创建商品",
+    "params": "@RequestBody PmsProductParam productParam",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 32
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "getUpdateInfo",
+    "http": "GET",
+    "url": "/product/updateInfo/{id}",
+    "summary": "根据商品id获取商品编辑信息",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<PmsProductResult>",
+    "calls": [
+      "PmsProductService.getUpdateInfo"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 44
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/product/update/{id}",
+    "summary": "更新商品",
+    "params": "@PathVariable Long id, @RequestBody PmsProductParam productParam",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 52
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/product/list",
+    "summary": "查询商品",
+    "params": "PmsProductQueryParam productQueryParam, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<PmsProduct>>",
+    "calls": [
+      "PmsProductService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 64
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/product/simpleList",
+    "summary": "根据商品名称或货号模糊查询",
+    "params": "String keyword",
+    "returns": "CommonResult<List<PmsProduct>>",
+    "calls": [
+      "PmsProductService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 74
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "updateVerifyStatus",
+    "http": "POST",
+    "url": "/product/update/verifyStatus",
+    "summary": "批量修改审核状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"verifyStatus\") Integer verifyStatus, @RequestParam(\"detail\") String detail",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductService.updateVerifyStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 82
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "updatePublishStatus",
+    "http": "POST",
+    "url": "/product/update/publishStatus",
+    "summary": "批量上下架商品",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"publishStatus\") Integer publishStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductService.updatePublishStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 96
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "updateRecommendStatus",
+    "http": "POST",
+    "url": "/product/update/recommendStatus",
+    "summary": "批量推荐商品",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"recommendStatus\") Integer recommendStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductService.updateRecommendStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 109
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "updateNewStatus",
+    "http": "POST",
+    "url": "/product/update/newStatus",
+    "summary": "批量设为新品",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"newStatus\") Integer newStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductService.updateNewStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 122
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsProductController.java",
+    "method": "updateDeleteStatus",
+    "http": "POST",
+    "url": "/product/update/deleteStatus",
+    "summary": "批量修改删除状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam(\"deleteStatus\") Integer deleteStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsProductService.updateDeleteStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：5:商品管理 (/product/**)",
+    "line": 135
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsSkuStockController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsSkuStockController.java",
+    "method": "getList",
+    "http": "GET",
+    "url": "/sku/{pid}",
+    "summary": "根据商品ID及sku编码模糊搜索sku库存",
+    "params": "@PathVariable Long pid, @RequestParam(value = \"keyword\",required = false) String keyword",
+    "returns": "CommonResult<List<PmsSkuStock>>",
+    "calls": [
+      "PmsSkuStockService.getList"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：6:商品库存管理 (/sku/**)",
+    "line": 28
+  },
+  {
+    "module": "mall-admin",
+    "controller": "PmsSkuStockController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/PmsSkuStockController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/sku/update/{pid}",
+    "summary": "批量更新sku库存信息",
+    "params": "@PathVariable Long pid,@RequestBody List<PmsSkuStock> skuStockList",
+    "returns": "CommonResult",
+    "calls": [
+      "PmsSkuStockService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：6:商品库存管理 (/sku/**)",
+    "line": 35
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsCouponController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponController.java",
+    "method": "add",
+    "http": "POST",
+    "url": "/coupon/create",
+    "summary": "添加优惠券",
+    "params": "@RequestBody SmsCouponParam couponParam",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsCouponService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：13:优惠券管理 (/coupon/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsCouponController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/coupon/delete/{id}",
+    "summary": "删除优惠券",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsCouponService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：13:优惠券管理 (/coupon/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsCouponController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/coupon/update/{id}",
+    "summary": "修改优惠券",
+    "params": "@PathVariable Long id,@RequestBody SmsCouponParam couponParam",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsCouponService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：13:优惠券管理 (/coupon/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsCouponController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/coupon/list",
+    "summary": "根据优惠券名称和类型分页获取优惠券列表",
+    "params": "@RequestParam(value = \"name\",required = false) String name, @RequestParam(value = \"type\",required = false) Integer type, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsCoupon>>",
+    "calls": [
+      "SmsCouponService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：13:优惠券管理 (/coupon/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsCouponController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/coupon/{id}",
+    "summary": "获取单个优惠券的详细信息",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<SmsCouponParam>",
+    "calls": [
+      "SmsCouponService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：13:优惠券管理 (/coupon/**)",
+    "line": 74
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsCouponHistoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsCouponHistoryController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/couponHistory/list",
+    "summary": "根据优惠券id，使用状态，订单编号分页获取领取记录",
+    "params": "@RequestParam(value = \"couponId\", required = false) Long couponId, @RequestParam(value = \"useStatus\", required = false) Integer useStatus, @RequestParam(value = \"orderSn\", required = false) String orderSn, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsCouponHistory>>",
+    "calls": [
+      "SmsCouponHistoryService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：14:优惠券领取记录管理 (/couponHistory/**)",
+    "line": 32
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/flash/create",
+    "summary": "添加活动",
+    "params": "@RequestBody SmsFlashPromotion flashPromotion",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：15:限时购活动管理 (/flash/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/flash/update/{id}",
+    "summary": "编辑活动",
+    "params": "@PathVariable Long id, @RequestBody SmsFlashPromotion flashPromotion",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：15:限时购活动管理 (/flash/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/flash/delete/{id}",
+    "summary": "删除活动",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：15:限时购活动管理 (/flash/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/flash/update/status/{id}",
+    "summary": "修改上下线状态",
+    "params": "@PathVariable Long id, Integer status",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionService.updateStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：15:限时购活动管理 (/flash/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/flash/{id}",
+    "summary": "获取活动详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<SmsFlashPromotion>",
+    "calls": [
+      "SmsFlashPromotionService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：15:限时购活动管理 (/flash/**)",
+    "line": 73
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/flash/list",
+    "summary": "根据活动名称分页查询",
+    "params": "@RequestParam(value = \"keyword\", required = false) String keyword, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsFlashPromotion>>",
+    "calls": [
+      "SmsFlashPromotionService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：15:限时购活动管理 (/flash/**)",
+    "line": 81
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionProductRelationController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionProductRelationController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/flashProductRelation/create",
+    "summary": "批量选择商品添加关联",
+    "params": "@RequestBody List<SmsFlashPromotionProductRelation> relationList",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionProductRelationService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：16:限时购商品关系管理 (/flashProductRelation/**)",
+    "line": 30
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionProductRelationController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionProductRelationController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/flashProductRelation/update/{id}",
+    "summary": "修改关联信息",
+    "params": "@PathVariable Long id, @RequestBody SmsFlashPromotionProductRelation relation",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionProductRelationService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：16:限时购商品关系管理 (/flashProductRelation/**)",
+    "line": 41
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionProductRelationController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionProductRelationController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/flashProductRelation/delete/{id}",
+    "summary": "删除关联",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionProductRelationService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：16:限时购商品关系管理 (/flashProductRelation/**)",
+    "line": 52
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionProductRelationController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionProductRelationController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/flashProductRelation/{id}",
+    "summary": "获取关联商品促销信息",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<SmsFlashPromotionProductRelation>",
+    "calls": [
+      "SmsFlashPromotionProductRelationService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：16:限时购商品关系管理 (/flashProductRelation/**)",
+    "line": 63
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionProductRelationController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionProductRelationController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/flashProductRelation/list",
+    "summary": "分页查询不同场次关联及商品信息",
+    "params": "@RequestParam(value = \"flashPromotionId\") Long flashPromotionId, @RequestParam(value = \"flashPromotionSessionId\") Long flashPromotionSessionId, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsFlashPromotionProduct>>",
+    "calls": [
+      "SmsFlashPromotionProductRelationService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：16:限时购商品关系管理 (/flashProductRelation/**)",
+    "line": 71
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/flashSession/create",
+    "summary": "添加场次",
+    "params": "@RequestBody SmsFlashPromotionSession promotionSession",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionSessionService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：17:限时购场次管理 (/flashSession/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/flashSession/update/{id}",
+    "summary": "修改场次",
+    "params": "@PathVariable Long id, @RequestBody SmsFlashPromotionSession promotionSession",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionSessionService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：17:限时购场次管理 (/flashSession/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "method": "updateStatus",
+    "http": "POST",
+    "url": "/flashSession/update/status/{id}",
+    "summary": "修改启用状态",
+    "params": "@PathVariable Long id, Integer status",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionSessionService.updateStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：17:限时购场次管理 (/flashSession/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/flashSession/delete/{id}",
+    "summary": "删除场次",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsFlashPromotionSessionService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：17:限时购场次管理 (/flashSession/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/flashSession/{id}",
+    "summary": "获取场次详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<SmsFlashPromotionSession>",
+    "calls": [
+      "SmsFlashPromotionSessionService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：17:限时购场次管理 (/flashSession/**)",
+    "line": 73
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/flashSession/list",
+    "summary": "获取全部场次",
+    "params": "",
+    "returns": "CommonResult<List<SmsFlashPromotionSession>>",
+    "calls": [
+      "SmsFlashPromotionSessionService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：17:限时购场次管理 (/flashSession/**)",
+    "line": 81
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsFlashPromotionSessionController.java",
+    "method": "selectList",
+    "http": "GET",
+    "url": "/flashSession/selectList",
+    "summary": "获取全部可选场次及其数量",
+    "params": "Long flashPromotionId",
+    "returns": "CommonResult<List<SmsFlashPromotionSessionDetail>>",
+    "calls": [
+      "SmsFlashPromotionSessionService.selectList"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：17:限时购场次管理 (/flashSession/**)",
+    "line": 89
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeAdvertiseController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeAdvertiseController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/home/advertise/create",
+    "summary": "添加广告",
+    "params": "@RequestBody SmsHomeAdvertise advertise",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeAdvertiseService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：18:首页轮播广告管理 (/home/advertise/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeAdvertiseController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeAdvertiseController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/home/advertise/delete",
+    "summary": "删除广告",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeAdvertiseService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：18:首页轮播广告管理 (/home/advertise/**)",
+    "line": 39
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeAdvertiseController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeAdvertiseController.java",
+    "method": "updateStatus",
+    "http": "POST",
+    "url": "/home/advertise/update/status/{id}",
+    "summary": "修改上下线状态",
+    "params": "@PathVariable Long id, Integer status",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeAdvertiseService.updateStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：18:首页轮播广告管理 (/home/advertise/**)",
+    "line": 49
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeAdvertiseController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeAdvertiseController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/home/advertise/{id}",
+    "summary": "获取广告详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<SmsHomeAdvertise>",
+    "calls": [
+      "SmsHomeAdvertiseService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：18:首页轮播广告管理 (/home/advertise/**)",
+    "line": 59
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeAdvertiseController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeAdvertiseController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/home/advertise/update/{id}",
+    "summary": "修改广告",
+    "params": "@PathVariable Long id, @RequestBody SmsHomeAdvertise advertise",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeAdvertiseService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：18:首页轮播广告管理 (/home/advertise/**)",
+    "line": 67
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeAdvertiseController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeAdvertiseController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/home/advertise/list",
+    "summary": "分页查询广告",
+    "params": "@RequestParam(value = \"name\", required = false) String name, @RequestParam(value = \"type\", required = false) Integer type, @RequestParam(value = \"endTime\", required = false) String endTime, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsHomeAdvertise>>",
+    "calls": [
+      "SmsHomeAdvertiseService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：18:首页轮播广告管理 (/home/advertise/**)",
+    "line": 77
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeBrandController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/home/brand/create",
+    "summary": "添加首页推荐品牌",
+    "params": "@RequestBody List<SmsHomeBrand> homeBrandList",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeBrandService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：19:首页品牌管理 (/home/brand/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeBrandController.java",
+    "method": "updateSort",
+    "http": "POST",
+    "url": "/home/brand/update/sort/{id}",
+    "summary": "修改推荐品牌排序",
+    "params": "@PathVariable Long id, Integer sort",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeBrandService.updateSort"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：19:首页品牌管理 (/home/brand/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeBrandController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/home/brand/delete",
+    "summary": "批量删除推荐品牌",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeBrandService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：19:首页品牌管理 (/home/brand/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeBrandController.java",
+    "method": "updateRecommendStatus",
+    "http": "POST",
+    "url": "/home/brand/update/recommendStatus",
+    "summary": "批量修改推荐品牌状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam Integer recommendStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeBrandService.updateRecommendStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：19:首页品牌管理 (/home/brand/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeBrandController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeBrandController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/home/brand/list",
+    "summary": "分页查询推荐品牌",
+    "params": "@RequestParam(value = \"brandName\", required = false) String brandName, @RequestParam(value = \"recommendStatus\", required = false) Integer recommendStatus, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsHomeBrand>>",
+    "calls": [
+      "SmsHomeBrandService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：19:首页品牌管理 (/home/brand/**)",
+    "line": 73
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeNewProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeNewProductController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/home/newProduct/create",
+    "summary": "添加首页新品",
+    "params": "@RequestBody List<SmsHomeNewProduct> homeNewProductList",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeNewProductService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：20:首页新品管理 (/home/newProduct/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeNewProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeNewProductController.java",
+    "method": "updateSort",
+    "http": "POST",
+    "url": "/home/newProduct/update/sort/{id}",
+    "summary": "修改首页新品排序",
+    "params": "@PathVariable Long id, Integer sort",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeNewProductService.updateSort"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：20:首页新品管理 (/home/newProduct/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeNewProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeNewProductController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/home/newProduct/delete",
+    "summary": "批量删除首页新品",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeNewProductService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：20:首页新品管理 (/home/newProduct/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeNewProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeNewProductController.java",
+    "method": "updateRecommendStatus",
+    "http": "POST",
+    "url": "/home/newProduct/update/recommendStatus",
+    "summary": "批量修改首页新品状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam Integer recommendStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeNewProductService.updateRecommendStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：20:首页新品管理 (/home/newProduct/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeNewProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeNewProductController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/home/newProduct/list",
+    "summary": "分页查询首页新品",
+    "params": "@RequestParam(value = \"productName\", required = false) String productName, @RequestParam(value = \"recommendStatus\", required = false) Integer recommendStatus, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsHomeNewProduct>>",
+    "calls": [
+      "SmsHomeNewProductService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：20:首页新品管理 (/home/newProduct/**)",
+    "line": 73
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendProductController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/home/recommendProduct/create",
+    "summary": "添加首页推荐",
+    "params": "@RequestBody List<SmsHomeRecommendProduct> homeRecommendProductList",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendProductService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：21:首页人气推荐管理 (/home/recommendProduct/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendProductController.java",
+    "method": "updateSort",
+    "http": "POST",
+    "url": "/home/recommendProduct/update/sort/{id}",
+    "summary": "修改推荐排序",
+    "params": "@PathVariable Long id, Integer sort",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendProductService.updateSort"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：21:首页人气推荐管理 (/home/recommendProduct/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendProductController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/home/recommendProduct/delete",
+    "summary": "批量删除推荐",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendProductService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：21:首页人气推荐管理 (/home/recommendProduct/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendProductController.java",
+    "method": "updateRecommendStatus",
+    "http": "POST",
+    "url": "/home/recommendProduct/update/recommendStatus",
+    "summary": "批量修改推荐状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam Integer recommendStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendProductService.updateRecommendStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：21:首页人气推荐管理 (/home/recommendProduct/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendProductController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendProductController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/home/recommendProduct/list",
+    "summary": "分页查询推荐",
+    "params": "@RequestParam(value = \"productName\", required = false) String productName, @RequestParam(value = \"recommendStatus\", required = false) Integer recommendStatus, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsHomeRecommendProduct>>",
+    "calls": [
+      "SmsHomeRecommendProductService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：21:首页人气推荐管理 (/home/recommendProduct/**)",
+    "line": 73
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendSubjectController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/home/recommendSubject/create",
+    "summary": "添加首页推荐专题",
+    "params": "@RequestBody List<SmsHomeRecommendSubject> homeRecommendSubjectList",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendSubjectService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：22:首页专题推荐管理 (/home/recommendSubject/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendSubjectController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java",
+    "method": "updateSort",
+    "http": "POST",
+    "url": "/home/recommendSubject/update/sort/{id}",
+    "summary": "修改推荐排序",
+    "params": "@PathVariable Long id, Integer sort",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendSubjectService.updateSort"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：22:首页专题推荐管理 (/home/recommendSubject/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendSubjectController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/home/recommendSubject/delete",
+    "summary": "批量删除推荐",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendSubjectService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：22:首页专题推荐管理 (/home/recommendSubject/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendSubjectController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java",
+    "method": "updateRecommendStatus",
+    "http": "POST",
+    "url": "/home/recommendSubject/update/recommendStatus",
+    "summary": "批量修改推荐状态",
+    "params": "@RequestParam(\"ids\") List<Long> ids, @RequestParam Integer recommendStatus",
+    "returns": "CommonResult",
+    "calls": [
+      "SmsHomeRecommendSubjectService.updateRecommendStatus"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：22:首页专题推荐管理 (/home/recommendSubject/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "SmsHomeRecommendSubjectController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/SmsHomeRecommendSubjectController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/home/recommendSubject/list",
+    "summary": "分页查询推荐",
+    "params": "@RequestParam(value = \"subjectName\", required = false) String subjectName, @RequestParam(value = \"recommendStatus\", required = false) Integer recommendStatus, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<SmsHomeRecommendSubject>>",
+    "calls": [
+      "SmsHomeRecommendSubjectService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：22:首页专题推荐管理 (/home/recommendSubject/**)",
+    "line": 73
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "register",
+    "http": "POST",
+    "url": "/admin/register",
+    "summary": "用户注册",
+    "params": "@Validated @RequestBody UmsAdminParam umsAdminParam",
+    "returns": "CommonResult<UmsAdmin>",
+    "calls": [
+      "UmsAdminService.register"
+    ],
+    "permission": "配置白名单放行；方法内可能仍依赖登录主体",
+    "line": 49
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "login",
+    "http": "POST",
+    "url": "/admin/login",
+    "summary": "登录以后返回token",
+    "params": "@Validated @RequestBody UmsAdminLoginParam umsAdminLoginParam",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.login"
+    ],
+    "permission": "配置白名单放行；方法内可能仍依赖登录主体",
+    "line": 60
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "refreshToken",
+    "http": "GET",
+    "url": "/admin/refreshToken",
+    "summary": "刷新token",
+    "params": "HttpServletRequest request",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.refreshToken"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 74
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "getAdminInfo",
+    "http": "GET",
+    "url": "/admin/info",
+    "summary": "获取当前登录用户信息",
+    "params": "Principal principal",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.getAdminByUsername",
+      "UmsAdminService.getRoleList",
+      "UmsRoleService.getMenuList"
+    ],
+    "permission": "配置白名单放行；方法内可能仍依赖登录主体",
+    "line": 89
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "logout",
+    "http": "POST",
+    "url": "/admin/logout",
+    "summary": "登出功能",
+    "params": "Principal principal",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.logout"
+    ],
+    "permission": "配置白名单放行；方法内可能仍依赖登录主体",
+    "line": 110
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/admin/list",
+    "summary": "根据用户名或姓名分页获取用户列表",
+    "params": "@RequestParam(value = \"keyword\", required = false) String keyword, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<UmsAdmin>>",
+    "calls": [
+      "UmsAdminService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 118
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/admin/{id}",
+    "summary": "获取指定用户信息",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<UmsAdmin>",
+    "calls": [
+      "UmsAdminService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 128
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/admin/update/{id}",
+    "summary": "修改指定用户信息",
+    "params": "@PathVariable Long id, @RequestBody UmsAdmin admin",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 136
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "updatePassword",
+    "http": "POST",
+    "url": "/admin/updatePassword",
+    "summary": "修改指定用户密码",
+    "params": "@Validated @RequestBody UpdateAdminPasswordParam updatePasswordParam",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.updatePassword"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 147
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/admin/delete/{id}",
+    "summary": "删除指定用户信息",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 165
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "updateStatus",
+    "http": "POST",
+    "url": "/admin/updateStatus/{id}",
+    "summary": "修改帐号状态",
+    "params": "@PathVariable Long id,@RequestParam(value = \"status\") Integer status",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 176
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "updateRole",
+    "http": "POST",
+    "url": "/admin/role/update",
+    "summary": "给用户分配角色",
+    "params": "@RequestParam(\"adminId\") Long adminId, @RequestParam(\"roleIds\") List<Long> roleIds",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsAdminService.updateRole"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 189
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsAdminController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsAdminController.java",
+    "method": "getRoleList",
+    "http": "GET",
+    "url": "/admin/role/{adminId}",
+    "summary": "获取指定用户的角色",
+    "params": "@PathVariable Long adminId",
+    "returns": "CommonResult<List<UmsRole>>",
+    "calls": [
+      "UmsAdminService.getRoleList"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：25:后台用户管理 (/admin/**)",
+    "line": 201
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMemberLevelController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMemberLevelController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/memberLevel/list",
+    "summary": "查询所有会员等级",
+    "params": "@RequestParam(\"defaultStatus\") Integer defaultStatus",
+    "returns": "CommonResult<List<UmsMemberLevel>>",
+    "calls": [
+      "UmsMemberLevelService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：30:会员等级管理 (/memberLevel/**)",
+    "line": 31
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMenuController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/menu/create",
+    "summary": "添加后台菜单",
+    "params": "@RequestBody UmsMenu umsMenu",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMenuService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：27:后台菜单管理 (/menu/**)",
+    "line": 31
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMenuController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/menu/update/{id}",
+    "summary": "修改后台菜单",
+    "params": "@PathVariable Long id, @RequestBody UmsMenu umsMenu",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMenuService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：27:后台菜单管理 (/menu/**)",
+    "line": 43
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMenuController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/menu/{id}",
+    "summary": "根据ID获取菜单详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<UmsMenu>",
+    "calls": [
+      "UmsMenuService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：27:后台菜单管理 (/menu/**)",
+    "line": 56
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMenuController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/menu/delete/{id}",
+    "summary": "根据ID删除后台菜单",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMenuService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：27:后台菜单管理 (/menu/**)",
+    "line": 64
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMenuController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/menu/list/{parentId}",
+    "summary": "分页查询后台菜单",
+    "params": "@PathVariable Long parentId, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<UmsMenu>>",
+    "calls": [
+      "UmsMenuService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：27:后台菜单管理 (/menu/**)",
+    "line": 76
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMenuController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "method": "treeList",
+    "http": "GET",
+    "url": "/menu/treeList",
+    "summary": "树形结构返回所有菜单列表",
+    "params": "",
+    "returns": "CommonResult<List<UmsMenuNode>>",
+    "calls": [
+      "UmsMenuService.treeList"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：27:后台菜单管理 (/menu/**)",
+    "line": 86
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsMenuController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsMenuController.java",
+    "method": "updateHidden",
+    "http": "POST",
+    "url": "/menu/updateHidden/{id}",
+    "summary": "修改菜单显示状态",
+    "params": "@PathVariable Long id, @RequestParam(\"hidden\") Integer hidden",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMenuService.updateHidden"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：27:后台菜单管理 (/menu/**)",
+    "line": 94
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceCategoryController.java",
+    "method": "listAll",
+    "http": "GET",
+    "url": "/resourceCategory/listAll",
+    "summary": "查询所有后台资源分类",
+    "params": "",
+    "returns": "CommonResult<List<UmsResourceCategory>>",
+    "calls": [
+      "UmsResourceCategoryService.listAll"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：28:后台资源分类管理 (/resourceCategory/**)",
+    "line": 28
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceCategoryController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/resourceCategory/create",
+    "summary": "添加后台资源分类",
+    "params": "@RequestBody UmsResourceCategory umsResourceCategory",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsResourceCategoryService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：28:后台资源分类管理 (/resourceCategory/**)",
+    "line": 36
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceCategoryController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/resourceCategory/update/{id}",
+    "summary": "修改后台资源分类",
+    "params": "@PathVariable Long id, @RequestBody UmsResourceCategory umsResourceCategory",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsResourceCategoryService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：28:后台资源分类管理 (/resourceCategory/**)",
+    "line": 48
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceCategoryController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceCategoryController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/resourceCategory/delete/{id}",
+    "summary": "根据ID删除后台资源分类",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsResourceCategoryService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：28:后台资源分类管理 (/resourceCategory/**)",
+    "line": 61
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/resource/create",
+    "summary": "添加后台资源",
+    "params": "@RequestBody UmsResource umsResource",
+    "returns": "CommonResult",
+    "calls": [
+      "DynamicSecurityMetadataSource.clearDataSource",
+      "UmsResourceService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：29:后台资源管理 (/resource/**)",
+    "line": 33
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/resource/update/{id}",
+    "summary": "修改后台资源",
+    "params": "@PathVariable Long id, @RequestBody UmsResource umsResource",
+    "returns": "CommonResult",
+    "calls": [
+      "DynamicSecurityMetadataSource.clearDataSource",
+      "UmsResourceService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：29:后台资源管理 (/resource/**)",
+    "line": 46
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/resource/{id}",
+    "summary": "根据ID获取资源详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<UmsResource>",
+    "calls": [
+      "UmsResourceService.getItem"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：29:后台资源管理 (/resource/**)",
+    "line": 60
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/resource/delete/{id}",
+    "summary": "根据ID删除后台资源",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "DynamicSecurityMetadataSource.clearDataSource",
+      "UmsResourceService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：29:后台资源管理 (/resource/**)",
+    "line": 68
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/resource/list",
+    "summary": "分页模糊查询后台资源",
+    "params": "@RequestParam(required = false) Long categoryId, @RequestParam(required = false) String nameKeyword, @RequestParam(required = false) String urlKeyword, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<UmsResource>>",
+    "calls": [
+      "UmsResourceService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：29:后台资源管理 (/resource/**)",
+    "line": 81
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsResourceController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsResourceController.java",
+    "method": "listAll",
+    "http": "GET",
+    "url": "/resource/listAll",
+    "summary": "查询所有后台资源",
+    "params": "",
+    "returns": "CommonResult<List<UmsResource>>",
+    "calls": [
+      "UmsResourceService.listAll"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：29:后台资源管理 (/resource/**)",
+    "line": 93
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/role/create",
+    "summary": "添加角色",
+    "params": "@RequestBody UmsRole role",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsRoleService.create"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 29
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/role/update/{id}",
+    "summary": "修改角色",
+    "params": "@PathVariable Long id, @RequestBody UmsRole role",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsRoleService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 40
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/role/delete",
+    "summary": "批量删除角色",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsRoleService.delete"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 51
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "listAll",
+    "http": "GET",
+    "url": "/role/listAll",
+    "summary": "获取所有角色",
+    "params": "",
+    "returns": "CommonResult<List<UmsRole>>",
+    "calls": [
+      "UmsRoleService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 62
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/role/list",
+    "summary": "根据角色名称分页获取角色列表",
+    "params": "@RequestParam(value = \"keyword\", required = false) String keyword, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<CommonPage<UmsRole>>",
+    "calls": [
+      "UmsRoleService.list"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 70
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "updateStatus",
+    "http": "POST",
+    "url": "/role/updateStatus/{id}",
+    "summary": "修改角色状态",
+    "params": "@PathVariable Long id, @RequestParam(value = \"status\") Integer status",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsRoleService.update"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 80
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "listMenu",
+    "http": "GET",
+    "url": "/role/listMenu/{roleId}",
+    "summary": "获取角色相关菜单",
+    "params": "@PathVariable Long roleId",
+    "returns": "CommonResult<List<UmsMenu>>",
+    "calls": [
+      "UmsRoleService.listMenu"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 93
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "listResource",
+    "http": "GET",
+    "url": "/role/listResource/{roleId}",
+    "summary": "获取角色相关资源",
+    "params": "@PathVariable Long roleId",
+    "returns": "CommonResult<List<UmsResource>>",
+    "calls": [
+      "UmsRoleService.listResource"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 101
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "allocMenu",
+    "http": "POST",
+    "url": "/role/allocMenu",
+    "summary": "给角色分配菜单",
+    "params": "@RequestParam Long roleId, @RequestParam List<Long> menuIds",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsRoleService.allocMenu"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 109
+  },
+  {
+    "module": "mall-admin",
+    "controller": "UmsRoleController",
+    "file": "mall/mall-admin/src/main/java/com/macro/mall/controller/UmsRoleController.java",
+    "method": "allocResource",
+    "http": "POST",
+    "url": "/role/allocResource",
+    "summary": "给角色分配资源",
+    "params": "@RequestParam Long roleId, @RequestParam List<Long> resourceIds",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsRoleService.allocResource"
+    ],
+    "permission": "后台动态资源权限（按URL匹配；运行时角色分配未确认）；SQL样例可匹配资源：26:后台用户角色管理 (/role/**)",
+    "line": 117
+  },
+  {
+    "module": "mall-demo",
+    "controller": "DemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java",
+    "method": "getBrandList",
+    "http": "GET",
+    "url": "/brand/listAll",
+    "summary": "获取全部品牌列表",
+    "params": "",
+    "returns": "CommonResult<List<PmsBrand>>",
+    "calls": [
+      "DemoService.listAllBrand"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 34
+  },
+  {
+    "module": "mall-demo",
+    "controller": "DemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java",
+    "method": "createBrand",
+    "http": "POST",
+    "url": "/brand/create",
+    "summary": "添加品牌",
+    "params": "@Validated @RequestBody PmsBrandDto pmsBrand",
+    "returns": "CommonResult",
+    "calls": [
+      "DemoService.createBrand"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 41
+  },
+  {
+    "module": "mall-demo",
+    "controller": "DemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java",
+    "method": "updateBrand",
+    "http": "POST",
+    "url": "/brand/update/{id}",
+    "summary": "更新品牌",
+    "params": "@PathVariable(\"id\") Long id, @Validated @RequestBody PmsBrandDto pmsBrandDto",
+    "returns": "CommonResult",
+    "calls": [
+      "DemoService.updateBrand"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 57
+  },
+  {
+    "module": "mall-demo",
+    "controller": "DemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java",
+    "method": "deleteBrand",
+    "http": "GET",
+    "url": "/brand/delete/{id}",
+    "summary": "删除品牌",
+    "params": "@PathVariable(\"id\") Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "DemoService.deleteBrand"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 73
+  },
+  {
+    "module": "mall-demo",
+    "controller": "DemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java",
+    "method": "listBrand",
+    "http": "GET",
+    "url": "/brand/list",
+    "summary": "分页获取品牌列表",
+    "params": "@RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"3\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<PmsBrand>>",
+    "calls": [
+      "DemoService.listBrand"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 87
+  },
+  {
+    "module": "mall-demo",
+    "controller": "DemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/DemoController.java",
+    "method": "brand",
+    "http": "GET",
+    "url": "/brand/{id}",
+    "summary": "根据编号查询品牌信息",
+    "params": "@PathVariable(\"id\") Long id",
+    "returns": "CommonResult<PmsBrand>",
+    "calls": [
+      "DemoService.getBrand"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 96
+  },
+  {
+    "module": "mall-demo",
+    "controller": "RestTemplateDemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "method": "getForEntity",
+    "http": "GET",
+    "url": "/template/get/{id}",
+    "summary": "getForEntity url",
+    "params": "@PathVariable Long id",
+    "returns": "Object",
+    "calls": [
+      "RestTemplate.getForEntity"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 40
+  },
+  {
+    "module": "mall-demo",
+    "controller": "RestTemplateDemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "method": "getForEntity2",
+    "http": "GET",
+    "url": "/template/get2/{id}",
+    "summary": "getForEntity params",
+    "params": "@PathVariable Long id",
+    "returns": "Object",
+    "calls": [
+      "RestTemplate.getForEntity"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 49
+  },
+  {
+    "module": "mall-demo",
+    "controller": "RestTemplateDemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "method": "getForEntity3",
+    "http": "GET",
+    "url": "/template/get3/{id}",
+    "summary": "getForEntity Uri",
+    "params": "@PathVariable Long id",
+    "returns": "Object",
+    "calls": [
+      "RestTemplate.getForEntity"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 60
+  },
+  {
+    "module": "mall-demo",
+    "controller": "RestTemplateDemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "method": "getForObject",
+    "http": "GET",
+    "url": "/template/get4/{id}",
+    "summary": "getForObject url",
+    "params": "@PathVariable Long id",
+    "returns": "Object",
+    "calls": [
+      "RestTemplate.getForObject"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 70
+  },
+  {
+    "module": "mall-demo",
+    "controller": "RestTemplateDemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "method": "postForEntity",
+    "http": "POST",
+    "url": "/template/post",
+    "summary": "postForEntity jsonBody",
+    "params": "@RequestBody PmsBrand brand",
+    "returns": "Object",
+    "calls": [
+      "RestTemplate.postForEntity"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 79
+  },
+  {
+    "module": "mall-demo",
+    "controller": "RestTemplateDemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "method": "postForObject",
+    "http": "POST",
+    "url": "/template/post2",
+    "summary": "postForEntity jsonBody",
+    "params": "@RequestBody PmsBrand brand",
+    "returns": "Object",
+    "calls": [
+      "RestTemplate.postForObject"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 88
+  },
+  {
+    "module": "mall-demo",
+    "controller": "RestTemplateDemoController",
+    "file": "mall/mall-demo/src/main/java/com/macro/mall/demo/controller/RestTemplateDemoController.java",
+    "method": "postForEntity3",
+    "http": "POST",
+    "url": "/template/post3",
+    "summary": "postForEntity form",
+    "params": "@RequestParam String name",
+    "returns": "Object",
+    "calls": [
+      "RestTemplate.postForEntity"
+    ],
+    "permission": "教学应用自定义SecurityConfig对/**配置permitAll；其他过滤行为见该配置",
+    "line": 97
+  },
+  {
+    "module": "mall-portal",
+    "controller": "AlipayController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/AlipayController.java",
+    "method": "pay",
+    "http": "GET",
+    "url": "/alipay/pay",
+    "summary": "支付宝电脑网站支付",
+    "params": "AliPayParam aliPayParam, HttpServletResponse response",
+    "returns": "void",
+    "calls": [
+      "AlipayConfig.getCharset",
+      "AlipayService.pay"
+    ],
+    "permission": "配置白名单放行",
+    "line": 39
+  },
+  {
+    "module": "mall-portal",
+    "controller": "AlipayController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/AlipayController.java",
+    "method": "webPay",
+    "http": "GET",
+    "url": "/alipay/webPay",
+    "summary": "支付宝手机网站支付",
+    "params": "AliPayParam aliPayParam, HttpServletResponse response",
+    "returns": "void",
+    "calls": [
+      "AlipayConfig.getCharset",
+      "AlipayService.webPay"
+    ],
+    "permission": "配置白名单放行",
+    "line": 48
+  },
+  {
+    "module": "mall-portal",
+    "controller": "AlipayController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/AlipayController.java",
+    "method": "notify",
+    "http": "POST",
+    "url": "/alipay/notify",
+    "summary": "支付宝异步回调",
+    "params": "HttpServletRequest request",
+    "returns": "String",
+    "calls": [
+      "AlipayService.notify"
+    ],
+    "permission": "配置白名单放行",
+    "line": 57
+  },
+  {
+    "module": "mall-portal",
+    "controller": "AlipayController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/AlipayController.java",
+    "method": "query",
+    "http": "GET",
+    "url": "/alipay/query",
+    "summary": "支付宝统一收单线下交易查询",
+    "params": "String outTradeNo, String tradeNo",
+    "returns": "CommonResult<String>",
+    "calls": [
+      "AlipayService.query"
+    ],
+    "permission": "配置白名单放行",
+    "line": 69
+  },
+  {
+    "module": "mall-portal",
+    "controller": "HomeController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java",
+    "method": "content",
+    "http": "GET",
+    "url": "/home/content",
+    "summary": "首页内容信息展示",
+    "params": "",
+    "returns": "CommonResult<HomeContentResult>",
+    "calls": [
+      "HomeService.content"
+    ],
+    "permission": "配置白名单放行",
+    "line": 31
+  },
+  {
+    "module": "mall-portal",
+    "controller": "HomeController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java",
+    "method": "recommendProductList",
+    "http": "GET",
+    "url": "/home/recommendProductList",
+    "summary": "分页获取推荐商品",
+    "params": "@RequestParam(value = \"pageSize\", defaultValue = \"4\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<List<PmsProduct>>",
+    "calls": [
+      "HomeService.recommendProductList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 39
+  },
+  {
+    "module": "mall-portal",
+    "controller": "HomeController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java",
+    "method": "getProductCateList",
+    "http": "GET",
+    "url": "/home/productCateList/{parentId}",
+    "summary": "获取首页商品分类",
+    "params": "@PathVariable Long parentId",
+    "returns": "CommonResult<List<PmsProductCategory>>",
+    "calls": [
+      "HomeService.getProductCateList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 48
+  },
+  {
+    "module": "mall-portal",
+    "controller": "HomeController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java",
+    "method": "getSubjectList",
+    "http": "GET",
+    "url": "/home/subjectList",
+    "summary": "根据分类获取专题",
+    "params": "@RequestParam(required = false) Long cateId, @RequestParam(value = \"pageSize\", defaultValue = \"4\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<List<CmsSubject>>",
+    "calls": [
+      "HomeService.getSubjectList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 56
+  },
+  {
+    "module": "mall-portal",
+    "controller": "HomeController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java",
+    "method": "hotProductList",
+    "http": "GET",
+    "url": "/home/hotProductList",
+    "summary": "分页获取人气推荐商品",
+    "params": "@RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"6\") Integer pageSize",
+    "returns": "CommonResult<List<PmsProduct>>",
+    "calls": [
+      "HomeService.hotProductList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 66
+  },
+  {
+    "module": "mall-portal",
+    "controller": "HomeController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/HomeController.java",
+    "method": "newProductList",
+    "http": "GET",
+    "url": "/home/newProductList",
+    "summary": "分页获取新品推荐商品",
+    "params": "@RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"6\") Integer pageSize",
+    "returns": "CommonResult<List<PmsProduct>>",
+    "calls": [
+      "HomeService.newProductList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 75
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberAttentionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java",
+    "method": "add",
+    "http": "POST",
+    "url": "/member/attention/add",
+    "summary": "添加品牌关注",
+    "params": "@RequestBody MemberBrandAttention memberBrandAttention",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberAttentionService.add"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 27
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberAttentionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/member/attention/delete",
+    "summary": "取消品牌关注",
+    "params": "Long brandId",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberAttentionService.delete"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 39
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberAttentionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/member/attention/list",
+    "summary": "分页查询当前用户品牌关注列表",
+    "params": "@RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<MemberBrandAttention>>",
+    "calls": [
+      "MemberAttentionService.list"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 51
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberAttentionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java",
+    "method": "detail",
+    "http": "GET",
+    "url": "/member/attention/detail",
+    "summary": "根据品牌ID获取品牌关注详情",
+    "params": "@RequestParam Long brandId",
+    "returns": "CommonResult<MemberBrandAttention>",
+    "calls": [
+      "MemberAttentionService.detail"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 60
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberAttentionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberAttentionController.java",
+    "method": "clear",
+    "http": "POST",
+    "url": "/member/attention/clear",
+    "summary": "清空当前用户品牌关注列表",
+    "params": "",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberAttentionService.clear"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 68
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberProductCollectionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberProductCollectionController.java",
+    "method": "add",
+    "http": "POST",
+    "url": "/member/productCollection/add",
+    "summary": "添加商品收藏",
+    "params": "@RequestBody MemberProductCollection productCollection",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberCollectionService.add"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 28
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberProductCollectionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberProductCollectionController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/member/productCollection/delete",
+    "summary": "删除商品收藏",
+    "params": "Long productId",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberCollectionService.delete"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 40
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberProductCollectionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberProductCollectionController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/member/productCollection/list",
+    "summary": "显示当前用户商品收藏列表",
+    "params": "@RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<MemberProductCollection>>",
+    "calls": [
+      "MemberCollectionService.list"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 52
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberProductCollectionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberProductCollectionController.java",
+    "method": "detail",
+    "http": "GET",
+    "url": "/member/productCollection/detail",
+    "summary": "显示商品收藏详情",
+    "params": "@RequestParam Long productId",
+    "returns": "CommonResult<MemberProductCollection>",
+    "calls": [
+      "MemberCollectionService.detail"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 61
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberProductCollectionController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberProductCollectionController.java",
+    "method": "clear",
+    "http": "POST",
+    "url": "/member/productCollection/clear",
+    "summary": "清空当前用户商品收藏列表",
+    "params": "",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberCollectionService.clear"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 69
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberReadHistoryController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberReadHistoryController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/member/readHistory/create",
+    "summary": "创建浏览记录",
+    "params": "@RequestBody MemberReadHistory memberReadHistory",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberReadHistoryService.create"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 30
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberReadHistoryController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberReadHistoryController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/member/readHistory/delete",
+    "summary": "删除浏览记录",
+    "params": "@RequestParam(\"ids\") List<String> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberReadHistoryService.delete"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 42
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberReadHistoryController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberReadHistoryController.java",
+    "method": "clear",
+    "http": "POST",
+    "url": "/member/readHistory/clear",
+    "summary": "清空浏览记录",
+    "params": "",
+    "returns": "CommonResult",
+    "calls": [
+      "MemberReadHistoryService.clear"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 54
+  },
+  {
+    "module": "mall-portal",
+    "controller": "MemberReadHistoryController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/MemberReadHistoryController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/member/readHistory/list",
+    "summary": "分页获取浏览记录",
+    "params": "@RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<MemberReadHistory>>",
+    "calls": [
+      "MemberReadHistoryService.list"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 62
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "add",
+    "http": "POST",
+    "url": "/cart/add",
+    "summary": "添加商品到购物车",
+    "params": "@RequestBody OmsCartItem cartItem",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsCartItemService.add"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 33
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/cart/list",
+    "summary": "获取当前会员的购物车列表",
+    "params": "",
+    "returns": "CommonResult<List<OmsCartItem>>",
+    "calls": [
+      "OmsCartItemService.list",
+      "UmsMemberService.getCurrentMember"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 44
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "listPromotion",
+    "http": "GET",
+    "url": "/cart/list/promotion",
+    "summary": "获取当前会员的购物车列表,包括促销信息",
+    "params": "@RequestParam(required = false) List<Long> cartIds",
+    "returns": "CommonResult<List<CartPromotionItem>>",
+    "calls": [
+      "OmsCartItemService.listPromotion",
+      "UmsMemberService.getCurrentMember"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 52
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "updateQuantity",
+    "http": "GET",
+    "url": "/cart/update/quantity",
+    "summary": "修改购物车中指定商品的数量",
+    "params": "@RequestParam Long id, @RequestParam Integer quantity",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsCartItemService.updateQuantity",
+      "UmsMemberService.getCurrentMember"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 60
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "getCartProduct",
+    "http": "GET",
+    "url": "/cart/getProduct/{productId}",
+    "summary": "获取购物车中指定商品的规格,用于重选规格",
+    "params": "@PathVariable Long productId",
+    "returns": "CommonResult<CartProduct>",
+    "calls": [
+      "OmsCartItemService.getCartProduct"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 72
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "updateAttr",
+    "http": "POST",
+    "url": "/cart/update/attr",
+    "summary": "修改购物车中商品的规格",
+    "params": "@RequestBody OmsCartItem cartItem",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsCartItemService.updateAttr"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 80
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/cart/delete",
+    "summary": "删除购物车中的指定商品",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsCartItemService.delete",
+      "UmsMemberService.getCurrentMember"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 91
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsCartItemController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsCartItemController.java",
+    "method": "clear",
+    "http": "POST",
+    "url": "/cart/clear",
+    "summary": "清空当前会员的购物车",
+    "params": "",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsCartItemService.clear",
+      "UmsMemberService.getCurrentMember"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 102
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "generateConfirmOrder",
+    "http": "POST",
+    "url": "/order/generateConfirmOrder",
+    "summary": "根据购物车信息生成确认单",
+    "params": "@RequestBody List<Long> cartIds",
+    "returns": "CommonResult<ConfirmOrderResult>",
+    "calls": [
+      "OmsPortalOrderService.generateConfirmOrder"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 35
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "generateOrder",
+    "http": "POST",
+    "url": "/order/generateOrder",
+    "summary": "根据购物车信息生成订单",
+    "params": "@RequestBody OrderParam orderParam",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderService.generateOrder"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 43
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "paySuccess",
+    "http": "POST",
+    "url": "/order/paySuccess",
+    "summary": "用户支付成功的回调",
+    "params": "@RequestParam Long orderId,@RequestParam Integer payType",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderService.paySuccess"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 51
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "cancelTimeOutOrder",
+    "http": "POST",
+    "url": "/order/cancelTimeOutOrder",
+    "summary": "自动取消超时订单",
+    "params": "",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderService.cancelTimeOutOrder"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 59
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "cancelOrder",
+    "http": "POST",
+    "url": "/order/cancelOrder",
+    "summary": "取消单个超时订单",
+    "params": "Long orderId",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderService.sendDelayMessageCancelOrder"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 67
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/order/list",
+    "summary": "按状态分页获取用户订单列表",
+    "params": "@RequestParam Integer status, @RequestParam(required = false, defaultValue = \"1\") Integer pageNum, @RequestParam(required = false, defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<OmsOrderDetail>>",
+    "calls": [
+      "OmsPortalOrderService.list"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 77
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "detail",
+    "http": "GET",
+    "url": "/order/detail/{orderId}",
+    "summary": "根据ID获取订单详情",
+    "params": "@PathVariable Long orderId",
+    "returns": "CommonResult<OmsOrderDetail>",
+    "calls": [
+      "OmsPortalOrderService.detail"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 87
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "cancelUserOrder",
+    "http": "POST",
+    "url": "/order/cancelUserOrder",
+    "summary": "用户取消订单",
+    "params": "Long orderId",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderService.cancelOrder"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 95
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "confirmReceiveOrder",
+    "http": "POST",
+    "url": "/order/confirmReceiveOrder",
+    "summary": "用户确认收货",
+    "params": "Long orderId",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderService.confirmReceiveOrder"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 103
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderController.java",
+    "method": "deleteOrder",
+    "http": "POST",
+    "url": "/order/deleteOrder",
+    "summary": "用户删除订单",
+    "params": "Long orderId",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderService.deleteOrder"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 111
+  },
+  {
+    "module": "mall-portal",
+    "controller": "OmsPortalOrderReturnApplyController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/OmsPortalOrderReturnApplyController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/returnApply/create",
+    "summary": "申请退货",
+    "params": "@RequestBody OmsOrderReturnApplyParam returnApply",
+    "returns": "CommonResult",
+    "calls": [
+      "OmsPortalOrderReturnApplyService.create"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 29
+  },
+  {
+    "module": "mall-portal",
+    "controller": "PmsPortalBrandController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalBrandController.java",
+    "method": "recommendList",
+    "http": "GET",
+    "url": "/brand/recommendList",
+    "summary": "分页获取推荐品牌",
+    "params": "@RequestParam(value = \"pageSize\", defaultValue = \"6\") Integer pageSize, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum",
+    "returns": "CommonResult<List<PmsBrand>>",
+    "calls": [
+      "PmsPortalBrandService.recommendList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 31
+  },
+  {
+    "module": "mall-portal",
+    "controller": "PmsPortalBrandController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalBrandController.java",
+    "method": "detail",
+    "http": "GET",
+    "url": "/brand/detail/{brandId}",
+    "summary": "获取品牌详情",
+    "params": "@PathVariable Long brandId",
+    "returns": "CommonResult<PmsBrand>",
+    "calls": [
+      "PmsPortalBrandService.detail"
+    ],
+    "permission": "配置白名单放行",
+    "line": 40
+  },
+  {
+    "module": "mall-portal",
+    "controller": "PmsPortalBrandController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalBrandController.java",
+    "method": "productList",
+    "http": "GET",
+    "url": "/brand/productList",
+    "summary": "分页获取品牌相关商品",
+    "params": "@RequestParam Long brandId, @RequestParam(value = \"pageNum\", defaultValue = \"1\") Integer pageNum, @RequestParam(value = \"pageSize\", defaultValue = \"6\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<PmsProduct>>",
+    "calls": [
+      "PmsPortalBrandService.productList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 48
+  },
+  {
+    "module": "mall-portal",
+    "controller": "PmsPortalProductController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalProductController.java",
+    "method": "search",
+    "http": "GET",
+    "url": "/product/search",
+    "summary": "综合搜索、筛选、排序",
+    "params": "@RequestParam(required = false) String keyword, @RequestParam(required = false) Long brandId, @RequestParam(required = false) Long productCategoryId, @RequestParam(required = false, defaultValue = \"0\") Integer pageNum, @RequestParam(required = false, defaultValue = \"5\") Integer pageSize, @RequestParam(required = false, defaultValue = \"0\") Integer sort",
+    "returns": "CommonResult<CommonPage<PmsProduct>>",
+    "calls": [
+      "PmsPortalProductService.search"
+    ],
+    "permission": "配置白名单放行",
+    "line": 37
+  },
+  {
+    "module": "mall-portal",
+    "controller": "PmsPortalProductController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalProductController.java",
+    "method": "categoryTreeList",
+    "http": "GET",
+    "url": "/product/categoryTreeList",
+    "summary": "以树形结构获取所有商品分类",
+    "params": "",
+    "returns": "CommonResult<List<PmsProductCategoryNode>>",
+    "calls": [
+      "PmsPortalProductService.categoryTreeList"
+    ],
+    "permission": "配置白名单放行",
+    "line": 50
+  },
+  {
+    "module": "mall-portal",
+    "controller": "PmsPortalProductController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/PmsPortalProductController.java",
+    "method": "detail",
+    "http": "GET",
+    "url": "/product/detail/{id}",
+    "summary": "获取前台商品详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<PmsPortalProductDetail>",
+    "calls": [
+      "PmsPortalProductService.detail"
+    ],
+    "permission": "配置白名单放行",
+    "line": 58
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java",
+    "method": "register",
+    "http": "POST",
+    "url": "/sso/register",
+    "summary": "会员注册",
+    "params": "@RequestParam String username, @RequestParam String password, @RequestParam String telephone, @RequestParam String authCode",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberService.register"
+    ],
+    "permission": "配置白名单放行",
+    "line": 39
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java",
+    "method": "login",
+    "http": "POST",
+    "url": "/sso/login",
+    "summary": "会员登录",
+    "params": "@RequestParam String username, @RequestParam String password",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberService.login"
+    ],
+    "permission": "配置白名单放行",
+    "line": 50
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java",
+    "method": "info",
+    "http": "GET",
+    "url": "/sso/info",
+    "summary": "获取会员信息",
+    "params": "Principal principal",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberService.getCurrentMember"
+    ],
+    "permission": "配置白名单放行",
+    "line": 65
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java",
+    "method": "getAuthCode",
+    "http": "GET",
+    "url": "/sso/getAuthCode",
+    "summary": "获取验证码",
+    "params": "@RequestParam String telephone",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberService.generateAuthCode"
+    ],
+    "permission": "配置白名单放行",
+    "line": 76
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java",
+    "method": "updatePassword",
+    "http": "POST",
+    "url": "/sso/updatePassword",
+    "summary": "会员修改密码",
+    "params": "@RequestParam String telephone, @RequestParam String password, @RequestParam String authCode",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberService.updatePassword"
+    ],
+    "permission": "配置白名单放行",
+    "line": 84
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberController.java",
+    "method": "refreshToken",
+    "http": "GET",
+    "url": "/sso/refreshToken",
+    "summary": "刷新token",
+    "params": "HttpServletRequest request",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberService.refreshToken"
+    ],
+    "permission": "配置白名单放行",
+    "line": 95
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberCouponController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberCouponController.java",
+    "method": "add",
+    "http": "POST",
+    "url": "/member/coupon/add/{couponId}",
+    "summary": "领取指定优惠券",
+    "params": "@PathVariable Long couponId",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberCouponService.add"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 40
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberCouponController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberCouponController.java",
+    "method": "listHistory",
+    "http": "GET",
+    "url": "/member/coupon/listHistory",
+    "summary": "获取会员优惠券历史列表",
+    "params": "@RequestParam(value = \"useStatus\", required = false) Integer useStatus",
+    "returns": "CommonResult<List<SmsCouponHistory>>",
+    "calls": [
+      "UmsMemberCouponService.listHistory"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 50
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberCouponController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberCouponController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/member/coupon/list",
+    "summary": "获取会员优惠券列表",
+    "params": "@RequestParam(value = \"useStatus\", required = false) Integer useStatus",
+    "returns": "CommonResult<List<SmsCoupon>>",
+    "calls": [
+      "UmsMemberCouponService.list"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 60
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberCouponController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberCouponController.java",
+    "method": "listCart",
+    "http": "GET",
+    "url": "/member/coupon/list/cart/{type}",
+    "summary": "获取登录会员购物车的相关优惠券",
+    "params": "@PathVariable Integer type",
+    "returns": "CommonResult<List<SmsCouponHistoryDetail>>",
+    "calls": [
+      "OmsCartItemService.listPromotion",
+      "UmsMemberCouponService.listCart",
+      "UmsMemberService.getCurrentMember"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 70
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberCouponController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberCouponController.java",
+    "method": "listByProduct",
+    "http": "GET",
+    "url": "/member/coupon/listByProduct/{productId}",
+    "summary": "获取当前商品相关优惠券",
+    "params": "@PathVariable Long productId",
+    "returns": "CommonResult<List<SmsCoupon>>",
+    "calls": [
+      "UmsMemberCouponService.listByProduct"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 79
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberReceiveAddressController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java",
+    "method": "add",
+    "http": "POST",
+    "url": "/member/address/add",
+    "summary": "添加收货地址",
+    "params": "@RequestBody UmsMemberReceiveAddress address",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberReceiveAddressService.add"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 28
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberReceiveAddressController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/member/address/delete/{id}",
+    "summary": "删除收货地址",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberReceiveAddressService.delete"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 39
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberReceiveAddressController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java",
+    "method": "update",
+    "http": "POST",
+    "url": "/member/address/update/{id}",
+    "summary": "修改收货地址",
+    "params": "@PathVariable Long id, @RequestBody UmsMemberReceiveAddress address",
+    "returns": "CommonResult",
+    "calls": [
+      "UmsMemberReceiveAddressService.update"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 50
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberReceiveAddressController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java",
+    "method": "list",
+    "http": "GET",
+    "url": "/member/address/list",
+    "summary": "获取所有收货地址",
+    "params": "",
+    "returns": "CommonResult<List<UmsMemberReceiveAddress>>",
+    "calls": [
+      "UmsMemberReceiveAddressService.list"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 61
+  },
+  {
+    "module": "mall-portal",
+    "controller": "UmsMemberReceiveAddressController",
+    "file": "mall/mall-portal/src/main/java/com/macro/mall/portal/controller/UmsMemberReceiveAddressController.java",
+    "method": "getItem",
+    "http": "GET",
+    "url": "/member/address/{id}",
+    "summary": "获取收货地址详情",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<UmsMemberReceiveAddress>",
+    "calls": [
+      "UmsMemberReceiveAddressService.getItem"
+    ],
+    "permission": "需会员认证；对象归属另看业务方法",
+    "line": 69
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "importAllList",
+    "http": "POST",
+    "url": "/esProduct/importAll",
+    "summary": "导入所有数据库中商品到ES",
+    "params": "",
+    "returns": "CommonResult<Integer>",
+    "calls": [
+      "EsProductService.importAll"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 34
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "delete",
+    "http": "GET",
+    "url": "/esProduct/delete/{id}",
+    "summary": "根据id删除商品",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<Object>",
+    "calls": [
+      "EsProductService.delete"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 42
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "delete",
+    "http": "POST",
+    "url": "/esProduct/delete/batch",
+    "summary": "根据id批量删除商品",
+    "params": "@RequestParam(\"ids\") List<Long> ids",
+    "returns": "CommonResult<Object>",
+    "calls": [
+      "EsProductService.delete"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 50
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "create",
+    "http": "POST",
+    "url": "/esProduct/create/{id}",
+    "summary": "根据id创建商品",
+    "params": "@PathVariable Long id",
+    "returns": "CommonResult<EsProduct>",
+    "calls": [
+      "EsProductService.create"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 58
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "search",
+    "http": "GET",
+    "url": "/esProduct/search/simple",
+    "summary": "简单搜索",
+    "params": "@RequestParam(required = false) String keyword, @RequestParam(required = false, defaultValue = \"0\") Integer pageNum, @RequestParam(required = false, defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<EsProduct>>",
+    "calls": [
+      "EsProductService.search"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 70
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "search",
+    "http": "GET",
+    "url": "/esProduct/search",
+    "summary": "综合搜索、筛选、排序",
+    "params": "@RequestParam(required = false) String keyword, @RequestParam(required = false) Long brandId, @RequestParam(required = false) Long productCategoryId, @RequestParam(required = false, defaultValue = \"0\") Integer pageNum, @RequestParam(required = false, defaultValue = \"5\") Integer pageSize, @RequestParam(required = false, defaultValue = \"0\") Integer sort",
+    "returns": "CommonResult<CommonPage<EsProduct>>",
+    "calls": [
+      "EsProductService.search"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 81
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "recommend",
+    "http": "GET",
+    "url": "/esProduct/recommend/{id}",
+    "summary": "根据商品id推荐商品",
+    "params": "@PathVariable Long id, @RequestParam(required = false, defaultValue = \"0\") Integer pageNum, @RequestParam(required = false, defaultValue = \"5\") Integer pageSize",
+    "returns": "CommonResult<CommonPage<EsProduct>>",
+    "calls": [
+      "EsProductService.recommend"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 94
+  },
+  {
+    "module": "mall-search",
+    "controller": "EsProductController",
+    "file": "mall/mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+    "method": "searchRelatedInfo",
+    "http": "GET",
+    "url": "/esProduct/search/relate",
+    "summary": "获取搜索的相关品牌、分类及筛选属性",
+    "params": "@RequestParam(required = false) String keyword",
+    "returns": "CommonResult<EsProductRelatedInfo>",
+    "calls": [
+      "EsProductService.searchRelatedInfo"
+    ],
+    "permission": "该应用未发现Security过滤链；外部访问控制无法确认",
+    "line": 104
+  }
+]

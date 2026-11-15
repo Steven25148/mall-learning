@@ -1,0 +1,15 @@
+{
+  "java_files": 519,
+  "api_methods": 246,
+  "api_by_module": {
+    "mall-admin": 160,
+    "mall-demo": 13,
+    "mall-portal": 65,
+    "mall-search": 8
+  },
+  "controller_count": 47,
+  "tables": 76,
+  "models": 132,
+  "transaction_declarations": 35,
+  "service_implementations": 49
+}

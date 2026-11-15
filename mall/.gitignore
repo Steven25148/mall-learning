@@ -1,0 +1,17 @@
+# Maven #
+target/
+
+# IDEA #
+.idea/
+*.iml
+
+# Eclipse #
+.settings/
+.classpath
+.project
+
+# Python API test environment #
+.venv-api-tests/
+.pytest_cache/
+__pycache__/
+*.pyc

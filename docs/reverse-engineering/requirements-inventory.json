@@ -1,0 +1,796 @@
+[
+  {
+    "module": "admin",
+    "controller": "CmsPrefrenceAreaController",
+    "id": "REQ-CMS-001",
+    "name": "查询优选区域",
+    "flow": "返回全部优选区域，供商品关联选择；未找到本Controller的写入操作",
+    "edge": "没有分页或专门空结果错误；不能扩展成完整CMS管理",
+    "tables": "cms_prefrence_area",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "CmsPrefrenceAreaService"
+    ],
+    "access": [
+      "CmsPrefrenceAreaMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "CmsSubjectController",
+    "id": "REQ-CMS-002",
+    "name": "查询商品专题",
+    "flow": "全部查询，或按专题名称模糊条件分页查询，用于商品关联等场景",
+    "edge": "此处没有专题增删改接口；空列表由通用结果返回",
+    "tables": "cms_subject",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "CmsSubjectService"
+    ],
+    "access": [
+      "CmsSubjectMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "MinioController",
+    "id": "REQ-FILE-001",
+    "name": "MinIO上传与删除文件",
+    "flow": "Controller直接创建MinioClient；桶不存在则创建并配置策略；对象名为日期/原文件名，返回名称和URL；删除按objectName执行",
+    "edge": "上传为multipart file，异常捕获后failed；未发现扩展名白名单的服务端校验；没有Service层",
+    "tables": "无MySQL业务表写入",
+    "middleware": "MinIO SDK；不是Redis/MQ/ES",
+    "services": [],
+    "access": []
+  },
+  {
+    "module": "admin",
+    "controller": "OmsCompanyAddressController",
+    "id": "REQ-ORDERCFG-001",
+    "name": "查询公司收货地址",
+    "flow": "读取公司地址列表，退货处理可引用地址",
+    "edge": "此Controller没有新增、编辑或删除公司地址接口",
+    "tables": "oms_company_address",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "OmsCompanyAddressService"
+    ],
+    "access": [
+      "OmsCompanyAddressMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "OmsOrderController",
+    "id": "REQ-ADMINORDER-001",
+    "name": "后台订单处理",
+    "flow": "列表按订单号、状态、来源、类型、日期、收件人筛选；详情带明细和日志；发货SQL限状态1；关闭/编辑写操作记录；删除为逻辑删除",
+    "edge": "close与商城cancel不同，不释放锁库存和权益；费用修改未重算payAmount；操作人固定后台管理员",
+    "tables": "oms_order,oms_order_item,oms_order_operate_history",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "OmsOrderService"
+    ],
+    "access": [
+      "OmsOrderDao",
+      "OmsOrderMapper",
+      "OmsOrderOperateHistoryDao",
+      "OmsOrderOperateHistoryMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "OmsOrderReturnApplyController",
+    "id": "REQ-ADMINRETURN-001",
+    "name": "处理退货申请",
+    "flow": "按条件分页/关联详情；状态1确认，2收货完成，3拒绝；删除条件含status=3",
+    "edge": "状态更新未检查旧状态；未发现支付渠道退款或自动入库；非法目标状态返回0",
+    "tables": "oms_order_return_apply,oms_company_address",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "OmsOrderReturnApplyService"
+    ],
+    "access": [
+      "OmsOrderReturnApplyDao",
+      "OmsOrderReturnApplyMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "OmsOrderReturnReasonController",
+    "id": "REQ-ORDERCFG-002",
+    "name": "维护退货原因",
+    "flow": "创建时设创建时间，提供分页、详情、修改、批量删除及状态变更",
+    "edge": "受影响行数由Controller判断；不能由原因配置推断完整售后审批规则",
+    "tables": "oms_order_return_reason",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "OmsOrderReturnReasonService"
+    ],
+    "access": [
+      "OmsOrderReturnReasonMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "OmsOrderSettingController",
+    "id": "REQ-ORDERCFG-003",
+    "name": "读取和修改订单设置",
+    "flow": "按ID读取/更新设置；商城延迟取消实际读取主键1的normalOrderOvertime",
+    "edge": "表中其他时限字段不证明存在对应定时任务；更新不自动重发已有消息",
+    "tables": "oms_order_setting",
+    "middleware": "本接口无；延迟取消路径读取本表后使用MQ",
+    "services": [
+      "OmsOrderSettingService"
+    ],
+    "access": [
+      "OmsOrderSettingMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "OssController",
+    "id": "REQ-FILE-002",
+    "name": "OSS上传签名与回调信息",
+    "flow": "Service生成有目录前缀、大小上限、到期时间的上传policy和signature；callback从请求参数组装URL/大小等",
+    "edge": "签名生成异常记录后仍返回结果对象；实际上传由前端直接向OSS执行；未证明真实账号可用",
+    "tables": "无MySQL业务表写入",
+    "middleware": "OSS SDK；不是Redis/MQ/ES",
+    "services": [
+      "OssService"
+    ],
+    "access": []
+  },
+  {
+    "module": "admin",
+    "controller": "PmsBrandController",
+    "id": "REQ-PRODUCT-001",
+    "name": "维护品牌",
+    "flow": "品牌新增/编辑/查询/删除及批量状态；首字母为空取名称第一个字符；修改品牌时同步商品表内brandName",
+    "edge": "没有将首字符转换为拼音的步骤；删除未见禁止有商品品牌删除的校验",
+    "tables": "pms_brand,pms_product",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "PmsBrandService"
+    ],
+    "access": [
+      "PmsBrandMapper",
+      "PmsProductMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "PmsProductAttributeCategoryController",
+    "id": "REQ-PRODUCT-002",
+    "name": "维护商品属性分类",
+    "flow": "创建时仅设name并insertSelective，属性/参数数量由SQL默认值0提供；提供列表、详情、修改、删除和带属性列表",
+    "edge": "分类数量为存储字段；删除未见自动清理所有关联数据的完整链路",
+    "tables": "pms_product_attribute_category,pms_product_attribute",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "PmsProductAttributeCategoryService"
+    ],
+    "access": [
+      "PmsProductAttributeCategoryDao",
+      "PmsProductAttributeCategoryMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "PmsProductAttributeController",
+    "id": "REQ-PRODUCT-003",
+    "name": "维护规格和参数",
+    "flow": "按分类及type分页；新增type0增加attributeCount，type1增加paramCount；删除按首条所属分类修正计数；按商品分类查筛选属性",
+    "edge": "删除依赖非空ID列表且以第一条判断分类/类型，不能断言支持跨类别批量删除的一致计数",
+    "tables": "pms_product_attribute,pms_product_attribute_category,pms_product_category_attribute_relation",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "PmsProductAttributeService"
+    ],
+    "access": [
+      "PmsProductAttributeCategoryMapper",
+      "PmsProductAttributeDao",
+      "PmsProductAttributeMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "PmsProductCategoryController",
+    "id": "REQ-PRODUCT-004",
+    "name": "维护商品分类",
+    "flow": "由parentId设置level；创建和修改维护筛选属性关系；修改同步商品内分类名；提供层级查询、导航/显示状态",
+    "edge": "删除是主键删除，未见强制级联清理商品与全部子分类",
+    "tables": "pms_product_category,pms_product_category_attribute_relation,pms_product",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "PmsProductCategoryService"
+    ],
+    "access": [
+      "PmsProductCategoryAttributeRelationDao",
+      "PmsProductCategoryAttributeRelationMapper",
+      "PmsProductCategoryDao",
+      "PmsProductCategoryMapper",
+      "PmsProductMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "PmsProductController",
+    "id": "REQ-PRODUCT-005",
+    "name": "创建编辑和管理商品",
+    "flow": "主表及会员价/阶梯价/满减/SKU/属性值/专题/优选关联一起保存；SKU编码缺失时按日期商品ID序号生成；查询及批量审核/上下架/新品/推荐/删除状态",
+    "edge": "审核人固定test；业务事务在接口声明；会员价可维护不代表结算使用；删除状态不等同物理删除；没有自动同步ES",
+    "tables": "pms_product,pms_member_price,pms_product_ladder,pms_product_full_reduction,pms_sku_stock,pms_product_attribute_value,cms_subject_product_relation,cms_prefrence_area_product_relation,pms_product_vertify_record",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "PmsProductService"
+    ],
+    "access": [
+      "CmsPrefrenceAreaProductRelationMapper",
+      "CmsSubjectProductRelationMapper",
+      "PmsMemberPriceMapper",
+      "PmsProductAttributeValueMapper",
+      "PmsProductDao",
+      "PmsProductFullReductionMapper",
+      "PmsProductLadderMapper",
+      "PmsProductMapper",
+      "PmsProductVertifyRecordDao",
+      "PmsSkuStockMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "PmsSkuStockController",
+    "id": "REQ-PRODUCT-006",
+    "name": "查询和批量更新SKU",
+    "flow": "按productId和可选skuCode查SKU；更新先按productId过滤请求列表，再调用DAO的REPLACE INTO语句",
+    "edge": "语句未列lock_stock和promotion_price，不能按普通字段局部UPDATE理解；该后台维护入口不是下单并发锁",
+    "tables": "pms_sku_stock",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "PmsSkuStockService"
+    ],
+    "access": [
+      "PmsSkuStockDao",
+      "PmsSkuStockMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsCouponController",
+    "id": "REQ-MARKETING-001",
+    "name": "维护优惠券定义",
+    "flow": "创建将剩余数量设为发行数量并清使用/领取计数；useType2写指定商品关系，1写分类关系；删除同时清两类关系；更新按当前类型替换相应关系",
+    "edge": "未自动证明历史领取记录随删除清理；修改类型时仅替换当前类型分支，其他旧关系不应假定已删除",
+    "tables": "sms_coupon,sms_coupon_product_relation,sms_coupon_product_category_relation",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsCouponService"
+    ],
+    "access": [
+      "SmsCouponDao",
+      "SmsCouponMapper",
+      "SmsCouponProductCategoryRelationDao",
+      "SmsCouponProductCategoryRelationMapper",
+      "SmsCouponProductRelationDao",
+      "SmsCouponProductRelationMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsCouponHistoryController",
+    "id": "REQ-MARKETING-002",
+    "name": "查询优惠券领取记录",
+    "flow": "按券ID、使用状态、订单号查询领取记录，分页返回",
+    "edge": "该入口只查询，不是人工核销或退款退券接口",
+    "tables": "sms_coupon_history",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsCouponHistoryService"
+    ],
+    "access": [
+      "SmsCouponHistoryMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsFlashPromotionController",
+    "id": "REQ-FLASH-001",
+    "name": "维护秒杀活动配置",
+    "flow": "活动新增、编辑、删除、上下线和名称分页查询",
+    "edge": "存在活动不证明有独立高并发秒杀购买链；未发现此操作通知MQ",
+    "tables": "sms_flash_promotion",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsFlashPromotionService"
+    ],
+    "access": [
+      "SmsFlashPromotionMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsFlashPromotionProductRelationController",
+    "id": "REQ-FLASH-002",
+    "name": "维护活动场次商品",
+    "flow": "批量插入商品关系，编辑促销配置、删除、详情、按活动/场次查关联商品",
+    "edge": "这一步写活动关联表；不等于实际预扣SKU库存或严格执行秒杀限购",
+    "tables": "sms_flash_promotion_product_relation,pms_product",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsFlashPromotionProductRelationService"
+    ],
+    "access": [
+      "SmsFlashPromotionProductRelationDao",
+      "SmsFlashPromotionProductRelationMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsFlashPromotionSessionController",
+    "id": "REQ-FLASH-003",
+    "name": "维护秒杀时间段",
+    "flow": "场次创建/修改/启停/删除；可选列表筛status1并计算对应活动商品数量",
+    "edge": "商城当前时间选择场次的查询与此可选列表筛选条件不完全相同",
+    "tables": "sms_flash_promotion_session,sms_flash_promotion_product_relation",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsFlashPromotionSessionService"
+    ],
+    "access": [
+      "SmsFlashPromotionSessionMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsHomeAdvertiseController",
+    "id": "REQ-HOMEADMIN-001",
+    "name": "维护首页广告",
+    "flow": "创建初始化clickCount/orderCount为0；编辑、上下线、删除、详情与条件分页",
+    "edge": "没有发现点击/转化计数持续更新链，不能把两个字段当已接通统计",
+    "tables": "sms_home_advertise",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsHomeAdvertiseService"
+    ],
+    "access": [
+      "SmsHomeAdvertiseMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsHomeBrandController",
+    "id": "REQ-HOMEADMIN-002",
+    "name": "维护品牌推荐",
+    "flow": "批量插入首页品牌条目，设推荐状态与排序初值；可排序、批量删、改推荐状态、按名称/状态查",
+    "edge": "维护首页配置，不是个性化推荐算法；数据库未声明该业务关联唯一性",
+    "tables": "sms_home_brand",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsHomeBrandService"
+    ],
+    "access": [
+      "SmsHomeBrandMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsHomeNewProductController",
+    "id": "REQ-HOMEADMIN-003",
+    "name": "维护首页新品",
+    "flow": "批量添加条目、排序、删除、推荐状态及名称/状态分页查询",
+    "edge": "这里的推荐条目与pms_product.new_status是不同数据存储，不假定自动双向同步",
+    "tables": "sms_home_new_product",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsHomeNewProductService"
+    ],
+    "access": [
+      "SmsHomeNewProductMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsHomeRecommendProductController",
+    "id": "REQ-HOMEADMIN-004",
+    "name": "维护首页人气推荐",
+    "flow": "批量添加条目、排序、删除、推荐状态和条件分页",
+    "edge": "这里维护手工推荐表，不能写成销量实时算法",
+    "tables": "sms_home_recommend_product",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsHomeRecommendProductService"
+    ],
+    "access": [
+      "SmsHomeRecommendProductMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "SmsHomeRecommendSubjectController",
+    "id": "REQ-HOMEADMIN-005",
+    "name": "维护首页专题推荐",
+    "flow": "添加专题推荐条目、改排序/状态、批量删与分页",
+    "edge": "仅推荐关系，不构成专题内容编辑的全部能力",
+    "tables": "sms_home_recommend_subject",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "SmsHomeRecommendSubjectService"
+    ],
+    "access": [
+      "SmsHomeRecommendSubjectMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "UmsAdminController",
+    "id": "REQ-ADMIN-001",
+    "name": "后台账号与登录",
+    "flow": "注册检查用户名后BCrypt存储；登录核对密码和启用状态、写登录日志、返回Token；信息查角色/菜单；账号编辑、状态、改密、删除、分配角色、刷新及登出",
+    "edge": "注册/登录等列入白名单；登出只清缓存；修改/删除与缓存失效顺序见正文观察；前端无角色拒绝进入",
+    "tables": "ums_admin,ums_admin_login_log,ums_admin_role_relation,ums_role,ums_role_resource_relation,ums_resource,ums_role_menu_relation,ums_menu",
+    "middleware": "Redis管理员/资源缓存；无业务MQ/ES",
+    "services": [
+      "UmsAdminService",
+      "UmsRoleService"
+    ],
+    "access": [
+      "UmsAdminLoginLogMapper",
+      "UmsAdminMapper",
+      "UmsAdminRoleRelationDao",
+      "UmsAdminRoleRelationMapper",
+      "UmsRoleDao",
+      "UmsRoleMapper",
+      "UmsRoleMenuRelationMapper",
+      "UmsRoleResourceRelationMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "UmsMemberLevelController",
+    "id": "REQ-MEMBERLEVEL-001",
+    "name": "查询会员等级",
+    "flow": "按defaultStatus查询等级列表，供商品会员价等选择",
+    "edge": "未发现此Controller提供会员等级创建/编辑或完整会员管理",
+    "tables": "ums_member_level",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "UmsMemberLevelService"
+    ],
+    "access": [
+      "UmsMemberLevelMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "UmsMenuController",
+    "id": "REQ-PERMISSION-001",
+    "name": "维护后台菜单",
+    "flow": "创建/编辑时由父节点设置level；按父ID分页、详情、删除、树查询和hidden变更",
+    "edge": "菜单隐藏与后端资源授权独立；删除不代表自动回收所有关联资源",
+    "tables": "ums_menu",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "UmsMenuService"
+    ],
+    "access": [
+      "UmsMenuMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "UmsResourceCategoryController",
+    "id": "REQ-PERMISSION-002",
+    "name": "维护资源分类",
+    "flow": "新增设创建时间，提供全部查询、修改与删除",
+    "edge": "资源分类仅用于整理资源，未见按分类自动授权整组资源的机制",
+    "tables": "ums_resource_category",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "UmsResourceCategoryService"
+    ],
+    "access": [
+      "UmsResourceCategoryMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "UmsResourceController",
+    "id": "REQ-PERMISSION-003",
+    "name": "维护URL资源",
+    "flow": "提供资源增删改查；写操作后清当前进程动态权限Map，更新/删除清相关管理员资源缓存",
+    "edge": "规则匹配URL而非HTTP动词；进程内刷新没有找到跨实例广播",
+    "tables": "ums_resource,ums_role_resource_relation,ums_admin_role_relation",
+    "middleware": "Redis资源缓存失效；本进程权限Map；无MQ/ES",
+    "services": [
+      "UmsResourceService"
+    ],
+    "access": [
+      "UmsResourceMapper"
+    ]
+  },
+  {
+    "module": "admin",
+    "controller": "UmsRoleController",
+    "id": "REQ-PERMISSION-004",
+    "name": "维护角色及授权",
+    "flow": "角色增删改/启停/查询；菜单和资源分配先删除旧关系再插入新关系，资源分配清成员资源缓存",
+    "edge": "权限查询未过滤角色status；不能仅凭字段断言角色禁用实时失权",
+    "tables": "ums_role,ums_role_menu_relation,ums_role_resource_relation,ums_menu,ums_resource,ums_admin_role_relation",
+    "middleware": "Redis资源缓存失效；无MQ/ES",
+    "services": [
+      "UmsRoleService"
+    ],
+    "access": [
+      "UmsRoleDao",
+      "UmsRoleMapper",
+      "UmsRoleMenuRelationMapper",
+      "UmsRoleResourceRelationMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "AlipayController",
+    "id": "REQ-PAY-001",
+    "name": "支付宝网页支付与查询通知",
+    "flow": "电脑和手机支付直接使用请求订单号/金额/标题生成HTML；notify验签且TRADE_SUCCESS时按订单号处理支付；query成功时也可更新订单",
+    "edge": "notify返回String未ResponseBody；未见退款；金额/归属完整核对未见；SDK错误处理可能返回null后继续访问",
+    "tables": "oms_order,oms_order_item,pms_sku_stock（经订单Service）",
+    "middleware": "支付宝SDK；无直接Redis/MQ/ES",
+    "services": [
+      "AlipayService"
+    ],
+    "access": []
+  },
+  {
+    "module": "portal",
+    "controller": "HomeController",
+    "id": "REQ-HOME-001",
+    "name": "展示商城首页",
+    "flow": "广告、推荐品牌、当前活动/场次、秒杀商品、新品、人气、专题聚合；分类按显示状态；推荐商品接口实际分页返回未删已上架商品",
+    "edge": "首页广告只筛type1/status1；推荐商品不是个性化；当前场次查询未筛status；空活动返回空内容对象",
+    "tables": "sms_home_advertise,sms_home_brand,sms_home_new_product,sms_home_recommend_product,sms_home_recommend_subject,sms_flash_promotion,sms_flash_promotion_session,sms_flash_promotion_product_relation,pms_product,pms_brand,pms_product_category,cms_subject",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "HomeService"
+    ],
+    "access": [
+      "CmsSubjectMapper",
+      "HomeDao",
+      "PmsProductCategoryMapper",
+      "PmsProductMapper",
+      "SmsFlashPromotionMapper",
+      "SmsFlashPromotionSessionMapper",
+      "SmsHomeAdvertiseMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "MemberAttentionController",
+    "id": "REQ-MEMBERDATA-001",
+    "name": "关注品牌",
+    "flow": "当前会员+品牌先查重复；按sqlEnable读取品牌补信息；保存Mongo，按会员查询/取消/清空",
+    "edge": "品牌ID为空或SQL品牌不存在返回0；先查后写未证明并发唯一",
+    "tables": "pms_brand（可选读取）；Mongo MemberBrandAttention",
+    "middleware": "MongoDB；认证可读Redis，无直接业务MQ/ES",
+    "services": [
+      "MemberAttentionService"
+    ],
+    "access": [
+      "MemberBrandAttentionRepository",
+      "PmsBrandMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "MemberProductCollectionController",
+    "id": "REQ-MEMBERDATA-002",
+    "name": "收藏商品",
+    "flow": "按当前会员+商品查重复；按sqlEnable读取未删除商品信息；保存Mongo；按会员查询、取消和清空",
+    "edge": "商品ID为空、商品不存在/已删返回0；无已声明的联合唯一约束",
+    "tables": "pms_product（可选读取）；Mongo MemberProductCollection",
+    "middleware": "MongoDB；认证可读Redis，无直接业务MQ/ES",
+    "services": [
+      "MemberCollectionService"
+    ],
+    "access": [
+      "MemberProductCollectionRepository",
+      "PmsProductMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "MemberReadHistoryController",
+    "id": "REQ-MEMBERDATA-003",
+    "name": "记录商品浏览",
+    "flow": "写当前会员、创建时间并重置ID；开关控制SQL补商品信息；按当前会员时间倒序查/清空；可按ID列表删除",
+    "edge": "按ID列表删除未加会员条件；新增每次独立写，不按商品去重",
+    "tables": "pms_product（可选读取）；Mongo MemberReadHistory",
+    "middleware": "MongoDB；认证可读Redis，无直接业务MQ/ES",
+    "services": [
+      "MemberReadHistoryService"
+    ],
+    "access": [
+      "MemberReadHistoryRepository",
+      "PmsProductMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "OmsCartItemController",
+    "id": "REQ-CART-001",
+    "name": "维护购物车并计算促销",
+    "flow": "按当前会员及商品/SKU合并数量；列表可带促销；按本人ID更新数量、删除或清空；改规格先删旧项再add",
+    "edge": "空cartIds在listPromotion中不会筛选，实际选择全部；改规格旧项删除缺会员过滤；未见统一正数量校验",
+    "tables": "oms_cart_item,pms_product,pms_sku_stock,pms_product_ladder,pms_product_full_reduction,pms_product_attribute,pms_product_attribute_value",
+    "middleware": "无直接业务Redis/MQ/ES；公共认证用Redis",
+    "services": [
+      "OmsCartItemService",
+      "UmsMemberService"
+    ],
+    "access": [
+      "OmsCartItemMapper",
+      "PortalProductDao",
+      "UmsMemberLevelMapper",
+      "UmsMemberMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "OmsPortalOrderController",
+    "id": "REQ-PORTALORDER-001",
+    "name": "会员订单操作",
+    "flow": "确认单、下单、支付状态写入、取消及重新发送取消消息、订单列表详情、确认收货、删除；流程见正文REQ-ORDER-001至004",
+    "edge": "接口之间归属和状态约束不同；不能由名称假定全部检查；库存/积分/支付风险见第23章",
+    "tables": "oms_order,oms_order_item,oms_cart_item,oms_order_setting,pms_sku_stock,sms_coupon,sms_coupon_history,sms_coupon_product_relation,sms_coupon_product_category_relation,ums_member,ums_member_receive_address,ums_integration_consume_setting,pms_product,pms_product_ladder,pms_product_full_reduction",
+    "middleware": "Redis会员缓存/订单计数；RabbitMQ取消；无ES",
+    "services": [
+      "OmsPortalOrderService"
+    ],
+    "access": [
+      "OmsOrderItemMapper",
+      "OmsOrderMapper",
+      "OmsOrderSettingMapper",
+      "PmsSkuStockMapper",
+      "PortalOrderDao",
+      "PortalOrderItemDao",
+      "SmsCouponHistoryMapper",
+      "UmsIntegrationConsumeSettingMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "OmsPortalOrderReturnApplyController",
+    "id": "REQ-PORTALRETURN-001",
+    "name": "提交退货申请",
+    "flow": "复制请求对象到申请表，设创建时间与status0",
+    "edge": "未查询订单归属、支付状态及可退数量；不执行退款",
+    "tables": "oms_order_return_apply",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "OmsPortalOrderReturnApplyService"
+    ],
+    "access": [
+      "OmsOrderReturnApplyMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "PmsPortalBrandController",
+    "id": "REQ-BROWSE-001",
+    "name": "浏览品牌与品牌商品",
+    "flow": "推荐品牌按首页品牌表；品牌详情按ID；品牌商品按未删除且上架分页",
+    "edge": "品牌不存在可返回null；不是后台品牌管理",
+    "tables": "pms_brand,sms_home_brand,pms_product",
+    "middleware": "未见直接Redis/MQ/ES",
+    "services": [
+      "PmsPortalBrandService"
+    ],
+    "access": [
+      "HomeDao",
+      "PmsBrandMapper",
+      "PmsProductMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "PmsPortalProductController",
+    "id": "REQ-BROWSE-002",
+    "name": "查询商品、分类树与详情",
+    "flow": "search用MySQL名称LIKE及品牌/分类筛选，排除已删未上架；排序ID/销量/价格；详情聚合品牌、属性/SKU、条件促销及可用券",
+    "edge": "详情按主键取商品后继续读取，不像search一样显式检查上架/删除；分类树读取所有分类",
+    "tables": "pms_product,pms_product_category,pms_brand,pms_product_attribute,pms_product_attribute_value,pms_sku_stock,pms_product_ladder,pms_product_full_reduction,sms_coupon,sms_coupon_product_relation,sms_coupon_product_category_relation",
+    "middleware": "本搜索走MySQL；没有直接ES调用",
+    "services": [
+      "PmsPortalProductService"
+    ],
+    "access": [
+      "PmsBrandMapper",
+      "PmsProductAttributeMapper",
+      "PmsProductAttributeValueMapper",
+      "PmsProductCategoryMapper",
+      "PmsProductFullReductionMapper",
+      "PmsProductLadderMapper",
+      "PmsProductMapper",
+      "PmsSkuStockMapper",
+      "PortalProductDao"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "UmsMemberController",
+    "id": "REQ-MEMBER-001",
+    "name": "会员账号及验证码",
+    "flow": "手机号验证码写Redis并直接返回；注册验证验证码、查用户名/电话、BCrypt密码、设默认等级；登录/Token刷新/当前信息/验证码改密",
+    "edge": "未发现短信发送服务；验证码验证不销毁；会员login不显式检查isEnabled",
+    "tables": "ums_member,ums_member_level",
+    "middleware": "Redis会员缓存/验证码；无MQ/ES",
+    "services": [
+      "UmsMemberService"
+    ],
+    "access": [
+      "UmsMemberLevelMapper",
+      "UmsMemberMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "UmsMemberCouponController",
+    "id": "REQ-COUPON-001",
+    "name": "领取并查询会员优惠券",
+    "flow": "校验券存在、剩余数、enableTime、领取数量；写领取历史并减数量；按会员查历史、可用券、商品券、购物车可用/不可用券",
+    "edge": "库存不足/未到领取时间/限领抛ApiException；listCart门槛用intValue，日期与精度边界见正文；无严格并发扣减",
+    "tables": "sms_coupon,sms_coupon_history,sms_coupon_product_relation,sms_coupon_product_category_relation,pms_product；购物车券查询另读取购物车及促销",
+    "middleware": "无直接业务Redis/MQ/ES；认证用Redis",
+    "services": [
+      "OmsCartItemService",
+      "UmsMemberCouponService",
+      "UmsMemberService"
+    ],
+    "access": [
+      "OmsCartItemMapper",
+      "PmsProductMapper",
+      "PortalProductDao",
+      "SmsCouponHistoryDao",
+      "SmsCouponHistoryMapper",
+      "SmsCouponMapper",
+      "SmsCouponProductCategoryRelationMapper",
+      "SmsCouponProductRelationMapper",
+      "UmsMemberLevelMapper",
+      "UmsMemberMapper"
+    ]
+  },
+  {
+    "module": "portal",
+    "controller": "UmsMemberReceiveAddressController",
+    "id": "REQ-ADDRESS-001",
+    "name": "维护会员地址",
+    "flow": "新地址覆盖memberId为当前会员；列表、详情、删改按memberId过滤；更新默认地址时先清同会员原默认标记",
+    "edge": "新增不执行与更新相同的默认地址清理；详情未找到返回null，不能保证下单后续友好报错",
+    "tables": "ums_member_receive_address",
+    "middleware": "无直接业务Redis/MQ/ES；认证用Redis",
+    "services": [
+      "UmsMemberReceiveAddressService"
+    ],
+    "access": [
+      "UmsMemberReceiveAddressMapper"
+    ]
+  },
+  {
+    "module": "search",
+    "controller": "EsProductController",
+    "id": "REQ-SEARCH-001",
+    "name": "管理和检索ES商品索引",
+    "flow": "importAll/create读取未删已上架MySQL商品和属性后save；删索引按ID；简单搜索、组合过滤排序、相似商品与筛选聚合",
+    "edge": "显式接口同步，无后台自动同步；importAll不删除旧文档；应用未见Security链，外围访问控制未知",
+    "tables": "pms_product,pms_product_attribute_value,pms_product_attribute",
+    "middleware": "Elasticsearch pms索引；没有业务Redis/MQ",
+    "services": [
+      "EsProductService"
+    ],
+    "access": [
+      "EsProductDao",
+      "EsProductRepository"
+    ]
+  }
+]

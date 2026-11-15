@@ -1,0 +1,7 @@
+# API and database testing
+pytest>=8.0,<10
+requests>=2.31,<3
+PyMySQL>=1.1,<2
+
+# Optional browser automation fallback; prefer Playwright for this project.
+selenium>=4.20,<5

@@ -1,0 +1,11 @@
+$kind: collection
+description: 先运行“1. 登录并保存 Token”，再运行商品接口。登录脚本会自动把 data.token 保存到集合变量 token。
+variables:
+  baseUrl: http://172.18.225.193:8080
+  token: ""
+auth:
+  - id: 8af097ed-f52b-4cba-80fb-6be47cf6aeb3
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{token}}"

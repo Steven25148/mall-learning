@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Attach to mall-admin (WSL :5005)",
+            "request": "attach",
+            "hostName": "${input:mallWslIp}",
+            "port": 5005,
+            "timeout": 30000
+        }
+    ],
+    "inputs": [
+        {
+            "id": "mallWslIp",
+            "type": "promptString",
+            "description": "输入 Debug-Mall-Admin.cmd 打印的 WSL IP",
+            "default": "127.0.0.1"
+        }
+    ]
+}

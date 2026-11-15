@@ -1,0 +1,146 @@
+{
+  "info": {
+    "_postman_id": "8abdf9d5-c177-4dc8-8bc0-c657698ee668",
+    "name": "mall-admin 本地调试",
+    "description": "先运行“1. 登录并保存 Token”，再运行商品接口。登录脚本会自动把 data.token 保存到集合变量 token。",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://172.18.225.193:8080"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "1. 登录并保存 Token",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"macro123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/admin/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "admin",
+            "login"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const body = pm.response.json();",
+              "pm.test('登录成功', function () {",
+              "    pm.expect(body.code).to.eql(200);",
+              "    pm.expect(body.data.token).to.be.a('string').and.not.empty;",
+              "});",
+              "if (body.code === 200 && body.data && body.data.token) {",
+              "    pm.collectionVariables.set('token', body.data.token);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. 查询商品列表",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/product/list?pageNum=1&pageSize=5",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "product",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "pageNum",
+              "value": "1"
+            },
+            {
+              "key": "pageSize",
+              "value": "5"
+            },
+            {
+              "key": "keyword",
+              "value": "小米",
+              "disabled": true
+            },
+            {
+              "key": "publishStatus",
+              "value": "1",
+              "disabled": true
+            },
+            {
+              "key": "verifyStatus",
+              "value": "1",
+              "disabled": true
+            },
+            {
+              "key": "productSn",
+              "value": "",
+              "disabled": true
+            },
+            {
+              "key": "productCategoryId",
+              "value": "",
+              "disabled": true
+            },
+            {
+              "key": "brandId",
+              "value": "",
+              "disabled": true
+            },
+            {
+              "key": "minPrice",
+              "value": "1000",
+              "description": "完成 minPrice 功能后再启用",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

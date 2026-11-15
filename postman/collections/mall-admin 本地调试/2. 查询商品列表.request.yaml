@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{baseUrl}}/product/list?pageNum=1&pageSize=5"
+method: GET
+queryParams:
+  - key: pageNum
+    value: "1"
+  - key: pageSize
+    value: "5"
+  - key: keyword
+    value: 小米
+    disabled: true
+  - key: publishStatus
+    value: "1"
+    disabled: true
+  - key: verifyStatus
+    value: "1"
+    disabled: true
+  - key: productSn
+    value: ""
+    disabled: true
+  - key: productCategoryId
+    value: ""
+    disabled: true
+  - key: brandId
+    value: ""
+    disabled: true
+  - key: minPrice
+    value: "1000"
+    disabled: true
+    description: 完成 minPrice 功能后再启用
+order: 2000
